@@ -7,7 +7,7 @@ interface Props {
 }
 
 const SwitchTheme: React.FC<Props> = ({ theme, toggleTheme }) => {
-  const btnClass = theme === 'light' ? 'btn-toggle light' : 'btn-toggle dark';
+  const btnClass = theme === 'light' ? 'btn-toggle light' : 'btn-toggle';
 
   return (
     <button className={btnClass} onClick={() => toggleTheme(theme)}>

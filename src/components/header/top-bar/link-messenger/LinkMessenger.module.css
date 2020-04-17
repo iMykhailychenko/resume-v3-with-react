@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.logo {
+  height: 28px;
+  width: auto;
+  margin-left: 16px;
+}
