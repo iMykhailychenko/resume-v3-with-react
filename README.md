@@ -3,9 +3,9 @@
 
 ## Стек технологий:
 ```
+- typescript
 - react
 - redux
-- typescript
 ```
 ## Текущая версия в процессе разработки
 ## Для просмотра предыдущей версия резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/dist/)
