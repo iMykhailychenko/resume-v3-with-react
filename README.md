@@ -1,9 +1,15 @@
 # RESUME 
 ```*in education purpose```
 
+## Стек технологий:
+- react;
+- redux;
+- typescript;
+
 ![print scrin](https://avatars0.githubusercontent.com/u/50461642?s=460&v=4)
 
-## Для просмотра веб версии резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v3-with-react/)
+## Текущая версия в процессе разработки
+## Для просмотра предыдущей версия резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/)
 
 ## Персональные данные
 
