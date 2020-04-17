@@ -3,9 +3,9 @@
 
 ## Стек технологий:
 ```
-- react;
-- redux;
-- typescript;
+- react
+- redux
+- typescript
 ```
 
 ![print scrin](https://avatars0.githubusercontent.com/u/50461642?s=460&v=4)
