@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
+import styles from './Clock.module.css';
 
 type Props = {};
 
 interface State {
-  hours: number;
-  minutes: number;
+  hours: string;
+  minutes: string;
 }
+
+const hours = (): string => String(new Date().getHours()).padStart(2, "0")
+const minutes = (): string => String(new Date().getMinutes()).padStart(2, "0")
 
 export default class Clock extends Component<Props, State> {
   intervalID!: any;
 
   state = {
-    hours: new Date().getHours(),
-    minutes: new Date().getMinutes(),
+    hours: hours(),
+    minutes: minutes(),
   };
 
   componentDidMount() {
@@ -25,12 +29,12 @@ export default class Clock extends Component<Props, State> {
 
   tick() {
     this.setState({
-      hours: new Date().getHours(),
-      minutes: new Date().getMinutes(),
+      hours: hours(),
+      minutes: minutes(),
     });
   }
   render() {
     const { hours, minutes } = this.state;
-    return <p className="header__time">{hours}:{minutes}</p>;
+    return <p className={styles.time}>{hours}:{minutes}</p>;
   }
 }

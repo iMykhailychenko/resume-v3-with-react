@@ -1,6 +1,7 @@
 .btn-toggle {
   position: relative;
   display: flex;
+  margin: 0 auto;
   background: #c4c4c4;
   border: 3px solid #c4c4c4;
   border-radius: 8px;
@@ -20,6 +21,7 @@
 .light::before {
   left: 0;
   right: auto;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-toggle__elem {

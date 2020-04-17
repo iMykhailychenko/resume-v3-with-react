@@ -8,12 +8,13 @@ import { GlobalStyle } from '../../styled-components/GlobalStyle.js';
 
 interface Props {
   theme: string
+  menu: boolean
 };
 
-const App: React.FC<Props> = ({theme}) => {
+const App: React.FC<Props> = ({theme, menu}) => {
   return (
     <>
-      <GlobalStyle theme={theme} />
+      <GlobalStyle theme={theme} menu={menu}/>
 
       <Header />
 

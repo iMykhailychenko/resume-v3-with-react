@@ -1,12 +1,28 @@
 import React from 'react';
-// import styles from './Nav.module.css';
+import { CSSTransition } from 'react-transition-group';
+import SwitchTheme from './switch/SwitchContainer';
+import fadeInUp from '../../../transitions/fadeInUp.module.css';
+import styles from './Nav.module.css';
 
-const Nav = () => (
-  <div className="ler">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nobis
-    adipisci aperiam laudantium reprehenderit? A tempora rem quisquam aliquam,
-    odio error aliquid maiores, quibusdam natus nulla obcaecati quos quis unde.
-  </div>
-);
+interface Props {
+  menu: boolean;
+}
+
+const Nav: React.FC<Props> = ({ menu }) => {
+  return (
+    <CSSTransition
+      in={menu}
+      timeout={500}
+      classNames={fadeInUp}
+      unmountOnExit
+    >
+      <div className={styles.wrp}>
+        <div className="container">
+          <SwitchTheme />
+        </div>
+      </div>
+    </CSSTransition>
+  );
+};
 
 export default Nav;

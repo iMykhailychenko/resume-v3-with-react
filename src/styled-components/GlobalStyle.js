@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${props => (props.theme === 'light' ? '#fff' : '#000')};
     color: ${props => (props.theme === 'light' ? '#000' : '#fff')};
+    overflow: ${props => (props.menu ? 'hidden' : 'auto')};
   }
 
   a {

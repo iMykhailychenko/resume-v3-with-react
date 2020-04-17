@@ -1,7 +1,7 @@
 import SwitchTheme from './SwitchTheme';
 import { connect } from 'react-redux';
-import { themeActions } from '../../../redux/theme/themeActions';
-import { IState } from '../../../types';
+import { themeActions } from '../../../../redux/theme/themeActions';
+import { IState } from '../../../../types';
 
 const mapSTP = (state: IState): Pick<IState, 'theme'> => ({
   theme: state.theme,

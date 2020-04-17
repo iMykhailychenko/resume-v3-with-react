@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  margin-left: 25px;
+}
+
+.item {
+  padding: 0 6px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+.active {
+  composes: item;
+  font-weight: 500;
+  opacity: 1;
+}

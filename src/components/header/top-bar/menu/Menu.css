@@ -20,6 +20,10 @@
   transition: 0.3s ease-in-out;
 }
 
+.menu__svg rect {
+  transition: 0.3s ease-in-out;
+}
+
 .menu__svg--rotate {
   transform: rotateZ(90deg);
 }

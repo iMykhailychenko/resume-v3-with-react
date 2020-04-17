@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import Switch from './switch/SwitchContainer';
+import Nav from './nav/NavContainer';
 import TopBar from './top-bar/TopBar';
 
 type Props = {};
@@ -9,7 +9,7 @@ type Props = {};
 const Header: React.FC<Props> = () => (
   <header className="header container">
     <TopBar />
-    <Switch />
+    <Nav />
   </header>
 );
 
