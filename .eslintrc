@@ -1,0 +1,120 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "react-app",
+        "airbnb",
+        "plugin:import/errors",
+        "plugin:react/recommended",
+        "plugin:tsx-a11y/recommended",
+        "prettier",
+        "plugin:prettier/recommended",
+        "prettier/react"
+    ],
+    "plugins": [
+        "react",
+        "import",
+        "prettier",
+        "tsx-a11y"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "tsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "rules": {
+        "no-console": 1,
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "react/tsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        ],
+        "tsx-a11y/label-has-associated-control": [
+            2,
+            {
+                "labelComponents": [
+                    "CustomLabel"
+                ],
+                "labelAttributes": [
+                    "inputLabel"
+                ],
+                "controlComponents": [
+                    "CustomInput"
+                ],
+                "assert": "both",
+                "depth": 3
+            }
+        ],
+        "tsx-a11y/no-onchange": 0,
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "react/destructuring-assignment": [
+            2,
+            "always",
+            {
+                "ignoreClassFields": true
+            }
+        ],
+        "react/static-property-placement": [
+            1,
+            "static public field"
+        ],
+        "react/state-in-constructor": [
+            1,
+            "never"
+        ],
+        "tsx-a11y/no-static-element-interactions": [
+            "error",
+            {
+                "handlers": [
+                    "onClick",
+                    "onKeyPress",
+                    "onKeyDown",
+                    "onKeyUp"
+                ]
+            }
+        ],
+        "react/sort-comp": [
+            2,
+            {
+                "order": [
+                    "static-methods",
+                    "static-variables",
+                    "instance-variables",
+                    "lifecycle",
+                    "everything-else",
+                    "render"
+                ]
+            }
+        ]
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true
+    }
+}

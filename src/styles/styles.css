@@ -1,0 +1,6 @@
+@import './normalize.css';
+@import './base.css';
+
+.header__inner {
+  padding: 40px 0;
+}

@@ -1,0 +1,16 @@
+.menu__circle {
+  stroke-dasharray: 138.286, 207.429;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+}
+
+.menu__text {
+  display: block;
+  margin-left: 12px;
+  font-size: 1.4rem;
+}
