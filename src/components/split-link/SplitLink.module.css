@@ -1,13 +1,13 @@
 .link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 300px;
   margin: 0 auto 150px;
 }
 
 .text {
-  flex-basis: 210px;
+  max-width: 210px;
   margin: 0;
 }
 
@@ -15,6 +15,7 @@
   position: relative;
   height: 40px;
   width: 40px;
+  margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
 }
