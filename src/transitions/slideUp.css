@@ -1,0 +1,9 @@
+.slideUp-appear {
+  top: 200px;
+  opacity: 0;
+}
+
+.slideUp-appear-done {
+  top: 0;
+  opacity: 1;
+}

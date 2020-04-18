@@ -126,7 +126,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Загрузить резюме в pdf формате</h4>
+        <h4 className={styles.title}>Загрузить резюме</h4>
         <img className={styles.img} src={download} alt="" />
       </NavLink>
     </div>

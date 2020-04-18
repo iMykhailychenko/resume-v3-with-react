@@ -1,16 +1,9 @@
 import React from 'react';
-// import styles from './Education.module.css';
+import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
+import img from '../../images/emoji/education.png';
 
 const Education = () => (
-  <>
-    <h1>Education</h1>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, architecto
-      nisi optio deserunt ea animi, distinctio voluptatibus, cumque quisquam
-      consequatur veniam? Quis, sunt recusandae? Dolorem veritatis nostrum
-      voluptas a ad.
-    </div>
-  </>
+  <PageFirstBlock title="Образование и курсы" img={img} />
 );
 
 export default Education;

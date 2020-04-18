@@ -2,6 +2,7 @@
   width: 100%;
   margin-top: 30px;
   height: max-content;
+  overflow: hidden;
 }
 
 .scroll {
@@ -12,8 +13,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: stretch;
-  grid-gap: 24px 30px;
-  padding: 4px;
+  grid-gap: 10px 30px;
+  padding: 8px 14px 4px 4px;
 }
 
 .link {
@@ -21,6 +22,7 @@
   display: block;
   width: 260px;
   height: 160px;
+  margin-bottom: 10px;
 
   border-radius: 8px;
   overflow: hidden;

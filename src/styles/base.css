@@ -19,6 +19,17 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+main {
+  padding-top: 80px;
+  flex-grow: 2;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -101,10 +112,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-main {
-  padding-top: 80px;
 }
 
 .container {

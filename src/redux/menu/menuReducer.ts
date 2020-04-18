@@ -1,7 +1,7 @@
 import { TOGGLE_MENU, ActionTypes } from '../../types';
 
 export const menuReducer = (
-  menu: boolean = true,
+  menu: boolean = false,
   action: ActionTypes,
 ): boolean => {
   switch (action.type) {

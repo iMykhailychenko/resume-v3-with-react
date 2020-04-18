@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%;
+  margin: 0 auto;
+  padding: 10px 60px;
+  background: #707070;
+  border-radius: 8px 8px 0 0;
+}
+
+.footer span {
+  color: #fff;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  flex-basis: 200px;
+}
+
+.right {
+  flex-basis: 500px;
+}
+
+.link {
+  padding: 16px 6px;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.link:hover {
+  text-decoration: none;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,32 @@
+.title {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.emoji {
+  width: 140px;
+  height: auto;
+  margin: 0 auto 5%;
+}
+
+:global(.page-scroll) {
+  position: relative;
+  height: 30px;
+  width: 18px;
+  margin: 10% auto 14%;
+  border-radius: 18px;
+}
+
+:global(.page-scroll::before ) {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6px;
+  width: 1px;
+  background: #fff;
+  animation: scroll 1.5s ease-in-out infinite;
+}

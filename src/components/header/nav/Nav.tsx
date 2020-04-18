@@ -1,6 +1,6 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-import SwitchTheme from './switch/SwitchContainer';
+import SwitchTheme from './switch-theme/SwitchContainer';
 import Navigation from './navigation/NavigationContainer';
 import fadeInUp from '../../../transitions/fadeInUp.module.css';
 import styles from './Nav.module.css';

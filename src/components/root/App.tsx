@@ -3,11 +3,12 @@ import { Route, Switch } from 'react-router-dom';
 
 // components
 import Header from '../header/Header';
+import Footer from '../footer/FooterContainer'
 
 //styles
-import { GlobalStyle } from '../../styled-components/GlobalStyle.js';
+import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
 
-// pages
+// chunks
 const AsyncMain = lazy(() =>
   import('../../pages/main/Main' /* webpackChunkName: "home-page" */),
 );
@@ -46,7 +47,7 @@ interface Props {
 const App: React.FC<Props> = ({ theme, menu }) => {
   return (
     <>
-      <GlobalStyle theme={theme} menu={menu} />
+      <ThemeStyles theme={theme} menu={menu} />
       <Header />
 
       <main className="container">
@@ -65,7 +66,7 @@ const App: React.FC<Props> = ({ theme, menu }) => {
         </Suspense>
       </main>
 
-      <footer />
+      <Footer />
     </>
   );
 };

@@ -1,15 +1,12 @@
 import React from 'react';
-// import styles from './Reason.module.css';
+import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
+import SplitLink from '../../components/split-link/SplitLink';
+import img from '../../images/emoji/reason.png';
 
 const Reason = () => (
   <>
-    <h1>Reason</h1>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, architecto
-      nisi optio deserunt ea animi, distinctio voluptatibus, cumque quisquam
-      consequatur veniam? Quis, sunt recusandae? Dolorem veritatis nostrum
-      voluptas a ad.
-    </div>
+    <PageFirstBlock title="Почему я меняю профессию?" img={img} />
+    <SplitLink path="/general" text="Просмотреть общую информацию обомне" />
   </>
 );
 

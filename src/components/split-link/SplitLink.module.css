@@ -1,0 +1,49 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0 auto 150px;
+}
+
+.text {
+  flex-basis: 210px;
+  margin: 0;
+}
+
+:global(.page-relink-circle) {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+:global(.page-relink-circle::after),
+:global(.page-relink-circle::before) {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  height: 10px;
+  width: 10px;
+  transition: 0.1s ease-in-out;
+}
+
+:global(.page-relink-circle::after) {
+  left: -50%;
+  background: url('../../images//svg/next-blue.svg') no-repeat;
+}
+
+.link:hover :global(.page-relink-circle) {
+  border: 1px solid #369fff;
+}
+
+.link:hover :global(.page-relink-circle::after) {
+  left: 54%;
+}
+
+.link:hover :global(.page-relink-circle::before) {
+  left: 150%;
+}
