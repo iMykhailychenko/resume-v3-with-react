@@ -6,6 +6,7 @@
 .item {
   padding: 0 6px;
   font-size: 1.4rem;
+  line-height: 1;
   cursor: pointer;
   opacity: 0.5;
   transition: 0.3s ease-in-out;

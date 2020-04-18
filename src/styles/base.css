@@ -73,14 +73,20 @@ button {
   cursor: pointer;
 }
 
+h2,
+h3,
+p {
+  margin-bottom: 40px;
+}
+
 h1 {
   font-size: 4.8rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 3.6rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h3 {
@@ -97,7 +103,11 @@ a {
   text-decoration: none;
 }
 
+main {
+  padding-top: 80px;
+}
+
 .container {
-  width: 80%;
+  width: 86%;
   margin: 0 auto;
 }

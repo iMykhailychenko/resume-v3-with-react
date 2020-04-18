@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex-basis: 48%;
+}

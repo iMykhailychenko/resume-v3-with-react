@@ -1,16 +1,22 @@
 import React from 'react';
-// import styles from './Main.module.css';
+import styles from './Main.module.css';
 
 const Main = () => (
-  <>
-    <h1>Main</h1>
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, architecto
-      nisi optio deserunt ea animi, distinctio voluptatibus, cumque quisquam
-      consequatur veniam? Quis, sunt recusandae? Dolorem veritatis nostrum
-      voluptas a ad.
+  <div className={styles.container}>
+    <div className={styles.left}>
+      <h2>АВТОР ЭТОЙ СТРАНИЦЫ ИЩЕТ РАБОТУ НА ПОЗИЦИЮ FRONT-END РАЗРАБОТЧИКА</h2>
+      <p>
+        На этом сайте вы найдёте всю интересующую вас информацию, а также
+        сможете задать любые вопросы.
+      </p>
+      <p className="mark">
+        Если у вас нету времени ознакамливаться со всей информацией, или вам
+        просто лень, в пункте навигации по сайту вы можете перейти в раздел для
+        скачивания резюме.
+      </p>
     </div>
-  </>
+    <div className={styles.right}></div>
+  </div>
 );
 
 export default Main;

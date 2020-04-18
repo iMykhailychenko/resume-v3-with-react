@@ -13,6 +13,7 @@
   display: block;
   margin-left: 12px;
   font-size: 1.4rem;
+  line-height: 1;
 }
 
 .menu__svg {
