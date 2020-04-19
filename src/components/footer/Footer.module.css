@@ -25,7 +25,7 @@
 }
 
 .right {
-  flex-basis: 500px;
+  min-width: 450px;
 }
 
 .link {

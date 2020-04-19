@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from '../header/Header';
 import Footer from '../footer/FooterContainer';
 import Popup from '../popup/PopupContainer';
+import FormComponent from '../form/FormComponent';
 
 //styles
 import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
@@ -51,12 +52,7 @@ const App: React.FC<Props> = ({ theme, menu }) => {
       <ThemeStyles theme={theme} menu={menu} />
       <Header />
       <Popup>
-        <div className="d">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-          eligendi, temporibus amet aliquid nisi illo maiores exercitationem
-          optio cum. Deserunt harum beatae delectus ad nemo accusantium quod
-          aspernatur, minus facere?
-        </div>
+        <FormComponent/>
       </Popup>
 
       <main className="container">

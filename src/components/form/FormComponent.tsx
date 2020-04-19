@@ -1,64 +1,130 @@
-import React, { FormEvent } from 'react';
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import styles from './Form.module.css';
-
-const validName: RegExp = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
-const validNumber: RegExp = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+import { CSSTransition } from 'react-transition-group';
+import popTransition from '../../transitions/pop.module.css';
+import styles from './FormComponent.module.css';
 
 interface Props {}
 
 interface Values {
-  name?: string;
-  number?: string;
+  name: string;
+  email: string;
+  company: string;
+  text: string;
+  confirm: boolean;
 }
+
+interface Errors {
+  email?: string;
+  confirm?: string;
+}
+
+const validEmail: RegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+const initialValues: Values = {
+  name: '',
+  email: '',
+  company: '',
+  text: '',
+  confirm: false,
+};
 
 const FormComponent: React.FC<Props> = () => (
   <Formik
-    initialValues={{ name: '', number: '' }}
-    validate={(values: Values): Values => {
-      const errors: Values = {};
-      if (!values.name) errors.name = 'This is required field';
-      if (!values.number) errors.number = 'This is required field';
-      if (!validName.test(values.name!)) errors.name = 'Invalid name';
-      if (!validNumber.test(values.number!)) errors.number = 'Invalid number';
+    initialValues={initialValues}
+    validate={(values: Values): Errors => {
+      const errors: Errors = {};
+      if (!validEmail.test(values.email!))
+        errors.email = 'Упсс.. Кажется здесь есть ошибка.';
+      if (!values.email)
+        errors.email =
+          'Я не смогу ответить на ваш вопрос незная вашу электронную почту.';
+      if (!values.confirm)
+        errors.confirm =
+          'Не забудте отметить согласие на обработку персональной информации.';
+
       return errors;
     }}
-    onSubmit={values => console.log(event)}
+    onSubmit={(values, actions) => {
+      actions.resetForm();
+      actions.setStatus(true);
+    }}
   >
-    {() => (
-      <Form>
-        <label className={styles.label}>
-          <span className="subtitle">Name</span>
-          <Field
-            className={styles.input}
-            type="text"
-            name="name"
-            placeholder="Enter the contact name..."
-            autoComplete="off"
-          />
-          <ErrorMessage
-            name="name"
-            render={msg => <div className={styles.errors}>{msg}</div>}
-          />
-        </label>
+    {values => (
+      <Form className={styles.form}>
+        <h2 className={styles.title}>Обратная связь</h2>
+
+        <CSSTransition
+          in={values.status}
+          timeout={1000}
+          classNames={popTransition}
+          unmountOnExit
+        >
+          <p className={styles.success}>
+            Ваш вопрос успешно отправлен. Я постараюсь ответить на него максимально
+            быстро.
+          </p>
+        </CSSTransition>
+
+        <Field
+          className={styles.input}
+          type="text"
+          name="name"
+          placeholder="Ваше имя ..."
+          autoComplete="off"
+        />
+        <ErrorMessage
+          name="name"
+          render={msg => <span className={styles.errors}>{msg}</span>}
+        />
+
+        <Field
+          className={styles.input}
+          type="email"
+          name="email"
+          placeholder="*Ваша электронная почта ..."
+          autoComplete="off"
+        />
+        <ErrorMessage
+          name="email"
+          render={msg => <span className={styles.errors}>{msg}</span>}
+        />
+
+        <Field
+          className={styles.input}
+          type="text"
+          name="company"
+          placeholder="Компания / ссылка на сайт ..."
+          autoComplete="off"
+        />
+        <ErrorMessage
+          name="company"
+          render={msg => <span className={styles.errors}>{msg}</span>}
+        />
+
+        <textarea
+          className={styles.textarea}
+          rows={10}
+          cols={45}
+          name="text"
+          placeholder="Ваше сообщение ..."
+        />
 
         <label className={styles.label}>
-          <span className="subtitle">Number</span>
-          <Field
-            className={styles.input}
-            type="tel"
-            name="number"
-            placeholder="Enter the number..."
-            autoComplete="off"
-          />
-          <ErrorMessage
-            name="number"
-            render={msg => <div className={styles.errors}>{msg}</div>}
-          />
+          <Field type="checkbox" name="confirm" />
+          <span className={styles.checkmark}></span>
+          <span className={styles.checktext}>
+            Я даю согласие на обработку персональной информации
+          </span>
         </label>
 
-        <button className={styles.btn} type="submit">
-          Add contact
+        <ErrorMessage
+          name="confirm"
+          render={msg => <span className={styles.errors}>{msg}</span>}
+        />
+
+        <button className={styles.btn + ' btn-blue'} type="submit">
+          Отправить
         </button>
       </Form>
     )}

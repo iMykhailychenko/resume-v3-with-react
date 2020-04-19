@@ -37,10 +37,6 @@
   background: url('../../images//svg/next-blue.svg') no-repeat;
 }
 
-.link:hover :global(.page-relink-circle) {
-  border: 1px solid #369fff;
-}
-
 .link:hover :global(.page-relink-circle::after) {
   left: 54%;
 }

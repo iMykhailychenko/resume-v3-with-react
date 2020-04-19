@@ -17,6 +17,18 @@
   padding: 8px 14px 4px 4px;
 }
 
+@media (max-width: 1435px) {
+  .scroll {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1056px) {
+  .scroll {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .link {
   position: relative;
   display: block;

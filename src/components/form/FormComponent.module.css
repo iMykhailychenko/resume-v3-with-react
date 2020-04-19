@@ -1,0 +1,112 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 16px;
+  color: #000;
+}
+
+.errors {
+  position: relative;
+  top: -13px;
+  width: 300px;
+  color: #fa6666;
+}
+
+.input,
+.textarea {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: rgba(112, 112, 112, 0.13);
+  border-radius: 8px;
+  border: none;
+}
+
+.textarea {
+  height: 130px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.btn {
+  width: max-content;
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.label {
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.label input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.label input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.label input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.label .checkmark::after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checktext {
+  padding-left: 10px;
+  user-select: none;
+}
+
+.success {
+  max-width: 328px;
+  border-radius: 8px;
+  padding: 10px;
+  background: #369FFF;
+  color: #fff;
+  font-size: 1.2rem;
+}
