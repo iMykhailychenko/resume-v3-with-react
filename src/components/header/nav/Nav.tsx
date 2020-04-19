@@ -2,7 +2,7 @@ import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import SwitchTheme from './switch-theme/SwitchContainer';
 import Navigation from './navigation/NavigationContainer';
-import fadeInUp from '../../../transitions/fadeInUp.module.css';
+import slideNav from '../../../transitions/slideNav.module.css';
 import styles from './Nav.module.css';
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 
 const Nav: React.FC<Props> = ({ menu }) => {
   return (
-    <CSSTransition in={menu} timeout={500} classNames={fadeInUp} unmountOnExit>
+    <CSSTransition in={menu} timeout={500} classNames={slideNav} unmountOnExit>
       <div className={styles.wrp}>
         <div className="container">
           <SwitchTheme />

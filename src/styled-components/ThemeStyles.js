@@ -23,7 +23,7 @@ export const ThemeStyles = createGlobalStyle`
     color: ${props => (props.theme === 'light' ? '#000' : '#fff')};
 
     circle {
-      stroke: ${props => (props.theme === 'light' ? '#2B2B2B' : '#fff')}
+      stroke: ${props => (props.theme === 'light' ? '#2B2B2B' : '#fff')};
     }
   }
 
@@ -37,22 +37,23 @@ export const ThemeStyles = createGlobalStyle`
 
   .page-scroll {
     border: ${props =>
-      props.theme === 'light' ? '1px solid #000;' : '1px solid #fff;'};
+      props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }
 
   .page-scroll::before {
-    background: ${props => (props.theme === 'light' ? '#000;' : '#fff;')};
+    background: ${props => (props.theme === 'light' ? '#000' : '#fff')};
+    animation: scroll 1.5s ease-in-out infinite;
   }
 
   .page-relink-circle {
     border: ${props =>
-      props.theme === 'light' ? '1px solid #000;' : '1px solid #fff;'};
+      props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }
 
   .page-relink-circle::before {
     background: ${props =>
       props.theme === 'light'
-        ? `url(${nextBlack}) no-repeat;`
-        : `url(${nextWhite}) no-repeat;`
-  }
+        ? `url(${nextBlack}) no-repeat`
+        : `url(${nextWhite}) no-repeat`
+  };
 `;

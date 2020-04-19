@@ -29,7 +29,7 @@
   transform: translate(-50%, -50%);
   height: 10px;
   width: 10px;
-  transition: 0.1s ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
 :global(.page-relink-circle::after) {

@@ -1,0 +1,22 @@
+.enter :global(.popup) {
+  transform: scale(0);
+}
+
+.enterActive :global(.popup) {
+  transform: scale(1);
+  transition: 200ms ease-in-out;
+}
+
+.exit :global(.popup) {
+  transform: scale(1);
+}
+
+.exitActive {
+  opacity: 0;
+  transition: 300ms linear;
+}
+
+.exitActive :global(.popup) {
+  transform: scale(0);
+  transition: 200ms ease-in-out;
+}

@@ -1,3 +1,7 @@
+.section {
+  min-height: 80vh;
+}
+
 .title {
   width: 450px;
   margin: 0 auto;
@@ -19,7 +23,7 @@
   border-radius: 18px;
 }
 
-:global(.page-scroll::before ) {
+:global(.page-scroll::before) {
   content: '';
   position: absolute;
   top: 5px;
@@ -27,6 +31,5 @@
   transform: translateX(-50%);
   height: 6px;
   width: 1px;
-  background: #fff;
-  animation: scroll 1.5s ease-in-out infinite;
+  
 }

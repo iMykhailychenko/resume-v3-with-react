@@ -5,9 +5,7 @@
   left: 0;
   right: 0;
   z-index: 5;
-
   padding-top: 120px;
-
-  background: rgba(200, 200, 200, 0.7);
+  background: rgba(40, 40, 40, 0.4);
   backdrop-filter: blur(13px);
 }

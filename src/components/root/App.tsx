@@ -3,7 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 
 // components
 import Header from '../header/Header';
-import Footer from '../footer/FooterContainer'
+import Footer from '../footer/FooterContainer';
+import Popup from '../popup/PopupContainer';
 
 //styles
 import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
@@ -49,6 +50,14 @@ const App: React.FC<Props> = ({ theme, menu }) => {
     <>
       <ThemeStyles theme={theme} menu={menu} />
       <Header />
+      <Popup>
+        <div className="d">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+          eligendi, temporibus amet aliquid nisi illo maiores exercitationem
+          optio cum. Deserunt harum beatae delectus ad nemo accusantium quod
+          aspernatur, minus facere?
+        </div>
+      </Popup>
 
       <main className="container">
         <Suspense fallback={'loading...'}>

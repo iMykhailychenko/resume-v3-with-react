@@ -1,12 +1,13 @@
-.enter {
-  transform: translateY(-100%);
+.enter,
+.appearDone {
+  transform: translateY(100%);
   opacity: 0;
 }
 
 .enterActive {
   transform: translateY(0);
   opacity: 1;
-  transition: 500ms ease-in-out;
+  transition: 0.5s ease-in-out 0.5s;
 }
 
 .exit {
@@ -14,8 +15,9 @@
   opacity: 1;
 }
 
-.exitActive {
-  transform: translateY(-100%);
+.exitActive,
+.exitDone {
+  transform: translateY(100%);
   opacity: 0;
-  transition: 500ms ease-in-out;
+  transition: 0.5s ease-in-out 0.5s;
 }

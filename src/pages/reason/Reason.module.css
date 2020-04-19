@@ -1,0 +1,16 @@
+.link {
+  text-decoration: underline;
+}
+
+.block {
+  margin: 130px 0 280px;
+}
+
+.text {
+  width: 750px;
+}
+
+.img {
+  width: 900px;
+  margin-bottom: 80px;
+}
