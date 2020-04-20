@@ -1,9 +1,15 @@
 .link {
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.wrp {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  margin: 0 auto 80px;
 }
 
 .text {

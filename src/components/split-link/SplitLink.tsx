@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
-import { InView } from 'react-intersection-observer';
+import { Parallax } from 'rc-scroll-anim';
+
 import styles from './SplitLink.module.css';
-import fadeIn from '../../transitions/splitLink.module.css';
 
 interface Props {
   path: string;
@@ -11,18 +10,16 @@ interface Props {
 }
 
 const SplitLink: React.FC<Props> = ({ path, text }) => (
-  <InView rootMargin={'80px'}>
-    {({ inView, ref }) => (
-      <div className={styles.wrp} ref={ref}>
-        <CSSTransition in={inView} timeout={1000} classNames={fadeIn}>
-          <Link to={path} className={styles.link}>
-            <div className="page-relink-circle"></div>
-            <p className={styles.text}>{text}</p>
-          </Link>
-        </CSSTransition>
-      </div>
-    )}
-  </InView>
+  <Link to={path} className={styles.link}>
+    <Parallax
+      className={styles.wrp}
+      animation={{ y: 0, opacity: 1, playScale: [0, 0.3] }}
+      style={{ transform: 'translateY(70px)', opacity: 0 }}
+    >
+      <div className="page-relink-circle"></div>
+      <p className={styles.text}>{text}</p>
+    </Parallax>
+  </Link>
 );
 
 export default SplitLink;

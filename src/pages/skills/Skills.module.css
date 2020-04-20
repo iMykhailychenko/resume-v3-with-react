@@ -1,0 +1,54 @@
+.desc {
+  width: 60%;
+  margin: 100px auto 500px;
+  text-align: center;
+} 
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80vh;
+  padding-right: 15%;
+}
+
+.section:nth-last-of-type(1) {
+  margin-bottom: 50vh;
+}
+
+.left,
+.leftRevers,
+.right {
+  flex-basis: 40%;
+}
+
+.left,
+.leftRevers {
+  position: sticky;
+  top: 150px;
+}
+
+.left::before,
+.leftRevers::before {
+  content: '';
+  position: absolute;
+  top: 45vh;
+  left: 0;
+  width: 75vw;
+  height: 400px;
+  z-index: 105;
+}
+
+.leftRevers::before {
+  left: unset;
+  right: 0;
+}
+
+.item {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.itemTitle {
+  margin-bottom: 30px;
+}

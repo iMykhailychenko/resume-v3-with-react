@@ -12,7 +12,6 @@ export default class PageFirstBlock extends Component<Props> {
   componentWillUnmount() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
     });
   }
 

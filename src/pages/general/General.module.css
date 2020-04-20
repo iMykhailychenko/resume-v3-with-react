@@ -3,33 +3,34 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  margin: 150px 0 50px;
+  margin: 250px 0 50px;
 
-  height: 900vh;
+  height: 800vh;
 }
 
 .left {
   margin-right: 40px;
   width: 280px;
-  height: 900vh;
+  height: 800vh;
 }
 
 .right {
   width: 70%;
-  height: 900vh;
+  height: 800vh;
 }
 
 .img {
   position: sticky;
   top: 20px;
   z-index: 2;
-
   height: 320px;
   object-fit: cover;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.list {
+.general {
   position: sticky;
   top: 360px;
   margin-top: 700vh;
+  font-size: 1.2rem;
 }

@@ -9,7 +9,8 @@
   margin: 0;
   padding: 20px;
   font-size: 1.2rem;
-  background: #707070;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.02), 0 10px 10px rgba(0,0,0,0.01);
 }
 
 .param {

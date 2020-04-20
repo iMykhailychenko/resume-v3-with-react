@@ -13,6 +13,7 @@
 }
 
 .inner {
+  position: relative;
   transform-origin: center;
   max-width: 800px;
   padding: 50px;

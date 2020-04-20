@@ -12,7 +12,7 @@ const Reason = () => (
   <>
     <PageFirstBlock title="Почему я меняю профессию?" img={emoji} />
 
-    <div className={styles.content}>
+    <section className={styles.content}>
       <div className={styles.block}>
         <div className={styles.img}>
           <img src={imgOne} alt="" />
@@ -68,7 +68,9 @@ const Reason = () => (
           </p>
         </div>
       </div>
-    </div>
+    </section>
+
+    
 
     <SplitLink path="/general" text="Просмотреть общую информацию обомне" />
   </>

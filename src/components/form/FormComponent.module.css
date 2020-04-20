@@ -50,6 +50,7 @@
 
 /* Create a custom checkbox */
 .label {
+  position: relative;
   margin-bottom: 20px;
   color: #000;
 }

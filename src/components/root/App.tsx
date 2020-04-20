@@ -52,11 +52,11 @@ const App: React.FC<Props> = ({ theme, menu }) => {
       <ThemeStyles theme={theme} menu={menu} />
       <Header />
       <Popup>
-        <FormComponent/>
+        <FormComponent />
       </Popup>
 
       <main className="container">
-        <Suspense fallback={'loading...'}>
+        <Suspense fallback={<div className="loder"></div>}>
           <Switch>
             <Route path="/" exact component={AsyncMain} />
             <Route path="/contacts" component={AsyncContacts} />

@@ -1,12 +1,22 @@
 import { createGlobalStyle } from 'styled-components';
-import nextWhite from '../images/svg/next-white.svg'
-import nextBlack from '../images/svg/next-black.svg'
+import nextWhite from '../images/svg/next-white.svg';
+import nextBlack from '../images/svg/next-black.svg';
 
 export const ThemeStyles = createGlobalStyle`
   body {
     background: ${props => (props.theme === 'light' ? '#eee' : '#000')};
     color: ${props => (props.theme === 'light' ? '#000' : '#fff')};
     overflow: ${props => (props.menu ? 'hidden' : 'auto')};
+  }
+
+  .loder {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    background: ${props => (props.theme === 'light' ? '#eee' : '#000')};
   }
 
   a {
@@ -21,10 +31,10 @@ export const ThemeStyles = createGlobalStyle`
 
   .menu__btn {
     color: ${props => (props.theme === 'light' ? '#000' : '#fff')};
-
-    circle {
-      stroke: ${props => (props.theme === 'light' ? '#2B2B2B' : '#fff')};
-    }
+  }
+  
+  .menu__btn circle {
+    stroke: ${props => (props.theme === 'light' ? '#2B2B2B' : '#fff')};
   }
 
   .btn-toggle__elem--light {
@@ -54,6 +64,19 @@ export const ThemeStyles = createGlobalStyle`
     background: ${props =>
       props.theme === 'light'
         ? `url(${nextBlack}) no-repeat`
-        : `url(${nextWhite}) no-repeat`
-  };
+        : `url(${nextWhite}) no-repeat`};
+  }
+
+  .skills_left::before,
+  .skills_leftRevers::before {
+    background: ${props =>
+      props.theme === 'light'
+        ? `linear-gradient(to top, rgba(238, 238, 238, 0.9) 45%, rgba(238, 238, 238, 0))`
+        : `linear-gradient(to top, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0))`};
+  }
+
+  .skills_item {
+    border: ${props =>
+      props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
+  }
 `;
