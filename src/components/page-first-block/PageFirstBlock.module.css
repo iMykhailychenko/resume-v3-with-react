@@ -3,6 +3,7 @@
 }
 
 .title {
+  position: relative;
   width: 450px;
   margin: 0 auto;
   text-align: center;
@@ -10,6 +11,7 @@
 }
 
 .emoji {
+  position: relative;
   width: 140px;
   height: auto;
   margin: 0 auto 5%;

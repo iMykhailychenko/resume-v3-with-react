@@ -1,0 +1,22 @@
+.container {
+  position: sticky;
+  display: flex;
+  margin-top: 100vh;
+}
+
+.param,
+.value {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.2rem;
+  background: #707070;
+}
+
+.param {
+  margin-right: 16px;
+  width: 300px;
+}
+
+.value {
+  width: 100%;
+}

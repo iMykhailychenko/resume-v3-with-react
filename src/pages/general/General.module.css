@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  margin: 150px 0 50px;
+
+  height: 900vh;
+}
+
+.left {
+  margin-right: 40px;
+  width: 280px;
+  height: 900vh;
+}
+
+.right {
+  width: 70%;
+  height: 900vh;
+}
+
+.img {
+  position: sticky;
+  top: 20px;
+  z-index: 2;
+
+  height: 320px;
+  object-fit: cover;
+}
+
+.list {
+  position: sticky;
+  top: 360px;
+  margin-top: 700vh;
+}

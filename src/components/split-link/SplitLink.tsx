@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { InView } from 'react-intersection-observer';
 import styles from './SplitLink.module.css';
-import fadeIn from '../../transitions/fadeInUp.module.css';
+import fadeIn from '../../transitions/splitLink.module.css';
 
 interface Props {
   path: string;
