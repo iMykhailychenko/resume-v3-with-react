@@ -17,7 +17,7 @@ const Sale: React.FC<Props> = ({ number, prefix }) => (
           <CountUp
             start={0}
             end={number}
-            duration={2.5}
+            duration={1.5}
             decimals={2}
             separator=" "
             decimal="."

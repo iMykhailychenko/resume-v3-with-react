@@ -79,4 +79,16 @@ export const ThemeStyles = createGlobalStyle`
     border: ${props =>
       props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }
+
+  .download_files {
+    border-top: ${props =>
+      props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
+  }
+
+  .download_link {
+    background: ${props =>
+      props.theme === 'light' ? '#000' : '#fff'};
+    color: ${props =>
+      props.theme === 'light' ? '#fff' : '#000'};
+  }
 `;

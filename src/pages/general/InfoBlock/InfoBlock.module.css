@@ -1,7 +1,11 @@
 .container {
   position: sticky;
   display: flex;
-  margin-top: 100vh;
+  margin-top: 40vh;
+}
+
+.container:nth-of-type(1) {
+  margin-top: 90vh;
 }
 
 .param,

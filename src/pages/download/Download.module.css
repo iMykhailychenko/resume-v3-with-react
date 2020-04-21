@@ -1,0 +1,39 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+  margin-bottom: 50px;
+}
+
+.block {
+  flex-basis: 45%;
+}
+
+.img {
+  height: 90px;
+  width: auto;
+  margin-bottom: 60px;
+}
+
+:global(.download_files) {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+.list {
+  flex-basis: 20%;
+}
+
+:global(.download_link) {
+  display: block;
+  width: max-content;
+  padding: 10px 20px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.text {
+  flex-basis: 70%;
+}

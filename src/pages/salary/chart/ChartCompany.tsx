@@ -48,7 +48,7 @@ const ChartCompany: React.FC<Props> = () => (
   <ReactFC
     type="column2d"
     width="100%"
-    height="600"
+    height="500"
     dataFormat="JSON"
     dataSource={dataSource}
   />

@@ -5,18 +5,18 @@
   position: relative;
   margin: 250px 0 50px;
 
-  height: 800vh;
+  height: 400vh;
 }
 
 .left {
   margin-right: 40px;
   width: 280px;
-  height: 800vh;
+  height: 400vh;
 }
 
 .right {
   width: 70%;
-  height: 800vh;
+  height: 400vh;
 }
 
 .img {
@@ -31,6 +31,6 @@
 .general {
   position: sticky;
   top: 360px;
-  margin-top: 700vh;
+  margin-top: 340vh;
   font-size: 1.2rem;
 }
