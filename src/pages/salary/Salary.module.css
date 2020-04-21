@@ -1,5 +1,27 @@
-.section {
+.section,
+.beforeChart {
   width: 50%;
   margin: 0 auto 250px;
   text-align: center;
+}
+
+.beforeChart {
+  margin-bottom: 80px;
+}
+
+.chart {
+  width: 80%;
+  margin: 0 auto 100px;
+}
+
+.chartText {
+  width: 60%;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.end {
+  width: 50%;
+  text-align: center;
+  margin: 200px auto 180px;
 }

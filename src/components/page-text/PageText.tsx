@@ -8,7 +8,7 @@ const PageText: React.FC<Props> = ({ children }) => (
   <Parallax
     className={styles.content}
     animation={{ y: 0, opacity: 1 }}
-    style={{ transform: 'translateY(100%)', opacity: 0 }}
+    style={{ transform: 'translateY(-100%)', opacity: 0 }}
   >
     <section>{children}</section>
   </Parallax>
