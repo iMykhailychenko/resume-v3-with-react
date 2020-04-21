@@ -1,0 +1,10 @@
+.number {
+  font-size: 2.4rem;
+  opacity: 0.6;
+}
+
+.number:nth-last-of-type(1) {
+  color: #ffc56d;
+  font-size: 3rem;
+  opacity: 1;
+}

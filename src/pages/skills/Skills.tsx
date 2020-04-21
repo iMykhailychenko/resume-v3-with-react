@@ -1,21 +1,34 @@
 import React from 'react';
-import { Parallax } from 'rc-scroll-anim';
 import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
+import PageText from '../../components/page-text/PageText';
+import SkillsList from './SkillsList/SkillsList';
 
 import styles from './Skills.module.css';
 import emoji from '../../images/emoji/skills.png';
 
-const Skills = () => (
+const initVal = [
+  {
+    logo: 'string',
+    logoColor: 'FFC56D',
+    title: 'string',
+    text: 'string',
+  },
+  {
+    logo: 'string',
+    logoColor: 'FFC56D',
+    title: 'string',
+    text: 'string',
+  },
+];
+
+interface Props {}
+
+const Skills: React.FC<Props> = () => (
   <>
     <PageFirstBlock title="Hard skills" img={emoji} />
 
-    <section className={styles.desc}>
-      <Parallax
-        className={styles.title}
-        animation={{ y: 0, opacity: 1 }}
-        style={{ transform: 'translateY(-200px)', opacity: 0 }}
-      >
+    <PageText>
         <p>
           В данном разделе я укажу основные навыки и знания, которыми я овладел
           при прохождении курсов GoIT, а также те, что я освоил самостоятельно.
@@ -33,8 +46,7 @@ const Skills = () => (
           указанные навыки были пройдены мною на практике. Ссылка на GitHub
           профиль
         </p>
-      </Parallax>
-    </section>
+    </PageText>
 
     <article className={styles.article}>
       <section className={styles.section}>
@@ -48,141 +60,13 @@ const Skills = () => (
         </div>
 
         <div className={styles.right}>
-          <ul className={styles.list}>
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-          </ul>
+          <SkillsList props={initVal} />
         </div>
       </section>
 
       <section className={styles.section}>
         <div className={styles.right}>
-          <ul className={styles.list}>
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-          </ul>
+          <SkillsList props={initVal} />
         </div>
 
         <div className={styles.leftRevers + ' skills_leftRevers'}>
@@ -206,71 +90,7 @@ const Skills = () => (
         </div>
 
         <div className={styles.right}>
-          <ul className={styles.list}>
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-
-            <li className={styles.item + ' skills_item'}>
-              <h4 className={styles.itemTitle}>GITHUB</h4>
-              <p className={styles.itemText}>
-                Навыки работы с терминалом, создание репозиториев, веток и т.д.
-                Все практические задания в GoIT принимаются через GitHub.
-              </p>
-            </li>
-          </ul>
+          <SkillsList props={initVal} />
         </div>
       </section>
     </article>

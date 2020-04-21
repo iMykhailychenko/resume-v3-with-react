@@ -1,0 +1,15 @@
+.item {
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.itemTitle {
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+}

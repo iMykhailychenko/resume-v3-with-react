@@ -1,0 +1,25 @@
+.item {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  margin-bottom: 50px;
+}
+
+.block {
+  transform-style: preserve-3d;
+}
+
+.inner {
+  position: relative;
+  height: 400px;
+  width: 350px;
+  margin-bottom: 30px;
+  background: #fff;
+  transform-style: preserve-3d;
+}
+
+.title {
+  transform-style: preserve-3d;
+  transform: translateX(20%) translateY(100%) translateZ(200px);
+  font-size: 6rem;
+  font-weight: 700;
+}

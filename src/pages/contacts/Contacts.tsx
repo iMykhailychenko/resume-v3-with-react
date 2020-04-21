@@ -2,6 +2,7 @@ import React from 'react';
 import { Parallax } from 'rc-scroll-anim';
 import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
+import PageText from '../../components/page-text/PageText';
 import FormComponent from '../../components/form/FormComponent';
 
 import styles from './Contacts.module.css';
@@ -12,11 +13,7 @@ const Contacts = () => (
     <PageFirstBlock title="Контакты" img={img} />
 
     <section className={styles.section}>
-      <Parallax
-        className={styles.title}
-        animation={{ x: 0, opacity: 1 }}
-        style={{ transform: 'translatex(400px)', opacity: 0 }}
-      >
+      <PageText>
         <h3>Consequuntur sapiente, aspernatur cum voluptate ad expedita?</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
@@ -24,7 +21,7 @@ const Contacts = () => (
           accusantium ducimus. Sed accusamus, optio error labore delectus
           facilis temporibus voluptatum!
         </p>
-      </Parallax>
+      </PageText>
 
       <div className={styles.container}>
         <Parallax
