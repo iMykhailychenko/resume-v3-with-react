@@ -1,16 +1,28 @@
+#root {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: underline;
 }
 
-.block {
+.blockLeft,
+.blockRight {
   margin: 130px 0 280px;
 }
 
-.text {
-  width: 750px;
+.blockRight .text,
+.blockRight .img {
+  margin-left: auto;
 }
 
 .img {
-  width: 900px;
-  margin-bottom: 80px;
+  width: 700px;
+  border-radius: -10px;
+}
+
+.text {
+  width: 700px;
+  margin-top: 100px;
+  padding: 40px 100px 40px 40px;
 }

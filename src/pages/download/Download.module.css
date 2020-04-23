@@ -26,7 +26,7 @@
   flex-basis: 20%;
 }
 
-:global(.download_link) {
+.link {
   display: block;
   width: max-content;
   padding: 10px 20px;

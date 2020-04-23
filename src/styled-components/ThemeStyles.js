@@ -85,7 +85,12 @@ export const ThemeStyles = createGlobalStyle`
       props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }
 
-  .download_link {
+  .background {
+    background: ${props =>
+      props.theme === 'light' ? '#eee' : '#000'};
+  }
+
+  .reversBackground {
     background: ${props =>
       props.theme === 'light' ? '#000' : '#fff'};
     color: ${props =>

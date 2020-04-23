@@ -36,17 +36,17 @@ const Download: React.FC<Props> = () => (
         <div className="download_files">
           <ul className={styles.list}>
             <li>
-              <a className="download_link" href="http://" download>
+              <a className={styles.link + ' reversBackground'} href="http://" download>
                 Загрузить pdf UA
               </a>
             </li>
             <li>
-              <a className="download_link" href="http://" download>
+              <a className={styles.link + ' reversBackground'} href="http://" download>
                 Загрузить pdf RU
               </a>
             </li>
             <li>
-              <a className="download_link" href="http://" download>
+              <a className={styles.link + ' reversBackground'} href="http://" download>
                 Загрузить pdf EN
               </a>
             </li>
@@ -69,17 +69,17 @@ const Download: React.FC<Props> = () => (
         <div className="download_files">
           <ul className={styles.list}>
             <li>
-              <a className="download_link" href="http://" download>
+              <a className={styles.link + ' reversBackground'} href="http://" download>
                 Загрузить doc UA
               </a>
             </li>
             <li>
-              <a className="download_link" href="http://" download>
+              <a className={styles.link + ' reversBackground'} href="http://" download>
                 Загрузить doc RU
               </a>
             </li>
             <li>
-              <a className="download_link" href="http://" download>
+              <a className={styles.link + ' reversBackground'} href="http://" download>
                 Загрузить doc EN
               </a>
             </li>

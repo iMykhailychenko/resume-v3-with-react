@@ -1,10 +1,56 @@
 .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  height: 100%;
 }
 
 .left,
 .right {
-  flex-basis: 48%;
+  flex-basis: 40%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 3;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.btn span {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover span {
+  margin-left: 20px;
+}
+
+.img {
+  height: 50px;
+  width: auto;
+}
+
+.instruction {
+  position: relative;
+  top: 100%;
+  z-index: 3;
+}
+
+.instruction p {
+  color: #474747;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: right;
 }
