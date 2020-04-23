@@ -1,5 +1,7 @@
 # RESUME 
 ```In process...```
+[ссылка для предварительного просмотра](https://ihor-mykhailychenko.netlify.app)
+```pre-alpha version```
 
 ## Стек технологий:
 ```
