@@ -1,8 +1,8 @@
 .section {
   display: flex;
   justify-content: space-between;
-  margin-top: 300px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 250px;
 }
 
 .block {
@@ -32,6 +32,11 @@
   padding: 10px 20px;
   margin-bottom: 16px;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.link:hover {
+  opacity: 0.6;
 }
 
 .text {

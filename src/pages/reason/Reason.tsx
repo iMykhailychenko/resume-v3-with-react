@@ -4,10 +4,9 @@ import SplitLink from '../../components/split-link/SplitLink';
 import { Parallax } from 'rc-scroll-anim';
 import styles from './Reason.module.css';
 
-// img
 import emoji from '../../images/emoji/reason.png';
-import imgOne from '../../images/content/reason/reason-1.png';
-import imgTwo from '../../images/content/reason/reason-2.png';
+import videoOne from '../../images/content/reason/reason-1.mp4';
+import videoTwo from '../../images/content/reason/reason-2.mp4';
 
 const Reason = () => (
   <>
@@ -16,20 +15,18 @@ const Reason = () => (
     <section className={styles.content}>
       <div className={styles.blockLeft}>
         <Parallax
-          animation={{ y: 20 }}
-          style={{
-            transform: 'translateY(-120%)',
-          }}
+          animation={{ y: -100,  scale: 1 }}
+          style={{ transform: 'translateY(100px) scale(0.9)' }}
         >
-          <img className={styles.img} src={imgOne} alt="" />
+          <video className={styles.video} loop autoPlay>
+            <source src={videoOne} type="video/mp4" />
+          </video>
         </Parallax>
 
         <Parallax
-          className={styles.text  + ' background'}
-          animation={{ y: -100 }}
-          style={{
-            transform: 'translateY(50%)',
-          }}
+          className={styles.text + ' background'}
+          animation={{ y: -180 }}
+          style={{ transform: 'translateY(50px)' }}
         >
           <p>
             С детства меня интересовала математика, а в особенности геометрия.
@@ -50,20 +47,18 @@ const Reason = () => (
 
       <div className={styles.blockRight}>
         <Parallax
-          animation={{ y: 20 }}
-          style={{
-            transform: 'translateY(-120%)',
-          }}
+          animation={{ y: -100,  scale: 1 }}
+          style={{ transform: 'translateY(100px)  scale(0.9)' }}
         >
-          <img className={styles.img} src={imgTwo} alt="" />
+          <video className={styles.video} loop autoPlay>
+            <source src={videoTwo} type="video/mp4" />
+          </video>
         </Parallax>
 
         <Parallax
           className={styles.text + ' background'}
-          animation={{ y: -100 }}
-          style={{
-            transform: 'translateY(50%)',
-          }}
+          animation={{ y: -180 }}
+          style={{ transform: 'translateY(50px)' }}
         >
           <p>
             Уже в конце мая 2019 года я окончательно расставил приоритеты и

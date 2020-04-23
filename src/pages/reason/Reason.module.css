@@ -12,12 +12,12 @@
 }
 
 .blockRight .text,
-.blockRight .img {
+.blockRight .video {
   margin-left: auto;
 }
 
-.img {
-  width: 700px;
+.video {
+  width: 1000px;
   border-radius: -10px;
 }
 

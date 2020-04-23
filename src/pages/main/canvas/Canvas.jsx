@@ -8,12 +8,14 @@ import styles from './Canvas.module.css';
 
 export default class Canvas extends Component {
   canvasRef = createRef();
+  preloaderRef = createRef();
 
   componentDidMount() {
     // GENERAL OPERATORS
     const width = window.innerWidth;
     const height = window.innerHeight;
     const container = this.canvasRef.current;
+    const preloader = this.preloaderRef.current;
 
     // THREE JS INIT
     const camera = new THREE.PerspectiveCamera(20, width / height, 1, 1000);
@@ -89,6 +91,7 @@ export default class Canvas extends Component {
         action.setEffectiveWeight(weight);
       };
 
+      preloader.style.display = 'none';
       walkAction.play();
 
       const animate = () => {
@@ -140,6 +143,10 @@ export default class Canvas extends Component {
   }
 
   render() {
-    return <div className={styles.canvas} ref={this.canvasRef} />;
+    return (
+      <div className={styles.canvas} ref={this.canvasRef}>
+        <div className={styles.preloader} ref={this.preloaderRef}></div>
+      </div>
+    );
   }
 }
