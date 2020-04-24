@@ -50,7 +50,7 @@ const Skills: React.FC<Props> = () => (
 
     <article className={styles.article}>
       <section className={styles.section}>
-        <div className={styles.left + ' skills_left'}>
+        <div className={styles.left + ' gradient'}>
           <h3>HTML & CSS</h3>
           <p className={styles.itemText}>
             Уже в конце мая 2019 года я окончательно расставил приоритеты и
@@ -69,7 +69,7 @@ const Skills: React.FC<Props> = () => (
           <SkillsList props={initVal} />
         </div>
 
-        <div className={styles.leftRevers + ' skills_leftRevers'}>
+        <div className={styles.leftRevers + ' gradient'}>
           <h3>HTML & CSS</h3>
           <p className={styles.itemText}>
             Уже в конце мая 2019 года я окончательно расставил приоритеты и

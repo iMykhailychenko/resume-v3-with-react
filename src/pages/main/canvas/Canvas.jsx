@@ -145,7 +145,7 @@ export default class Canvas extends Component {
   render() {
     return (
       <div className={styles.canvas} ref={this.canvasRef}>
-        <div className={styles.preloader} ref={this.preloaderRef}></div>
+        <p className={styles.preloader} ref={this.preloaderRef}>... Loading</p>
       </div>
     );
   }

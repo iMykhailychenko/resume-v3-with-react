@@ -67,20 +67,19 @@ export const ThemeStyles = createGlobalStyle`
         : `url(${nextWhite}) no-repeat`};
   }
 
-  .skills_left::before,
-  .skills_leftRevers::before {
+  .gradient::before {
     background: ${props =>
       props.theme === 'light'
-        ? `linear-gradient(to top, rgba(238, 238, 238, 0.9) 45%, rgba(238, 238, 238, 0))`
-        : `linear-gradient(to top, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0))`};
+        ? `linear-gradient(to top, rgba(238, 238, 238, 1) 40%, rgba(238, 238, 238, 0))`
+        : `linear-gradient(to top, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0))`};
   }
 
-  .skills_item {
+  .border {
     border: ${props =>
       props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }
 
-  .download_files {
+  .border_top {
     border-top: ${props =>
       props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }

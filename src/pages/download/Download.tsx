@@ -33,20 +33,32 @@ const Download: React.FC<Props> = () => (
       >
         <img className={styles.img} src={pdf} alt="" />
 
-        <div className="download_files">
+        <div className={styles.files + ' border_top'}>
           <ul className={styles.list}>
             <li>
-              <a className={styles.link + ' reversBackground'} href="http://" download>
+              <a
+                className={styles.link + ' reversBackground'}
+                href="http://"
+                download
+              >
                 Загрузить pdf UA
               </a>
             </li>
             <li>
-              <a className={styles.link + ' reversBackground'} href="http://" download>
+              <a
+                className={styles.link + ' reversBackground'}
+                href="http://"
+                download
+              >
                 Загрузить pdf RU
               </a>
             </li>
             <li>
-              <a className={styles.link + ' reversBackground'} href="http://" download>
+              <a
+                className={styles.link + ' reversBackground'}
+                href="http://"
+                download
+              >
                 Загрузить pdf EN
               </a>
             </li>
@@ -66,20 +78,32 @@ const Download: React.FC<Props> = () => (
       >
         <img className={styles.img} src={word} alt="" />
 
-        <div className="download_files">
+        <div className={styles.files + ' border_top'}>
           <ul className={styles.list}>
             <li>
-              <a className={styles.link + ' reversBackground'} href="http://" download>
+              <a
+                className={styles.link + ' reversBackground'}
+                href="http://"
+                download
+              >
                 Загрузить doc UA
               </a>
             </li>
             <li>
-              <a className={styles.link + ' reversBackground'} href="http://" download>
+              <a
+                className={styles.link + ' reversBackground'}
+                href="http://"
+                download
+              >
                 Загрузить doc RU
               </a>
             </li>
             <li>
-              <a className={styles.link + ' reversBackground'} href="http://" download>
+              <a
+                className={styles.link + ' reversBackground'}
+                href="http://"
+                download
+              >
                 Загрузить doc EN
               </a>
             </li>
