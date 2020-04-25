@@ -8,7 +8,7 @@ const mapSTP = (state: IState): Pick<IState, 'locale'> => ({
 });
 
 const mapDTP = (dispatch: any) => ({
-  toggleLocale: (locale: string) => dispatch(localeActions(locale))
+  toggleLocale: (locale: string) => dispatch(localeActions(locale)),
 });
 
 export default connect(mapSTP, mapDTP)(Locale);

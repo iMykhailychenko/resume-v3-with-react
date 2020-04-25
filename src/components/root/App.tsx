@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from '../header/Header';
 import Footer from '../footer/FooterContainer';
 import Popup from '../popup/PopupContainer';
-import FormComponent from '../form/FormComponent';
+import FormComponent from '../form/FormContainer';
 
 //styles
 import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
@@ -15,7 +15,7 @@ const AsyncMain = lazy(() =>
   import('../../pages/main/Main' /* webpackChunkName: "home-page" */),
 );
 const AsyncContacts = lazy(() =>
-  import('../../pages/contacts/Contacts' /* webpackChunkName: "home-page" */),
+  import('../../pages/contacts/ContactsContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncDownload = lazy(() =>
   import('../../pages/download/Download' /* webpackChunkName: "home-page" */),

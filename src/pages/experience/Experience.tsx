@@ -2,9 +2,16 @@ import React, { Component } from 'react';
 import { Parallax } from 'rc-scroll-anim';
 import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
-
 import styles from './Experiance.module.css';
+
+// img
 import emoji from '../../images/emoji/experiance.png';
+import img1 from '../../images/content/experiance/experiance-1.png';
+import img2 from '../../images/content/experiance/experiance-2.png';
+import img3 from '../../images/content/experiance/experiance-3.png';
+import img4 from '../../images/content/experiance/experiance-4.png';
+import img5 from '../../images/content/experiance/experiance-5.png';
+import img6 from '../../images/content/experiance/experiance-6.png';
 
 interface Props {}
 interface State {
@@ -185,33 +192,59 @@ export default class Experiance extends Component<Props, State> {
             </p>
           </Parallax>
 
-          <ul className={styles.works + ' border_top'}>
-            <li>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+          <div className="border_top">
+            <ul className={styles.works}>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.img} src={img1} alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.img} src={img2} alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.img} src={img3} alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.img} src={img4} alt="" />
+                </a>
+              </li>
+            </ul>
 
-              </a>
-            </li>
-          </ul>
+            <Parallax
+              className={styles.title}
+              animation={{ y: 0, opacity: 1 }}
+              style={{
+                transform: 'translateY(50%)',
+                opacity: '0',
+              }}
+            >
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo alias pariatur corrupti, unde libero quod nulla dolor,
+                provident, quia ut amet quae recusandae. Dicta asperiores
+                quisquam dolorum eos ea quaerat.
+              </p>
+            </Parallax>
 
-          <Parallax
-            className={styles.title}
-            animation={{ y: 0, opacity: 1 }}
-            style={{
-              transform: 'translateY(50%)',
-              opacity: '0',
-            }}
-          >
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo alias pariatur corrupti, unde libero quod nulla dolor,
-              provident, quia ut amet quae recusandae. Dicta asperiores quisquam
-              dolorum eos ea quaerat.
-            </p>
-          </Parallax>
-
-          <ul className={styles.works + ' border_top'}>
-            <li className={styles.work}></li>
-          </ul>
+            <ul className={styles.works}>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.img} src={img5} alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <img className={styles.img} src={img6} alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <SplitLink path="/skills" text="Hard skills" />
       </>

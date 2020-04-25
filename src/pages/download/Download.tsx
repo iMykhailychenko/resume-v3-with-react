@@ -28,8 +28,8 @@ const Download: React.FC<Props> = () => (
     <section className={styles.section}>
       <Parallax
         className={styles.block}
-        animation={{ y: 0, opacity: 1 }}
-        style={{ transform: 'translateY(150px)', opacity: 0 }}
+        animation={{ x: 0, y: 0, opacity: 1 }}
+        style={{ transform: 'translateY(100px) translateX(-100px)', opacity: 0 }}
       >
         <img className={styles.img} src={pdf} alt="" />
 
@@ -73,8 +73,8 @@ const Download: React.FC<Props> = () => (
 
       <Parallax
         className={styles.block}
-        animation={{ y: 0, opacity: 1 }}
-        style={{ transform: 'translateY(250px)', opacity: 0 }}
+        animation={{ x: 0, y: 0, opacity: 1 }}
+        style={{ transform: 'translateY(100px) translateX(100px)', opacity: 0 }}
       >
         <img className={styles.img} src={word} alt="" />
 

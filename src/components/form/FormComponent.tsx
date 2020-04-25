@@ -4,7 +4,9 @@ import { CSSTransition } from 'react-transition-group';
 import popTransition from '../../transitions/pop.module.css';
 import styles from './FormComponent.module.css';
 
-interface Props {}
+interface Props {
+  content: any;
+}
 
 interface Values {
   name: string;
@@ -29,7 +31,7 @@ const initialValues: Values = {
   confirm: false,
 };
 
-const FormComponent: React.FC<Props> = () => (
+const FormComponent: React.FC<Props> = ({ content }) => (
   <Formik
     initialValues={initialValues}
     validate={(values: Values): Errors => {
@@ -52,7 +54,7 @@ const FormComponent: React.FC<Props> = () => (
   >
     {values => (
       <Form className={styles.form}>
-        <h2 className={styles.title}>Обратная связь</h2>
+        <h2 className={styles.title}>{content.title}</h2>
 
         <CSSTransition
           in={values.status}
@@ -61,8 +63,8 @@ const FormComponent: React.FC<Props> = () => (
           unmountOnExit
         >
           <p className={styles.success}>
-            Ваш вопрос успешно отправлен. Я постараюсь ответить на него максимально
-            быстро.
+            Ваш вопрос успешно отправлен. Я постараюсь ответить на него
+            максимально быстро.
           </p>
         </CSSTransition>
 
@@ -70,7 +72,7 @@ const FormComponent: React.FC<Props> = () => (
           className={styles.input}
           type="text"
           name="name"
-          placeholder="Ваше имя ..."
+          placeholder={content.name}
           autoComplete="off"
         />
         <ErrorMessage
@@ -82,7 +84,7 @@ const FormComponent: React.FC<Props> = () => (
           className={styles.input}
           type="email"
           name="email"
-          placeholder="*Ваша электронная почта ..."
+          placeholder={content.email}
           autoComplete="off"
         />
         <ErrorMessage
@@ -94,7 +96,7 @@ const FormComponent: React.FC<Props> = () => (
           className={styles.input}
           type="text"
           name="company"
-          placeholder="Компания / ссылка на сайт ..."
+          placeholder={content.company}
           autoComplete="off"
         />
         <ErrorMessage
@@ -107,15 +109,13 @@ const FormComponent: React.FC<Props> = () => (
           rows={10}
           cols={45}
           name="text"
-          placeholder="Ваше сообщение ..."
+          placeholder={content.text}
         />
 
         <label className={styles.label}>
           <Field type="checkbox" name="confirm" />
           <span className={styles.checkmark}></span>
-          <span className={styles.checktext}>
-            Я даю согласие на обработку персональной информации
-          </span>
+          <span className={styles.checktext}>{content.confirm}</span>
         </label>
 
         <ErrorMessage
@@ -124,7 +124,7 @@ const FormComponent: React.FC<Props> = () => (
         />
 
         <button className={styles.btn + ' btn-blue'} type="submit">
-          Отправить
+          {content.submit}
         </button>
       </Form>
     )}

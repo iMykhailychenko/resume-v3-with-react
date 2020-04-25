@@ -1,0 +1,17 @@
+{
+  "contacts": {
+    "title": "контакти",
+    "secondTitle": "1Consequuntur sapiente, aspernatur cum voluptate ad expedita?",
+    "text": "1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur obcaecati atque facilis, animi qui labore veritatis et aliquid dolorem accusantium ducimus. Sed accusamus, optio error labore delectus facilis temporibus voluptatum!",
+    "relink": "Завантажити резюме"
+  },
+  "form": {
+    "title": "Зворотній зв'язок",
+    "name": "Ваше ім'я ...",
+    "email": "*Ваша електронна пошта ...",
+    "company": "Компанія / посилання на сайт ...",
+    "text": "Ваше повідомлення ...",
+    "confirm": "Я даю згоду на обробку персональних даних",
+    "submit": "Надіслати"
+  }
+}

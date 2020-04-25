@@ -3,24 +3,25 @@ import { Parallax } from 'rc-scroll-anim';
 import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
 import PageText from '../../components/page-text/PageText';
-import FormComponent from '../../components/form/FormComponent';
+import FormComponent from '../../components/form/FormContainer';
 
 import styles from './Contacts.module.css';
 import img from '../../images/emoji/contacts.png';
 
-const Contacts = () => (
+type Props = {
+  content: {
+    [key: string]: string;
+  };
+};
+
+const Contacts: React.FC<Props> = ({ content }) => (
   <>
-    <PageFirstBlock title="Контакты" img={img} />
+    <PageFirstBlock title={content.title} img={img} />
 
     <section className={styles.section}>
       <PageText>
-        <h3>Consequuntur sapiente, aspernatur cum voluptate ad expedita?</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
-          obcaecati atque facilis, animi qui labore veritatis et aliquid dolorem
-          accusantium ducimus. Sed accusamus, optio error labore delectus
-          facilis temporibus voluptatum!
-        </p>
+        <h3>{content.secondTitle}</h3>
+        <p>{content.text}</p>
       </PageText>
 
       <div className={styles.container}>
@@ -43,7 +44,7 @@ const Contacts = () => (
       </div>
     </section>
 
-    <SplitLink path="/download" text="Загрузить резюме" />
+    <SplitLink path="/download" text={content.relink} />
   </>
 );
 

@@ -8,6 +8,7 @@ export interface IState {
   locale: string;
   menu: boolean;
   popup: boolean;
+  content: any;
 }
 
 // Action types
@@ -31,4 +32,8 @@ interface OpenPopup {
   payload: boolean;
 }
 
-export type ActionTypes = SwitchTheme | ToggleMenu | ToggleLocale | OpenPopup;
+export type ActionTypes =
+  | SwitchTheme
+  | ToggleMenu
+  | ToggleLocale
+  | OpenPopup;
