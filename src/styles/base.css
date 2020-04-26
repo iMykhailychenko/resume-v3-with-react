@@ -83,6 +83,10 @@ button {
   cursor: pointer;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 h3 {

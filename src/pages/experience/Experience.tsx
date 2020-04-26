@@ -13,7 +13,22 @@ import img4 from '../../images/content/experiance/experiance-4.png';
 import img5 from '../../images/content/experiance/experiance-5.png';
 import img6 from '../../images/content/experiance/experiance-6.png';
 
-interface Props {}
+interface Props {
+  content: {
+    title: string;
+    secondTitle: string;
+    textOne: string;
+    textTwo: string;
+    relink: string;
+    slider: {
+      linkt: string;
+      company: string;
+      title: string;
+      responsibility: string;
+      list: string[];
+    }[];
+  };
+}
 interface State {
   count: number;
 }
@@ -42,13 +57,15 @@ export default class Experiance extends Component<Props, State> {
   };
 
   render() {
+    const { content } = this.props;
     const { count } = this.state;
     const y: number = count * 400;
     const rotate: number = count * 45;
 
     return (
       <>
-        <PageFirstBlock title="Мой опыт работы" img={emoji} />
+        <PageFirstBlock title={content.title} img={emoji} />
+
         <Parallax
           component="section"
           className={styles.section + ' gradient'}
@@ -94,79 +111,25 @@ export default class Experiance extends Component<Props, State> {
               className={styles.wrp}
               style={{ transform: `translateY(-${y}px)` }}
             >
-              <div className={styles.inner}>
-                <h3>
-                  Январь 2020 г. Компания: DL.Agency. Должность: front-end
-                  developer.
-                </h3>
-                <p>Обязанности:</p>
-
-                <ul className={styles.list}>
-                  <li>
-                    Адаптивная, валидная и кроссбраузерная верстка сайтов по
-                    макету;
-                  </li>
-                  <li>Создание сложных анимаций с помощью JavaScript и CSS;</li>
-                  <li>Подключение новых модулей к готовым сайтам;</li>
-                  <li>Подключение верстки к CMS (wordpress);</li>
-                  <li>Оптимизация скорости загрузки сайтов;</li>
-                  <li>Доработка сайтов;</li>
-                </ul>
-              </div>
-
-              <div className={styles.inner}>
-                <h3>
-                  Май 2018 г. – Октябрь 2019г. Компания: ООО "КПМГ-Украина".
-                  Должность: консультант по трансфертному ценообразованию.
-                </h3>
-                <p>Обязанности:</p>
-
-                <ul className={styles.list}>
-                  <li>
-                    анализ внутригрупповых операций, проводимых между
-                    украинскими и зарубежными компаниями на предмет
-                    трансфертного ценообразования;
-                  </li>
-                  <li>
-                    проведение анализа рынка, на котором функционирует клиент
-                    (IT, сельское хозяйство, FMCG и др.);
-                  </li>
-                  <li>выявление рисков трансфертного ценообразования;</li>
-                  <li>
-                    работа с базами данных ktMINE, Ruslana, SPARK, TP Catalyst;
-                  </li>
-                  <li>
-                    подготовка документации по трансфертному ценообразованию;
-                  </li>
-                  <li>
-                    структурирование внутригрупповых операций в соответствии с
-                    украинским налоговым законодательством и международными
-                    принципами трансфертного ценообразования.
-                  </li>
-                </ul>
-              </div>
-
-              <div className={styles.inner}>
-                <h3>
-                  Февраль – Май 2018 г. Компания: ООО «ControlPay Украина».
-                  Должность: Invoice auditor
-                </h3>
-                <p>Обязанности:</p>
-
-                <ul className={styles.list}>
-                  <li>
-                    навигация и использование веб-платформы компании ControlPay
-                    и инструментов поддержки клиентов;
-                  </li>
-                  <li>проверка и анализ инвойсов;</li>
-                  <li>аудит транспортных накладных;</li>
-                  <li>анализ данных отгрузки грузов;</li>
-                  <li>проверка логики расчетов;</li>
-                  <li>
-                    общение с клиентами (электронная почта / конференц-связь).
-                  </li>
-                </ul>
-              </div>
+              {content.slider.map((slide, index) => (
+                <div key={index} className={styles.inner}>
+                  <a
+                    className={styles.link}
+                    href={slide.linkt}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {slide.company}
+                  </a>
+                  <h3>{slide.title}</h3>
+                  <p>{slide.responsibility}</p>
+                  <ul className={styles.list}>
+                    {slide.list.map((element, id) => (
+                      <li key={id}>{element}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
 
             <button className={styles.btn} onClick={this.handleDown}></button>
@@ -183,13 +146,8 @@ export default class Experiance extends Component<Props, State> {
               opacity: '0',
             }}
           >
-            <h3>Consectetur adipisicing elit. Autem,quis.</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Explicabo alias pariatur corrupti, unde libero quod nulla dolor,
-              provident, quia ut amet quae recusandae. Dicta asperiores quisquam
-              dolorum eos ea quaerat.
-            </p>
+            <h3>{content.secondTitle}</h3>
+            <p>{content.textOne}</p>
           </Parallax>
 
           <div className="border_top">
@@ -224,12 +182,7 @@ export default class Experiance extends Component<Props, State> {
                 opacity: '0',
               }}
             >
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Explicabo alias pariatur corrupti, unde libero quod nulla dolor,
-                provident, quia ut amet quae recusandae. Dicta asperiores
-                quisquam dolorum eos ea quaerat.
-              </p>
+              <p>{content.textOne}</p>
             </Parallax>
 
             <ul className={styles.works}>

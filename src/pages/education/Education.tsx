@@ -5,29 +5,37 @@ import ListElement from './ListElement/ListElement';
 import styles from './Education.module.css';
 import emoji from '../../images/emoji/education.png';
 
-const initial = {
-  title: 'string',
-  text: 'string',
-  background: '#fff',
-  color: '#000',
-  translate: '-180%',
-  y: '90deg',
-  x: '0',
+interface Props {
+  content: {
+    title: string;
+    item: [
+      {
+        title: string;
+        text: string;
+        background: string;
+        color: string;
+        translate: string;
+        x: string;
+        y: string;
+      },
+    ];
+    relink: string;
+  };
 }
 
-interface Props {}
-
-const Education: React.FC<Props> = () => (
+const Education: React.FC<Props> = ({ content: { title, item, relink } }) => (
   <>
-    <PageFirstBlock title="Образование и курсы" img={emoji} />
+    <PageFirstBlock title={title} img={emoji} />
 
     <div className={styles.section}>
       <ul className={styles.list}>
-      <ListElement {...initial} />
+        {item.map(element => (
+          <ListElement {...element} />
+        ))}
       </ul>
     </div>
 
-    <SplitLink path="/experience" text="Посмотреть мой опыт работы" />
+    <SplitLink path="/experience" text={relink} />
   </>
 );
 

@@ -3,8 +3,9 @@ import { connect } from 'react-redux';
 import { menuActions } from '../../../../redux/menu/menuActions';
 import { IState } from '../../../../types';
 
-const mapSTP = (state: IState): Pick<IState, 'menu'> => ({
+const mapSTP = (state: IState): Pick<IState, 'menu' | 'content'> => ({
   menu: state.menu,
+  content: state.content.header,
 });
 
 const mapDTP = (dispatch: any) => ({

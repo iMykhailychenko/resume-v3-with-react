@@ -12,33 +12,33 @@ import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
 
 // chunks
 const AsyncMain = lazy(() =>
-  import('../../pages/main/Main' /* webpackChunkName: "home-page" */),
+  import('../../pages/main/MainContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncContacts = lazy(() =>
   import('../../pages/contacts/ContactsContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncDownload = lazy(() =>
-  import('../../pages/download/Download' /* webpackChunkName: "home-page" */),
+  import('../../pages/download/DownloadContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncEducation = lazy(() =>
-  import('../../pages/education/Education' /* webpackChunkName: "home-page" */),
+  import('../../pages/education/EducationContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncExperience = lazy(() =>
   import(
-    '../../pages/experience/Experience' /* webpackChunkName: "home-page" */
+    '../../pages/experience/ExperienceContainer' /* webpackChunkName: "home-page" */
   ),
 );
 const AsyncGeneral = lazy(() =>
-  import('../../pages/general/General' /* webpackChunkName: "home-page" */),
+  import('../../pages/general/GeneralContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncReason = lazy(() =>
-  import('../../pages/reason/Reason' /* webpackChunkName: "home-page" */),
+  import('../../pages/reason/ReasonContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncSalary = lazy(() =>
-  import('../../pages/salary/Salary' /* webpackChunkName: "home-page" */),
+  import('../../pages/salary/SalaryContainer' /* webpackChunkName: "home-page" */),
 );
 const AsyncSkills = lazy(() =>
-  import('../../pages/skills/Skills' /* webpackChunkName: "home-page" */),
+  import('../../pages/skills/SkillsContainer' /* webpackChunkName: "home-page" */),
 );
 
 interface Props {

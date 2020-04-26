@@ -10,38 +10,49 @@ import Sale from './sale/Sale';
 import styles from './Salary.module.css';
 import emoji from '../../images/emoji/salary.png';
 
-const Salary = () => (
+interface Props {
+  content: {
+    title: string;
+    text: string[];
+    sale: string;
+    before: string;
+    now: string;
+    graphText: string;
+    captionOne: string;
+    captionTwo: string;
+    endText: string;
+    relink: string;
+  };
+}
+
+const Salary: React.FC<Props> = ({
+  content: {
+    title,
+    text,
+    sale,
+    before,
+    now,
+    graphText,
+    captionOne,
+    captionTwo,
+    endText,
+    relink,
+  },
+}) => (
   <>
-    <PageFirstBlock title="Ожидаемая зарплата" img={emoji} />
+    <PageFirstBlock title={title} img={emoji} />
 
     <PageText>
-      <p>
-        В соответствии с последними данными сайта DOU, Junior Software Engineer,
-        который знает язык программирования JavaScript, зарабатывает от 450$ до
-        700$ в месяц. Объективная реальность такова, что приезжему человеку
-        прожить в Киеве на зарплату меньше 600$ практически невозможно, так как
-        кроме удовлетворения своих первичных потребностей, нужно платить деньги
-        ещё и за аренду жилья.
-      </p>
-
-      <p>
-        Поэтому, несмотря на то, что программирование для меня почти как хобби,
-        я не смогу проживать в Киеве на протяжении долгого времени получая
-        зарплату меньше 600$. В свою очередь, за эти деньги я готов максимально
-        быстро погрузиться в работу, выкладываться на 110%, постоянно изучать
-        что-то новое и помогать вашей компании расти.
-      </p>
+      {text.map((paragraph, id) => (
+        <p key={id}>{paragraph}</p>
+      ))}
     </PageText>
 
     <section className={styles.section}>
-      <p>
-        В свою очередь, за эти деньги я готов максимально быстро погрузиться в
-        работу, выкладываться на 110%, постоянно изучать что-то новое и помогать
-        вашей компании расти.
-      </p>
+      <p>{sale}</p>
 
-      <Sale number={1200.0} prefix="before " />
-      <Sale number={999.99} prefix="now " />
+      <Sale number={1200.0} prefix={before} />
+      <Sale number={999.99} prefix={now} />
     </section>
 
     <section className={styles.beforeChart}>
@@ -53,29 +64,19 @@ const Salary = () => (
           opacity: '0',
         }}
       >
-        В свою очередь, за эти деньги я готов максимально быстро погрузиться в
-        работу, выкладываться на 110%, постоянно изучать что-то новое и помогать
-        вашей компании расти.
+        {graphText}
       </Parallax>
     </section>
 
     <section>
       <div className={styles.chart}>
         <ChartEffectiveness />
-        <p className={styles.chartText}>
-          В свою очередь, за эти деньги я готов максимально быстро погрузиться в
-          работу, выкладываться на 110%, постоянно изучать что-то новое и
-          помогать вашей компании расти.
-        </p>
+        <p className={styles.chartText}>{captionOne}</p>
       </div>
 
       <div className={styles.chart}>
         <ChartCompany />
-        <p className={styles.chartText}>
-          В свою очередь, за эти деньги я готов максимально быстро погрузиться в
-          работу, выкладываться на 110%, постоянно изучать что-то новое и
-          помогать вашей компании расти.
-        </p>
+        <p className={styles.chartText}>{captionTwo}</p>
       </div>
     </section>
 
@@ -88,13 +89,11 @@ const Salary = () => (
           opacity: '0',
         }}
       >
-        В свою очередь, за эти деньги я готов максимально быстро погрузиться в
-        работу, выкладываться на 110%, постоянно изучать что-то новое и помогать
-        вашей компании расти.
+        {endText}
       </Parallax>
     </section>
 
-    <SplitLink path="/contacts" text="Контакты" />
+    <SplitLink path="/contacts" text={relink} />
   </>
 );
 

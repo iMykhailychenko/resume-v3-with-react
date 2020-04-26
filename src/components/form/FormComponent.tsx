@@ -5,7 +5,7 @@ import popTransition from '../../transitions/pop.module.css';
 import styles from './FormComponent.module.css';
 
 interface Props {
-  content: any;
+  content: { [key: string]: string };
 }
 
 interface Values {
@@ -36,14 +36,9 @@ const FormComponent: React.FC<Props> = ({ content }) => (
     initialValues={initialValues}
     validate={(values: Values): Errors => {
       const errors: Errors = {};
-      if (!validEmail.test(values.email!))
-        errors.email = 'Упсс.. Кажется здесь есть ошибка.';
-      if (!values.email)
-        errors.email =
-          'Я не смогу ответить на ваш вопрос незная вашу электронную почту.';
-      if (!values.confirm)
-        errors.confirm =
-          'Не забудте отметить согласие на обработку персональной информации.';
+      if (!validEmail.test(values.email!)) errors.email = content.errorMail;
+      if (!values.email) errors.email = content.errorNoMail;
+      if (!values.confirm) errors.confirm = content.errorConfirm;
 
       return errors;
     }}
@@ -62,10 +57,7 @@ const FormComponent: React.FC<Props> = ({ content }) => (
           classNames={popTransition}
           unmountOnExit
         >
-          <p className={styles.success}>
-            Ваш вопрос успешно отправлен. Я постараюсь ответить на него
-            максимально быстро.
-          </p>
+          <p className={styles.success}>{content.success}</p>
         </CSSTransition>
 
         <Field

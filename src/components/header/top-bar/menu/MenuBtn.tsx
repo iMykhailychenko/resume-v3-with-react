@@ -3,12 +3,13 @@ import './Menu.css';
 import { getCircleWidth } from './utils';
 
 interface Props {
+  content: string;
   menu: boolean;
   theme: string;
   toggleMenu(menu: boolean): void;
 }
 
-const MenuBtn: React.FC<Props> = ({ theme, menu, toggleMenu }) => {
+const MenuBtn: React.FC<Props> = ({ content, theme, menu, toggleMenu }) => {
   const color: string = theme === 'light' ? '#000' : '#F8F8F8';
   const svg: string = menu ? 'menu__svg menu__svg--rotate' : 'menu__svg';
   const width: number = getCircleWidth(25);
@@ -39,7 +40,7 @@ const MenuBtn: React.FC<Props> = ({ theme, menu, toggleMenu }) => {
         <rect x="11" y="17" width="3" height="3" rx="1.5" fill={color} />
       </svg>
 
-      <span className="menu__text">Навигация по сайту</span>
+  <span className="menu__text">{content}</span>
     </button>
   );
 };

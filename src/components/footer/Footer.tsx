@@ -2,17 +2,21 @@ import React from 'react';
 import styles from './Footer.module.css';
 
 interface Props {
+  content: {
+    text: string;
+    btn: string;
+  };
   popup: boolean;
   openPopup(popup: boolean): void;
 }
 
-const Footer: React.FC<Props> = ({ popup, openPopup }) => (
+const Footer: React.FC<Props> = ({ content, popup, openPopup }) => (
   <footer className={styles.footer}>
     <div className={styles.left}>
-      <span>Остались вопросы?</span>
+      <span>{content.text}</span>
 
       <button className="btn-blue" onClick={() => openPopup(popup)}>
-        Пишите
+        {content.btn}
       </button>
     </div>
 

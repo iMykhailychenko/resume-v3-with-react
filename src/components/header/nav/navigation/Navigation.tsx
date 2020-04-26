@@ -14,11 +14,12 @@ import salary from '../../../../images/nav/salary.jpg';
 import skills from '../../../../images/nav/skills.jpg';
 
 interface Props {
+  content: { [key: string]: string };
   menu: boolean;
   toggleMenu(menu: boolean): void;
 }
 
-const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
+const Navigation: React.FC<Props> = ({ content, menu, toggleMenu }) => (
   <nav className={styles.nav}>
     <div className={styles.scroll}>
       <NavLink
@@ -30,7 +31,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Главная</h4>
+        <h4 className={styles.title}>{content.main}</h4>
         <img className={styles.img} src={main} alt="" />
       </NavLink>
 
@@ -42,7 +43,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Почему я меняю профессию?</h4>
+        <h4 className={styles.title}>{content.reason}</h4>
         <img className={styles.img} src={reason} alt="" />
       </NavLink>
 
@@ -54,7 +55,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Общая информация</h4>
+        <h4 className={styles.title}>{content.general}</h4>
         <img className={styles.img} src={general} alt="" />
       </NavLink>
 
@@ -66,7 +67,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Образование и курсы</h4>
+        <h4 className={styles.title}>{content.education}</h4>
         <img className={styles.img} src={education} alt="" />
       </NavLink>
 
@@ -78,7 +79,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Мой опыт работы</h4>
+        <h4 className={styles.title}>{content.experience}</h4>
         <img className={styles.img} src={experience} alt="" />
       </NavLink>
 
@@ -90,7 +91,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Hard skills</h4>
+        <h4 className={styles.title}>{content.skills}</h4>
         <img className={styles.img} src={skills} alt="" />
       </NavLink>
 
@@ -102,7 +103,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Ожидаемая зарплата</h4>
+        <h4 className={styles.title}>{content.salary}</h4>
         <img className={styles.img} src={salary} alt="" />
       </NavLink>
 
@@ -114,7 +115,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Контакты</h4>
+        <h4 className={styles.title}>{content.contacts}</h4>
         <img className={styles.img} src={contacts} alt="" />
       </NavLink>
 
@@ -126,7 +127,7 @@ const Navigation: React.FC<Props> = ({ menu, toggleMenu }) => (
         className={styles.link}
         activeClassName={styles.active}
       >
-        <h4 className={styles.title}>Загрузить резюме</h4>
+        <h4 className={styles.title}>{content.download}</h4>
         <img className={styles.img} src={download} alt="" />
       </NavLink>
     </div>
