@@ -40,6 +40,10 @@ const AsyncSalary = lazy(() =>
 const AsyncSkills = lazy(() =>
   import('../../pages/skills/SkillsContainer' /* webpackChunkName: "home-page" */),
 );
+const AsyncNotFound = lazy(() =>
+  import('../../pages/404/NotFoundContainer' /* webpackChunkName: "not-found" */),
+);
+
 
 interface Props {
   theme: string;
@@ -67,6 +71,7 @@ const App: React.FC<Props> = ({ theme, menu }) => {
             <Route path="/reason" component={AsyncReason} />
             <Route path="/salary" component={AsyncSalary} />
             <Route path="/skills" component={AsyncSkills} />
+            <Route component={AsyncNotFound} />
           </Switch>
         </Suspense>
       </main>

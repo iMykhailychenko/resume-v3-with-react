@@ -35,10 +35,9 @@ const Download: React.FC<Props> = ({
   content: { title, text, pdf, doc, btn, relink },
 }) => (
   <>
-    <PageFirstBlock title="Загрузить резюме" img={emoji} />
+    <PageFirstBlock title={title} img={emoji} />
 
     <PageText>
-      <h3>{title}</h3>
       <p>{text}</p>
     </PageText>
 

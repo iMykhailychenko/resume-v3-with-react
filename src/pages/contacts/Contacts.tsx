@@ -37,7 +37,7 @@ const Contacts: React.FC<Props> = ({ content }) => (
           <iframe
             className={styles.map}
             title="myLocation"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0192308642!2d30.52267701561989!3d50.40347919862942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf49bba0846b%3A0x36710373f1fbc0b5!2z0L_RgNC-0YHQvy4g0J3QsNGD0LrQuCwgMTAsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1587335385863!5m2!1sru!2sua"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.3493411358186!2d30.503960815729435!3d50.397326779468074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8cb9360005b%3A0x5830ab4023f437c8!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjNC60ZbQstGB0YzQutCwLCA0LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1588016801284!5m2!1suk!2sua"
             aria-hidden="false"
           />
         </div>
