@@ -1,10 +1,6 @@
 import React from 'react';
 import styles from './SkillsList.module.css';
-
-// img
-import github from '../../../images/content/skills/github.svg';
-
-const icons: { [key: string]: string } = { github };
+import icons from './icons';
 
 interface Values {
   img: string;
@@ -21,7 +17,7 @@ const SkillsList: React.FC<Props> = ({ props }) => (
   <ul className={styles.list}>
     {props.map(({ img, logoColor, title, text }, id) => (
       <li key={id} className={styles.item + ' border'}>
-        <div className={styles.logo} style={{ background: `#${logoColor}` }}>
+        <div className={styles.logo} style={{ background: `${logoColor}` }}>
           <img className={styles.img} src={icons[img]} alt="" />
         </div>
 

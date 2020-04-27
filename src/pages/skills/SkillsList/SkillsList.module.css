@@ -1,5 +1,6 @@
 .item {
   padding: 40px;
+  min-height: 350px;
   margin-bottom: 40px;
 }
 
@@ -9,11 +10,11 @@
 
 .logo {
   width: max-content;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 20px;
 }
 
 .img {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }

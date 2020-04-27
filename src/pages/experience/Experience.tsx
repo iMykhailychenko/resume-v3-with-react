@@ -70,9 +70,7 @@ export default class Experiance extends Component<Props, State> {
           component="section"
           className={styles.section + ' gradient'}
           animation={{ opacity: 1 }}
-          style={{
-            opacity: 0,
-          }}
+          style={{ opacity: 0 }}
         >
           <div
             className={styles.circle + ' border'}
@@ -153,22 +151,38 @@ export default class Experiance extends Component<Props, State> {
           <div className="border_top">
             <ul className={styles.works}>
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://remens.ua/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className={styles.img} src={img1} alt="" />
                 </a>
               </li>
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://stalkanat-silur.hd.kiev.ua/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className={styles.img} src={img2} alt="" />
                 </a>
               </li>
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://kraina.hd.kiev.ua/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className={styles.img} src={img3} alt="" />
                 </a>
               </li>
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="http://horizon-capital.hd.kiev.ua/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className={styles.img} src={img4} alt="" />
                 </a>
               </li>
@@ -182,17 +196,25 @@ export default class Experiance extends Component<Props, State> {
                 opacity: '0',
               }}
             >
-              <p>{content.textOne}</p>
+              <p>{content.textTwo}</p>
             </Parallax>
 
             <ul className={styles.works}>
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://imykhailychenko.github.io/resume-v2/dist/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className={styles.img} src={img5} alt="" />
                 </a>
               </li>
               <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://imykhailychenko.github.io/resume/build/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className={styles.img} src={img6} alt="" />
                 </a>
               </li>
