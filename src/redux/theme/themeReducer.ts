@@ -1,7 +1,10 @@
 import { SWITCH_THEME, ActionTypes } from '../../types';
+import { getDataFromLocalStorage } from '../../helpers/storage';
+
+const init = getDataFromLocalStorage('theme', 'dark')
 
 export const themeReducer = (
-  theme: string = 'dark',
+  theme: string = init,
   action: ActionTypes,
 ): string => {
   switch (action.type) {

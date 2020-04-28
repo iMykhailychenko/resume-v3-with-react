@@ -118,7 +118,8 @@ h4 {
   font-weight: 400;
 }
 
-p {
+p,
+time {
   font-size: 1.6rem;
   font-weight: 300;
 }

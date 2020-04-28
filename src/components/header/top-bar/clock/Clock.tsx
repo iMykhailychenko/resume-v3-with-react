@@ -35,6 +35,6 @@ export default class Clock extends Component<Props, State> {
   }
   render() {
     const { hours, minutes } = this.state;
-    return <p className={styles.time}>{hours}:{minutes}</p>;
+    return <time className={styles.time}>{hours}:{minutes}</time>;
   }
 }

@@ -1,7 +1,7 @@
 import MenuBtn from './MenuBtn';
 import { connect } from 'react-redux';
 import { menuActions } from '../../../../redux/menu/menuActions';
-import { IState } from '../../../../types';
+import { IState, Dispatch } from '../../../../types';
 
 const mapSTP = (state: IState): Pick<IState, 'menu' | 'theme' | 'content'> => ({
   menu: state.menu,
@@ -9,7 +9,7 @@ const mapSTP = (state: IState): Pick<IState, 'menu' | 'theme' | 'content'> => ({
   content: state.content.header.menu,
 });
 
-const mapDTP = (dispatch: any) => ({
+const mapDTP = (dispatch: Dispatch<boolean>) => ({
   toggleMenu: (menu: boolean) => dispatch(menuActions(menu)),
 });
 

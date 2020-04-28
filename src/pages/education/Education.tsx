@@ -29,8 +29,8 @@ const Education: React.FC<Props> = ({ content: { title, item, relink } }) => (
 
     <div className={styles.section}>
       <ul className={styles.list}>
-        {item.map(element => (
-          <ListElement {...element} />
+        {item.map((element, id) => (
+          <ListElement key={id} {...element} />
         ))}
       </ul>
     </div>

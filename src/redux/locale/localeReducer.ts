@@ -1,7 +1,10 @@
 import { TOGGLE_LOCALE, ActionTypes } from '../../types';
+import { getDataFromLocalStorage } from '../../helpers/storage';
+
+const init = getDataFromLocalStorage('locale', 'UA')
 
 export const localeReducer = (
-  locale: string = 'UA',
+  locale: string = init,
   action: ActionTypes,
 ): string => {
   switch (action.type) {

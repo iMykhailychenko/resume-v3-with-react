@@ -1,7 +1,10 @@
-import { createStore } from 'redux';
-import { devToolsEnhancer } from 'redux-devtools-extension';
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
+import setData from './middleware/setDataToStorage';
 
-const store = createStore(rootReducer, devToolsEnhancer({ name: 'resume' }));
+const enhancer = applyMiddleware(setData);
+
+const store = createStore(rootReducer, composeWithDevTools(enhancer));
 
 export default store;

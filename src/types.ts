@@ -32,8 +32,8 @@ interface OpenPopup {
   payload: boolean;
 }
 
-export type ActionTypes =
-  | SwitchTheme
-  | ToggleMenu
-  | ToggleLocale
-  | OpenPopup;
+export type ActionTypes = SwitchTheme | ToggleMenu | ToggleLocale | OpenPopup;
+
+export interface Dispatch<S> {
+  <A extends ActionTypes>(action: A): A;
+}

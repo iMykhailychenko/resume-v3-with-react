@@ -16,7 +16,9 @@ interface Props {
   };
 }
 
-const General: React.FC<Props> = ({content: { title, tablet, text, relink }}) => (
+const General: React.FC<Props> = ({
+  content: { title, tablet, text, relink },
+}) => (
   <>
     <PageFirstBlock title={title} img={emoji} />
 
@@ -28,8 +30,8 @@ const General: React.FC<Props> = ({content: { title, tablet, text, relink }}) =>
       </div>
 
       <div className={styles.right}>
-        {tablet.map((raw: string[]) => (
-          <InfoBlock param={raw[0]} value={raw[1]} top={raw[2]} />
+        {tablet.map((raw, id) => (
+          <InfoBlock key={id} param={raw[0]} value={raw[1]} top={raw[2]} />
         ))}
       </div>
     </section>

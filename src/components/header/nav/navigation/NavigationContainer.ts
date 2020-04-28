@@ -1,14 +1,14 @@
 import Navigation from './Navigation';
 import { connect } from 'react-redux';
 import { menuActions } from '../../../../redux/menu/menuActions';
-import { IState } from '../../../../types';
+import { IState, Dispatch } from '../../../../types';
 
 const mapSTP = (state: IState): Pick<IState, 'menu' | 'content'> => ({
   menu: state.menu,
   content: state.content.header,
 });
 
-const mapDTP = (dispatch: any) => ({
+const mapDTP = (dispatch: Dispatch<boolean>) => ({
   toggleMenu: (menu: boolean) => dispatch(menuActions(menu)),
 });
 
