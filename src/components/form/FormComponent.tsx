@@ -31,6 +31,12 @@ const initialValues: Values = {
   confirm: false,
 };
 
+const encode = (data: { [key: string]: any }): string => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 const FormComponent: React.FC<Props> = ({ content }) => (
   <Formik
     initialValues={initialValues}
@@ -44,11 +50,21 @@ const FormComponent: React.FC<Props> = ({ content }) => (
     }}
     onSubmit={(values, actions) => {
       actions.resetForm();
-      actions.setStatus(true);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...values }),
+      })
+        .then(() => actions.setStatus(true))
+        .catch(error => console.log(error));
     }}
   >
     {values => (
-      <Form className={styles.form}>
+      <Form
+        className={styles.form}
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <h2 className={styles.title}>{content.title}</h2>
 
         <CSSTransition
@@ -96,7 +112,8 @@ const FormComponent: React.FC<Props> = ({ content }) => (
           render={msg => <span className={styles.errors}>{msg}</span>}
         />
 
-        <textarea
+        <Field
+          as="textarea"
           className={styles.textarea}
           rows={10}
           cols={45}

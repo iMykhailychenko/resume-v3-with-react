@@ -17,6 +17,7 @@
 
 .input,
 .textarea {
+  width: 328px;
   margin-bottom: 15px;
   padding: 10px 15px;
   background: rgba(112, 112, 112, 0.13);
