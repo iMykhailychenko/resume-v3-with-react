@@ -4,7 +4,7 @@ import React from 'react';
 import Nav from './nav/NavContainer';
 import TopBar from './top-bar/TopBar';
 
-type Props = {};
+interface Props {}
 
 const Header: React.FC<Props> = () => (
   <header className="header container">
