@@ -5,7 +5,7 @@ import PageText from '../../components/page-text/PageText';
 import SkillsList from './SkillsList/SkillsList';
 
 import styles from './Skills.module.css';
-import emoji from '../../images/emoji/skills.png';
+import emoji from '../../images/emoji/skills.webp';
 
 interface Values {
   img: string;

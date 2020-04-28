@@ -6,7 +6,7 @@ import PageText from '../../components/page-text/PageText';
 import FormComponent from '../../components/form/FormContainer';
 
 import styles from './Contacts.module.css';
-import img from '../../images/emoji/contacts.png';
+import img from '../../images/emoji/contacts.webp';
 
 type Props = {
   content: {

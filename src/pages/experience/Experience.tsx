@@ -5,13 +5,13 @@ import SplitLink from '../../components/split-link/SplitLink';
 import styles from './Experiance.module.css';
 
 // img
-import emoji from '../../images/emoji/experiance.png';
-import img1 from '../../images/content/experiance/experiance-1.png';
-import img2 from '../../images/content/experiance/experiance-2.png';
-import img3 from '../../images/content/experiance/experiance-3.png';
-import img4 from '../../images/content/experiance/experiance-4.png';
-import img5 from '../../images/content/experiance/experiance-5.png';
-import img6 from '../../images/content/experiance/experiance-6.png';
+import emoji from '../../images/emoji/experiance.webp';
+import img1 from '../../images/content/experiance/experiance-1.webp';
+import img2 from '../../images/content/experiance/experiance-2.webp';
+import img3 from '../../images/content/experiance/experiance-3.webp';
+import img4 from '../../images/content/experiance/experiance-4.webp';
+import img5 from '../../images/content/experiance/experiance-5.webp';
+import img6 from '../../images/content/experiance/experiance-6.webp';
 
 interface Props {
   content: {

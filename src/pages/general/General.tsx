@@ -4,8 +4,8 @@ import SplitLink from '../../components/split-link/SplitLink';
 import InfoBlock from './InfoBlock/InfoBlock';
 
 import styles from './General.module.css';
-import emoji from '../../images/emoji/general.png';
-import img from '../../images/content/general/my-photo.jpeg';
+import emoji from '../../images/emoji/general.webp';
+import img from '../../images/content/general/my-photo.webp';
 
 interface Props {
   content: {

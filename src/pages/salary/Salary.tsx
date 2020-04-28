@@ -8,7 +8,7 @@ import ChartCompany from './chart/ChartCompany';
 import Sale from './sale/Sale';
 
 import styles from './Salary.module.css';
-import emoji from '../../images/emoji/salary.png';
+import emoji from '../../images/emoji/salary.webp';
 
 interface Props {
   content: {

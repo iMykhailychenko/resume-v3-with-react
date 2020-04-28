@@ -3,7 +3,7 @@ import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
 import ListElement from './ListElement/ListElement';
 import styles from './Education.module.css';
-import emoji from '../../images/emoji/education.png';
+import emoji from '../../images/emoji/education.webp';
 
 interface Props {
   content: {

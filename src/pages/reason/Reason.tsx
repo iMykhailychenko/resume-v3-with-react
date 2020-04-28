@@ -4,9 +4,9 @@ import SplitLink from '../../components/split-link/SplitLink';
 import { Parallax } from 'rc-scroll-anim';
 import styles from './Reason.module.css';
 
-import emoji from '../../images/emoji/reason.png';
-import videoOne from '../../images/content/reason/reason-1.mp4';
-import videoTwo from '../../images/content/reason/reason-2.mp4';
+import emoji from '../../images/emoji/reason.webp';
+import videoOne from '../../images/content/reason/reason-1.webm';
+import videoTwo from '../../images/content/reason/reason-2.webm';
 
 interface Props {
   content: {

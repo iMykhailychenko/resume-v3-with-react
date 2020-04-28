@@ -3,15 +3,15 @@ import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
 // import images
-import contacts from '../../../../images/nav/contacts.jpg';
-import download from '../../../../images/nav/download.jpg';
-import education from '../../../../images/nav/education.jpg';
-import experience from '../../../../images/nav/experience.jpg';
-import general from '../../../../images/nav/general.jpg';
-import main from '../../../../images/nav/main.jpg';
-import reason from '../../../../images/nav/reason.jpg';
-import salary from '../../../../images/nav/salary.jpg';
-import skills from '../../../../images/nav/skills.jpg';
+import contacts from '../../../../images/nav/contacts.webp';
+import download from '../../../../images/nav/download.webp';
+import education from '../../../../images/nav/education.webp';
+import experience from '../../../../images/nav/experience.webp';
+import general from '../../../../images/nav/general.webp';
+import main from '../../../../images/nav/main.webp';
+import reason from '../../../../images/nav/reason.webp';
+import salary from '../../../../images/nav/salary.webp';
+import skills from '../../../../images/nav/skills.webp';
 
 interface Props {
   content: { [key: string]: string };

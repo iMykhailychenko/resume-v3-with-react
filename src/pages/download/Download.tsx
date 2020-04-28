@@ -6,9 +6,9 @@ import PageText from '../../components/page-text/PageText';
 import styles from './Download.module.css';
 
 // img
-import emoji from '../../images/emoji/download.png';
-import pdfImg from '../../images/content/dowload/pdf.png';
-import wordImg from '../../images/content/dowload/word.png';
+import emoji from '../../images/emoji/download.webp';
+import pdfImg from '../../images/content/dowload/pdf.webp';
+import wordImg from '../../images/content/dowload/word.webp';
 
 // files
 import pdfUA from './files/resume-ua.pdf';

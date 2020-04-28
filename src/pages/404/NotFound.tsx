@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import Canvas from '../main/canvas/CanvasContainer';
-import right from '../../images/emoji/right.png';
 import styles from './NotFound.module.css';
-import move from '../../images/svg/move.svg';
 import '../../transitions/slideUp.css';
+
+import right from '../../images/emoji/right.webp';
+import move from '../../images/svg/move.svg';
 
 interface Props {
   content: {
