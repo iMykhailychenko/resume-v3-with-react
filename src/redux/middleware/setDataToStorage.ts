@@ -12,7 +12,8 @@ const setData = (store: any) => (next: (action: ActionTypes) => any) => (
       break;
 
     case SWITCH_THEME:
-      setDataToLocalStorage('theme', action.payload);
+      const theme = action.payload === 'light' ? 'dark' : 'light';
+      setDataToLocalStorage('theme', theme);
       break;
   }
 };
