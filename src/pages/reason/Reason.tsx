@@ -4,9 +4,13 @@ import SplitLink from '../../components/split-link/SplitLink';
 import { Parallax } from 'rc-scroll-anim';
 import styles from './Reason.module.css';
 
-import emoji from '../../images/emoji/reason.webp';
-import videoOne from '../../images/content/reason/reason-1.webm';
-import videoTwo from '../../images/content/reason/reason-2.webm';
+import webp from '../../images/emoji/reason.webp';
+import videoOneWeb from '../../images/content/reason/reason-1.webm';
+import videoTwoWeb from '../../images/content/reason/reason-2.webm';
+
+import emoji from '../../images/emoji/reason.png';
+import videoOne from '../../images/content/reason/reason-1.mp4';
+import videoTwo from '../../images/content/reason/reason-2.mp4';
 
 interface Props {
   content: {
@@ -21,7 +25,7 @@ const Reason: React.FC<Props> = ({
   content: { title, firstText, secondText, relink },
 }) => (
   <>
-    <PageFirstBlock title={title} img={emoji} />
+    <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <section className={styles.content}>
       <div className={styles.blockLeft}>
@@ -30,6 +34,7 @@ const Reason: React.FC<Props> = ({
           style={{ transform: 'translateY(100px) scale(0.9)' }}
         >
           <video className={styles.video} loop autoPlay>
+            <source src={videoOneWeb} type="video/webm" />
             <source src={videoOne} type="video/mp4" />
           </video>
         </Parallax>
@@ -51,6 +56,7 @@ const Reason: React.FC<Props> = ({
           style={{ transform: 'translateY(100px)  scale(0.9)' }}
         >
           <video className={styles.video} loop autoPlay>
+            <source src={videoTwoWeb} type="video/webm" />
             <source src={videoTwo} type="video/mp4" />
           </video>
         </Parallax>

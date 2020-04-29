@@ -5,7 +5,8 @@ import PageText from '../../components/page-text/PageText';
 import SkillsList from './SkillsList/SkillsList';
 
 import styles from './Skills.module.css';
-import emoji from '../../images/emoji/skills.webp';
+import webp from '../../images/emoji/skills.webp';
+import emoji from '../../images/emoji/skills.png';
 
 interface Values {
   img: string;
@@ -31,7 +32,7 @@ const Skills: React.FC<Props> = ({
   content: { title, text, relink, list },
 }) => (
   <>
-    <PageFirstBlock title={title} img={emoji} />
+    <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <PageText>
       {text.map((paragraph, id) => (

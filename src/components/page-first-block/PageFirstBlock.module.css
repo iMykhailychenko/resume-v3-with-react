@@ -12,8 +12,8 @@
 
 .emoji {
   position: relative;
-  width: 140px;
   height: auto;
+  width: 140px;
   margin: 0 auto 5%;
 }
 
@@ -33,5 +33,4 @@
   transform: translateX(-50%);
   height: 6px;
   width: 1px;
-  
 }

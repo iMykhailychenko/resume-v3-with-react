@@ -3,7 +3,9 @@ import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
 import ListElement from './ListElement/ListElement';
 import styles from './Education.module.css';
-import emoji from '../../images/emoji/education.webp';
+
+import webp from '../../images/emoji/education.webp';
+import emoji from '../../images/emoji/education.png';
 
 interface Props {
   content: {
@@ -25,7 +27,7 @@ interface Props {
 
 const Education: React.FC<Props> = ({ content: { title, item, relink } }) => (
   <>
-    <PageFirstBlock title={title} img={emoji} />
+    <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <div className={styles.section}>
       <ul className={styles.list}>

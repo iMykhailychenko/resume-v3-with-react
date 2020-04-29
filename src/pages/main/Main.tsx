@@ -5,7 +5,8 @@ import Canvas from './canvas/CanvasContainer';
 import styles from './Main.module.css';
 import '../../transitions/slideUp.css';
 
-import right from '../../images/emoji/right.webp';
+import rightWeb from '../../images/emoji/right.webp';
+import right from '../../images/emoji/right.png';
 import move from '../../images/svg/move.svg';
 
 interface Props {
@@ -29,7 +30,10 @@ const Main: React.FC<Props> = ({ content: { title, text, relink } }) => (
 
       <CSSTransition in timeout={1000} classNames="slideUp" appear>
         <Link to="/reason" className={styles.btn + ' easeInOut'}>
-          <img className={styles.img} src={right} alt="" />
+          <picture className={styles.img}>
+            <source srcSet={rightWeb} type="image/webp" />
+            <img src={right} alt="" />
+          </picture>
           <span>{relink}</span>
         </Link>
       </CSSTransition>

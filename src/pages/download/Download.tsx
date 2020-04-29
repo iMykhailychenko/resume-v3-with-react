@@ -6,9 +6,13 @@ import PageText from '../../components/page-text/PageText';
 import styles from './Download.module.css';
 
 // img
-import emoji from '../../images/emoji/download.webp';
-import pdfImg from '../../images/content/dowload/pdf.webp';
-import wordImg from '../../images/content/dowload/word.webp';
+import webp from '../../images/emoji/download.webp';
+import pdfImgWeb from '../../images/content/dowload/pdf.webp';
+import wordImgWeb from '../../images/content/dowload/word.webp';
+
+import emoji from '../../images/emoji/download.png';
+import pdfImg from '../../images/content/dowload/pdf.png';
+import wordImg from '../../images/content/dowload/word.png';
 
 // files
 import pdfUA from './files/resume-ua.pdf';
@@ -18,7 +22,6 @@ import pdfEN from './files/resume-en.pdf';
 import docUA from './files/resume-ua.docx';
 import docRU from './files/resume-ru.docx';
 import docEN from './files/resume-en.docx';
-
 
 interface Props {
   content: {
@@ -35,7 +38,7 @@ const Download: React.FC<Props> = ({
   content: { title, text, pdf, doc, btn, relink },
 }) => (
   <>
-    <PageFirstBlock title={title} img={emoji} />
+    <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <PageText>
       <p>{text}</p>
@@ -50,7 +53,10 @@ const Download: React.FC<Props> = ({
           opacity: 0,
         }}
       >
-        <img className={styles.img} src={pdfImg} alt="" />
+        <picture className={styles.img}>
+          <source srcSet={pdfImgWeb} type="image/webp" />
+          <img src={pdfImg} alt="" />
+        </picture>
 
         <div className={styles.files + ' border_top'}>
           <ul className={styles.list}>
@@ -92,7 +98,10 @@ const Download: React.FC<Props> = ({
         animation={{ x: 0, y: 0, opacity: 1 }}
         style={{ transform: 'translateY(100px) translateX(100px)', opacity: 0 }}
       >
-        <img className={styles.img} src={wordImg} alt="" />
+        <picture className={styles.img}>
+          <source srcSet={wordImgWeb} type="image/webp" />
+          <img src={wordImg} alt="" />
+        </picture>
 
         <div className={styles.files + ' border_top'}>
           <ul className={styles.list}>

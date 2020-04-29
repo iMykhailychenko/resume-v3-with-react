@@ -4,8 +4,12 @@ import SplitLink from '../../components/split-link/SplitLink';
 import InfoBlock from './InfoBlock/InfoBlock';
 
 import styles from './General.module.css';
-import emoji from '../../images/emoji/general.webp';
-import img from '../../images/content/general/my-photo.webp';
+
+import webp from '../../images/emoji/general.webp';
+import imgWeb from '../../images/content/general/my-photo.webp';
+
+import emoji from '../../images/emoji/general.png';
+import img from '../../images/content/general/my-photo.jpeg';
 
 interface Props {
   content: {
@@ -20,11 +24,15 @@ const General: React.FC<Props> = ({
   content: { title, tablet, text, relink },
 }) => (
   <>
-    <PageFirstBlock title={title} img={emoji} />
+    <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <section className={styles.container}>
       <div className={styles.left}>
-        <img className={styles.img} src={img} alt="" />
+        
+        <picture className={styles.img}>
+          <source srcSet={imgWeb} type="image/webp" />
+          <img src={img} alt="" />
+        </picture>
 
         <p className={styles.general}>{text}</p>
       </div>

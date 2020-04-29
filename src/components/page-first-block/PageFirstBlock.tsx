@@ -5,6 +5,7 @@ import '../../transitions/slideUp.css';
 
 interface Props {
   title: string;
+  webp: string;
   img: string;
 }
 
@@ -16,12 +17,15 @@ export default class PageFirstBlock extends Component<Props> {
   }
 
   render() {
-    const { title, img } = this.props;
+    const { title, webp, img } = this.props;
 
     return (
       <section className={styles.section}>
         <CSSTransition in timeout={600} classNames="slideUp" appear>
-          <img className={styles.emoji + ' easeInOut'} src={img} alt="" />
+          <picture className={styles.emoji + ' easeInOut'}>
+            <source srcSet={webp} type="image/webp" />
+            <img src={img} alt="" />
+          </picture>
         </CSSTransition>
 
         <CSSTransition in timeout={800} classNames="slideUp" appear>

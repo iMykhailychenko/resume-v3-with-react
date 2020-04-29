@@ -15,6 +15,11 @@
   margin-bottom: 60px;
 }
 
+.img img {
+  height: 100%;
+  width: auto;
+}
+
 .files {
   position: relative;
   display: flex;

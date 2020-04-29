@@ -44,6 +44,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+picture {
+  display: block;
+}
+
 img {
   width: 100%;
   height: auto;

@@ -22,6 +22,7 @@ export default class Canvas extends Component {
     const clock = new THREE.Clock();
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0x909090);
+    scene.position.y = -1;
     scene.fog = new THREE.Fog(0x909090, 1, 60);
 
     const hemiLight = new THREE.HemisphereLight(0x909090, 0xe0e0e0);
@@ -55,12 +56,12 @@ export default class Canvas extends Component {
     scene.add(mesh);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.maxPolarAngle = 1.4;
+    controls.maxPolarAngle = 1.45;
     controls.minDistance = 5;
-    controls.maxDistance = 40;
+    controls.maxDistance = 55;
     controls.screenSpacePanning = true;
 
-    camera.position.set(5, 2, 18);
+    camera.position.set(8, 10, 14);
     controls.update();
 
     const loader = new GLTFLoader();

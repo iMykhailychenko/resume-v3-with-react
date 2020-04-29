@@ -5,6 +5,7 @@ import Canvas from '../main/canvas/CanvasContainer';
 import styles from './NotFound.module.css';
 import '../../transitions/slideUp.css';
 
+import rightWeb from '../../images/emoji/right.png';
 import right from '../../images/emoji/right.webp';
 import move from '../../images/svg/move.svg';
 
@@ -20,7 +21,7 @@ const NotFound: React.FC<Props> = ({ content: { title, text, relink } }) => (
   <section className={styles.container}>
     <div className={styles.left}>
       <CSSTransition in timeout={600} classNames="slideUp" appear>
-        <h1 className={styles.title + " easeInOut"}>{title}</h1>
+        <h1 className={styles.title + ' easeInOut'}>{title}</h1>
       </CSSTransition>
 
       <CSSTransition in timeout={800} classNames="slideUp" appear>
@@ -29,7 +30,10 @@ const NotFound: React.FC<Props> = ({ content: { title, text, relink } }) => (
 
       <CSSTransition in timeout={1000} classNames="slideUp" appear>
         <Link to="/" className={styles.btn + ' easeInOut'}>
-          <img className={styles.img} src={right} alt="" />
+          <picture className={styles.img}>
+            <source srcSet={rightWeb} type="image/webp" />
+            <img src={right} alt="" />
+          </picture>
           <span>{relink}</span>
         </Link>
       </CSSTransition>

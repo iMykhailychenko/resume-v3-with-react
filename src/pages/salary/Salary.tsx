@@ -8,7 +8,8 @@ import ChartCompany from './chart/ChartCompany';
 import Sale from './sale/Sale';
 
 import styles from './Salary.module.css';
-import emoji from '../../images/emoji/salary.webp';
+import webp from '../../images/emoji/salary.webp';
+import emoji from '../../images/emoji/salary.png';
 
 interface Props {
   content: {
@@ -40,7 +41,7 @@ const Salary: React.FC<Props> = ({
   },
 }) => (
   <>
-    <PageFirstBlock title={title} img={emoji} />
+    <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <PageText>
       {text.map((paragraph, id) => (

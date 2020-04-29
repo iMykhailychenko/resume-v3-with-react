@@ -42,6 +42,12 @@
   width: auto;
 }
 
+.img img {
+  height: 100%;
+  width: auto;
+  margin-top: 4px;
+}
+
 .instruction {
   position: relative;
   top: 100%;

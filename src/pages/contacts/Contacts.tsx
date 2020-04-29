@@ -6,7 +6,8 @@ import PageText from '../../components/page-text/PageText';
 import FormComponent from '../../components/form/FormContainer';
 
 import styles from './Contacts.module.css';
-import img from '../../images/emoji/contacts.webp';
+import webp from '../../images/emoji/contacts.webp';
+import img from '../../images/emoji/contacts.png';
 
 type Props = {
   content: {
@@ -16,7 +17,7 @@ type Props = {
 
 const Contacts: React.FC<Props> = ({ content }) => (
   <>
-    <PageFirstBlock title={content.title} img={img} />
+    <PageFirstBlock title={content.title} img={img} webp={webp} />
 
     <section className={styles.section}>
       <PageText>
