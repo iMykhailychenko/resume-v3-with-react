@@ -27,7 +27,7 @@
   height: 30px;
   width: 30px;
   z-index: 1;
-  background: #369FFF;
+  background: #369fff;
   animation: preloader 1s ease-in-out infinite;
 }
 
@@ -42,5 +42,12 @@
 
   100% {
     transform: translate(-50%, -50%) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+@media (max-width: 1250px) {
+  .preloader::after {
+    top: calc(50% + 30px);
+    left: 50%;
   }
 }

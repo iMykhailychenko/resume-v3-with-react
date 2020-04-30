@@ -39,22 +39,23 @@ export default class Popup extends Component<Props> {
     return (
       <CSSTransition
         in={popup}
-        timeout={1000}
+        timeout={600}
         classNames={popupAppear}
         unmountOnExit
       >
-        <div
-          className={styles.wrp}
-          ref={this.backdropRef}
-          onClick={this.handleClick}
-        >
-          <div className={styles.inner + ' popup'}>
-            <button
-              className={styles.close}
-              onClick={() => togglePopup(popup)}
-            />
-
-            {children}
+        <div className={styles.wrp}>
+          <div
+            className={styles.scroll}
+            ref={this.backdropRef}
+            onClick={this.handleClick}
+          >
+            <div className={styles.inner + ' popup'}>
+              <button
+                className={styles.close}
+                onClick={() => togglePopup(popup)}
+              />
+              {children}
+            </div>
           </div>
         </div>
       </CSSTransition>

@@ -9,3 +9,10 @@
   width: auto;
   margin-left: 16px;
 }
+
+
+@media (max-width: 670px) {
+  .link {
+    font-size: 0;
+  }
+}

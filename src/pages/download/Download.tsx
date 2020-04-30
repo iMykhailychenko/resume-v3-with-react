@@ -37,7 +37,7 @@ interface Props {
 const Download: React.FC<Props> = ({
   content: { title, text, pdf, doc, btn, relink },
 }) => (
-  <>
+  <main className="container">
     <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <PageText>
@@ -58,7 +58,7 @@ const Download: React.FC<Props> = ({
           <img src={pdfImg} alt="" />
         </picture>
 
-        <div className={styles.files + ' border_top'}>
+        <div className={styles.files + ' border-top'}>
           <ul className={styles.list}>
             <li>
               <a
@@ -103,7 +103,7 @@ const Download: React.FC<Props> = ({
           <img src={wordImg} alt="" />
         </picture>
 
-        <div className={styles.files + ' border_top'}>
+        <div className={styles.files + ' border-top'}>
           <ul className={styles.list}>
             <li>
               <a
@@ -140,7 +140,7 @@ const Download: React.FC<Props> = ({
     </section>
 
     <SplitLink path="/reason" text={relink} />
-  </>
+  </main>
 );
 
 export default Download;

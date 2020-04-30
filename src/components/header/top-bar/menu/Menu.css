@@ -28,3 +28,9 @@
 .menu__svg--rotate {
   transform: rotateZ(90deg);
 }
+
+@media (max-width: 370px) {
+  .menu__text {
+    font-size: 0;
+  }
+}

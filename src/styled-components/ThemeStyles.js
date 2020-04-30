@@ -79,7 +79,7 @@ export const ThemeStyles = createGlobalStyle`
       props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }
 
-  .border_top {
+  .border-top {
     border-top: ${props =>
       props.theme === 'light' ? '1px solid #000' : '1px solid #fff'};
   }

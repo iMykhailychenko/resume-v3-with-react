@@ -40,7 +40,7 @@ const Salary: React.FC<Props> = ({
     relink,
   },
 }) => (
-  <>
+  <main className="container">
     <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <PageText>
@@ -95,7 +95,7 @@ const Salary: React.FC<Props> = ({
     </section>
 
     <SplitLink path="/contacts" text={relink} />
-  </>
+  </main>
 );
 
 export default Salary;

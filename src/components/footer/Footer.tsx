@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Footer: React.FC<Props> = ({ content, popup, openPopup }) => (
-  <footer className={styles.footer}>
+  <footer className={styles.footer + ' footer'}>
     <div className={styles.left}>
       <span>{content.text}</span>
 

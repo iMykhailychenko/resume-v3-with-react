@@ -1,21 +1,31 @@
 .wrp {
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  bottom: 0;
+  z-index: 1000;
   background: rgba(40, 40, 40, 0.4);
   backdrop-filter: blur(13px);
+  overflow: hidden;
+}
+
+.scroll {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 120%;
+  overflow-x: scroll;
+  transition: 0.3s ease-in-out;
 }
 
 .inner {
   position: relative;
-  transform-origin: center;
-  max-width: 800px;
+  width: max-content;
+  height: max-content;
+  margin: 5% auto;
   padding: 50px;
   background: #fff;
   color: #000;

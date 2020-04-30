@@ -16,7 +16,7 @@ type Props = {
 };
 
 const Contacts: React.FC<Props> = ({ content }) => (
-  <>
+  <main className="container">
     <PageFirstBlock title={content.title} img={img} webp={webp} />
 
     <section className={styles.section}>
@@ -46,7 +46,7 @@ const Contacts: React.FC<Props> = ({ content }) => (
     </section>
 
     <SplitLink path="/download" text={content.relink} />
-  </>
+  </main>
 );
 
 export default Contacts;

@@ -24,7 +24,7 @@ interface Props {
 const Reason: React.FC<Props> = ({
   content: { title, firstText, secondText, relink },
 }) => (
-  <>
+  <main className="container">
     <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <section className={styles.content}>
@@ -74,7 +74,7 @@ const Reason: React.FC<Props> = ({
     </section>
 
     <SplitLink path="/general" text={relink} />
-  </>
+  </main>
 );
 
 export default Reason;

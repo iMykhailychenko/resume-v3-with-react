@@ -14,7 +14,7 @@
   padding: 20px;
   font-size: 1.2rem;
   background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.02), 0 10px 10px rgba(0,0,0,0.01);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.02), 0 10px 10px rgba(0, 0, 0, 0.01);
 }
 
 .param {
@@ -24,4 +24,41 @@
 
 .value {
   width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .container:nth-of-type(1) {
+    margin-top: 0;
+  }
+}
+
+@media (max-height: 760px) {
+  .container {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .container:nth-of-type(1) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .param {
+    font-weight: 700;
+  }
+  
+  .param,
+  .value {
+    width: 100%;
+  }
 }

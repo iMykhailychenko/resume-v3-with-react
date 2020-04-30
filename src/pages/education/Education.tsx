@@ -26,19 +26,21 @@ interface Props {
 }
 
 const Education: React.FC<Props> = ({ content: { title, item, relink } }) => (
-  <>
-    <PageFirstBlock title={title} img={emoji} webp={webp} />
+  <main className={styles.overflow}>
+    <div className="container">
+      <PageFirstBlock title={title} img={emoji} webp={webp} />
 
-    <div className={styles.section}>
-      <ul className={styles.list}>
-        {item.map((element, id) => (
-          <ListElement key={id} {...element} />
-        ))}
-      </ul>
+      <div className={styles.section}>
+        <ul className={styles.list}>
+          {item.map((element, id) => (
+            <ListElement key={id} {...element} />
+          ))}
+        </ul>
+      </div>
+
+      <SplitLink path="/experience" text={relink} />
     </div>
-
-    <SplitLink path="/experience" text={relink} />
-  </>
+  </main>
 );
 
 export default Education;

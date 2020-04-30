@@ -31,7 +31,7 @@ interface Props {
 const Skills: React.FC<Props> = ({
   content: { title, text, relink, list },
 }) => (
-  <>
+  <main className="container">
     <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <PageText>
@@ -69,7 +69,7 @@ const Skills: React.FC<Props> = ({
     </article>
 
     <SplitLink path="/salary" text={relink} />
-  </>
+  </main>
 );
 
 export default Skills;

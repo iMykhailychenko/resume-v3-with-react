@@ -5,3 +5,8 @@
   align-items: center;
   margin: 150px auto 0;
 }
+
+.overflow {
+  width: 100%;
+  overflow-x: hidden;
+}

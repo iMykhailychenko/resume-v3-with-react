@@ -4,7 +4,7 @@
 
 .title {
   position: relative;
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
@@ -12,7 +12,7 @@
 
 .emoji {
   position: relative;
-  height: auto;
+  height: 140px;
   width: 140px;
   margin: 0 auto 5%;
 }
@@ -29,8 +29,14 @@
   content: '';
   position: absolute;
   top: 5px;
-  left: 50%;
+  left: 57%;
   transform: translateX(-50%);
   height: 6px;
   width: 1px;
+}
+
+@media (max-height: 750px) {
+  .section {
+    padding: 100px 0;
+  }
 }

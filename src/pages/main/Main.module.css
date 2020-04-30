@@ -69,3 +69,50 @@
   width: 20px;
   margin-left: auto;
 }
+
+@media (max-height: 600px) {
+  .btn {
+    margin: 0;
+  }
+
+  .instruction p {
+    margin: 0;
+  }
+}
+
+@media (max-height: 460px) {
+  .instruction {
+    display: none;
+  }
+}
+
+@media (max-height: 680px) {
+
+  .left {
+    flex-basis: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .right {
+    flex-basis: 30%;
+  }
+
+  .left {
+    flex-basis: 70%;
+  }
+}
+
+@media (max-width: 940px) {
+  .instruction {
+    display: none;
+  }
+
+  .right {
+    flex-basis: 10%;
+  }
+
+  .left {
+    flex-basis: 90%;
+  }
+}

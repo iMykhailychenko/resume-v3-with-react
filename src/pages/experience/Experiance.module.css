@@ -3,7 +3,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 700px;
+  min-height: 600px;
   margin-bottom: 120px;
   overflow: hidden;
 }
@@ -53,7 +53,7 @@
 
 .current {
   position: absolute;
-  top: 41%;
+  top: 49%;
   left: 8%;
   transform: translateY(-50%);
   font-size: 10rem;
@@ -71,7 +71,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 400px;
+  min-height: 450px;
 }
 
 .wrp {
@@ -111,7 +111,7 @@
 
 .btn:nth-last-of-type(1) {
   top: auto;
-  bottom: 100px;
+  bottom: 50px;
 }
 
 .btn:nth-last-of-type(1)::before {
@@ -173,4 +173,11 @@
   object-fit: cover;
   border-radius: 8px;
   border: 2px solid transparent;
+}
+
+@media (max-width: 1400px) {
+  .btn {
+    left: unset;
+    right: 50%;
+  }
 }

@@ -5,11 +5,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 40px 0;
 }
 
 .leftBlock {
   display: flex;
   align-items: center;
+}
+
+@media (max-height: 600px) {
+  .inner {
+    padding: 20px 0;
+  }
 }

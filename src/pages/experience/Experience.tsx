@@ -67,11 +67,11 @@ export default class Experiance extends Component<Props, State> {
   render() {
     const { content } = this.props;
     const { count } = this.state;
-    const y: number = count * 400;
+    const y: number = count * 450;
     const rotate: number = count * 45;
 
     return (
-      <>
+      <main className="container">
         <PageFirstBlock title={content.title} img={emoji} webp={webp} />
 
         <Parallax
@@ -156,7 +156,7 @@ export default class Experiance extends Component<Props, State> {
             <p>{content.textOne}</p>
           </Parallax>
 
-          <div className="border_top">
+          <div className="border-top">
             <ul className={styles.works}>
               <li>
                 <a
@@ -248,7 +248,7 @@ export default class Experiance extends Component<Props, State> {
           </div>
         </div>
         <SplitLink path="/skills" text="Hard skills" />
-      </>
+      </main>
     );
   }
 }

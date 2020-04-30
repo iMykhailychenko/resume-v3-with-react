@@ -2,10 +2,6 @@
   overflow: hidden;
 }
 
-.link {
-  text-decoration: underline;
-}
-
 .blockLeft,
 .blockRight {
   margin: 130px 0 180px;
@@ -17,12 +13,31 @@
 }
 
 .video {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   border-radius: -10px;
 }
 
 .text {
-  width: 700px;
+  max-width: 700px;
+  width: 90%;
   margin-top: 100px;
   padding: 40px 100px 40px 40px;
+}
+
+@media (max-width: 470px) {
+  .text {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .blockLeft,
+  .blockRight {
+    margin: 10px 0 40px;
+  }
+
+  .blockRight .text,
+  .blockRight .video {
+    margin-left: 0;
+  }
 }

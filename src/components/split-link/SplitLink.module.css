@@ -13,7 +13,7 @@
 }
 
 .text {
-  max-width: 210px;
+  max-width: 200px;
   margin: 0;
 }
 
@@ -49,4 +49,14 @@
 
 .link:hover :global(.page-relink-circle::before) {
   left: 150%;
+}
+
+@media (max-width: 450px) {
+  .wrp {
+    justify-content: flex-start;
+  }
+
+  .link {
+    width: 270px;
+  }
 }

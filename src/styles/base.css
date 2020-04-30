@@ -136,3 +136,29 @@ a {
   width: 86%;
   margin: 0 auto;
 }
+
+@media (max-height: 750px) {
+  main {
+    padding-top: 2%;
+  }
+}
+
+@media (max-height: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .footerMain {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -23,7 +23,7 @@ interface Props {
 const General: React.FC<Props> = ({
   content: { title, tablet, text, relink },
 }) => (
-  <>
+  <main className="container">
     <PageFirstBlock title={title} img={emoji} webp={webp} />
 
     <section className={styles.container}>
@@ -45,7 +45,7 @@ const General: React.FC<Props> = ({
     </section>
 
     <SplitLink path="/education" text={relink} />
-  </>
+  </main>
 );
 
 export default General;

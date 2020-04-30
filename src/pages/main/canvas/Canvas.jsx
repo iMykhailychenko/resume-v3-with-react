@@ -114,6 +114,13 @@ export default class Canvas extends Component {
 
       animate();
 
+      window.onresize = () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      };
+
       let animCount = 0;
       window.addEventListener('keydown', event => {
         if (event.code !== 'Space') return;
@@ -146,7 +153,9 @@ export default class Canvas extends Component {
   render() {
     return (
       <div className={styles.canvas} ref={this.canvasRef}>
-        <p className={styles.preloader} ref={this.preloaderRef}>... Loading</p>
+        <p className={styles.preloader} ref={this.preloaderRef}>
+          ... Loading
+        </p>
       </div>
     );
   }
