@@ -1,9 +1,7 @@
 # RESUME 
 ```In process...```
 
-## Текущая версия в процессе разработки
-[ссылка для предварительного просмотра](https://ihor-mykhailychenko.netlify.app)
-```betta version```
+#### [Ссылка для просмотра резюме](https://ihor-mykhailychenko.netlify.app)
 
 Для просмотра предыдущей версия резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/dist/)
 
