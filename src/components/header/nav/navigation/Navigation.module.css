@@ -84,9 +84,8 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .scroll {
     grid-template-columns: 1fr;
   }
 }
-

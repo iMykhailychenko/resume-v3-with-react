@@ -5,8 +5,9 @@
   right: 0;
   bottom: 0;
   z-index: 1000;
-  background: rgba(40, 40, 40, 0.4);
-  backdrop-filter: blur(13px);
+  background-color: rgb(40, 40, 40);
+  background-color: rgba(40, 40, 40, 0.4);
+  backdrop-filter: blur(12px);
   overflow: hidden;
 }
 
@@ -58,4 +59,10 @@
 
 .close::before {
   transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+@media (max-width: 460px) {
+  .inner {
+    padding: 50px 20px;
+  }
 }

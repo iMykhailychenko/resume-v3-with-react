@@ -47,3 +47,59 @@
 .text {
   flex-basis: 70%;
 }
+
+@media (max-width: 1400px) {
+  .text {
+    flex-basis: 60%;
+  }
+}
+
+@media (max-width: 1070px) {
+  .text {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .text {
+    flex-basis: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .section {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  .files {
+    flex-direction: column-reverse;
+  }
+
+  .img {
+    width: max-content;
+    margin: 100px auto 50px;
+  }
+
+  .list {
+    flex-basis: unset;
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .text {
+    flex-basis: unset;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}

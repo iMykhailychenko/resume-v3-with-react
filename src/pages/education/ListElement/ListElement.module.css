@@ -41,8 +41,8 @@
   }
 
   .title {
-    width: 70%;
-    transform: translateX(25%) translateY(160%) translateZ(200px);
+    width: 60%;
+    transform: translateX(35%) translateY(160%) translateZ(200px);
     font-size: 3rem;
   }
 }

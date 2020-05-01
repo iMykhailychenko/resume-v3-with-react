@@ -1,5 +1,13 @@
 .content {
   width: 55%;
-  margin: 200px auto;
+  margin: 300px auto 200px;
   text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    margin-top: 50px;
+  }
 }

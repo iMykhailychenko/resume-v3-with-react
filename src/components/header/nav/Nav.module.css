@@ -6,6 +6,13 @@
   right: 0;
   z-index: 5;
   padding-top: 120px;
-  background: rgba(40, 40, 40, 0.4);
-  backdrop-filter: blur(13px);
+  background-color: rgb(40, 40, 40);
+  background-color: rgba(40, 40, 40, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 420px) {
+  .wrp {
+    padding-top: 87px;
+  }
 }

@@ -25,3 +25,23 @@
   text-align: center;
   margin: 200px auto 180px;
 }
+
+@media (max-width: 880px) {
+  .end {
+    width: 100%;
+  }
+  
+  .chart {
+    width: 100%;
+  }
+
+  .chartText {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+
+  .section,
+  .beforeChart {
+    width: 100%;
+  }
+}

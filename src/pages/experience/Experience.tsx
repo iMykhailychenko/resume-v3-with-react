@@ -65,9 +65,10 @@ export default class Experiance extends Component<Props, State> {
   };
 
   render() {
+    const mobile = window.innerWidth < 960;
     const { content } = this.props;
     const { count } = this.state;
-    const y: number = count * 450;
+    const y: number = count * 500;
     const rotate: number = count * 45;
 
     return (
@@ -80,37 +81,41 @@ export default class Experiance extends Component<Props, State> {
           animation={{ opacity: 1 }}
           style={{ opacity: 0 }}
         >
-          <div
-            className={styles.circle + ' border'}
-            style={{ transform: `rotate(${rotate}deg)` }}
-          >
-            <span
-              className={styles.point + ' reversBackground'}
-              style={{
-                transform: `scale(${count === 0 ? 2.5 : 1}) translate(${
-                  count === 0 ? '26%' : '50%'
-                }, -50%)`,
-              }}
-            />
-            <span
-              className={styles.point + ' reversBackground'}
-              style={{
-                transform: `scale(${count === 1 ? 2.5 : 1}) translate(${
-                  count === 1 ? '-12%' : '50%'
-                }, -50%)`,
-              }}
-            />
-            <span
-              className={styles.point + ' reversBackground'}
-              style={{
-                transform: `scale(${count === 2 ? 2.5 : 1}) translate(${
-                  count === 2 ? '6%' : '50%'
-                }, ${count === 2 ? '-20%' : '-50%'})`,
-              }}
-            />
-          </div>
+          {!mobile && (
+            <>
+              <div
+                className={styles.circle + ' border'}
+                style={{ transform: `rotate(${rotate}deg)` }}
+              >
+                <span
+                  className={styles.point + ' reversBackground'}
+                  style={{
+                    transform: `scale(${count === 0 ? 2.5 : 1}) translate(${
+                      count === 0 ? '26%' : '50%'
+                    }, -50%)`,
+                  }}
+                />
+                <span
+                  className={styles.point + ' reversBackground'}
+                  style={{
+                    transform: `scale(${count === 1 ? 2.5 : 1}) translate(${
+                      count === 1 ? '-12%' : '50%'
+                    }, -50%)`,
+                  }}
+                />
+                <span
+                  className={styles.point + ' reversBackground'}
+                  style={{
+                    transform: `scale(${count === 2 ? 2.5 : 1}) translate(${
+                      count === 2 ? '6%' : '50%'
+                    }, ${count === 2 ? '-20%' : '-50%'})`,
+                  }}
+                />
+              </div>
 
-          <span className={styles.current}>{`0${count + 1}`}</span>
+              <span className={styles.current}>{`0${count + 1}`}</span>
+            </>
+          )}
 
           <div className={styles.block}>
             <div
@@ -138,8 +143,15 @@ export default class Experiance extends Component<Props, State> {
               ))}
             </div>
 
-            <button className={styles.btn} onClick={this.handleDown}></button>
-            <button className={styles.btn} onClick={this.handleUp}></button>
+            {!mobile && (
+              <>
+                <button
+                  className={styles.btn}
+                  onClick={this.handleDown}
+                ></button>
+                <button className={styles.btn} onClick={this.handleUp}></button>
+              </>
+            )}
           </div>
         </Parallax>
 
@@ -156,7 +168,7 @@ export default class Experiance extends Component<Props, State> {
             <p>{content.textOne}</p>
           </Parallax>
 
-          <div className="border-top">
+          <div className={styles.border + " border-top"}>
             <ul className={styles.works}>
               <li>
                 <a

@@ -17,19 +17,9 @@ export default class PageFirstBlock extends Component<Props> {
   }
 
   render() {
-    const mobile = window.innerWidth < 768;
     const { title, webp, img } = this.props;
 
-    return mobile ? (
-      <section className={styles.section}>
-        <picture className={styles.emoji + ' easeInOut'}>
-          <source srcSet={webp} type="image/webp" />
-          <img src={img} alt="" />
-        </picture>
-
-        <h2 className={styles.title + ' easeInOut'}>{title}</h2>
-      </section>
-    ) : (
+    return (
       <section className={styles.section}>
         <CSSTransition in timeout={600} classNames="slideUp" appear>
           <picture className={styles.emoji + ' easeInOut'}>

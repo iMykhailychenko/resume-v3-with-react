@@ -25,6 +25,13 @@
   padding: 40px 100px 40px 40px;
 }
 
+@media (max-width: 768px) {
+  .text {
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+}
+
 @media (max-width: 470px) {
   .text {
     padding: 0;

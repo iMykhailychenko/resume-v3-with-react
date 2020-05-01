@@ -40,34 +40,36 @@ const Salary: React.FC<Props> = ({
     relink,
   },
 }) => (
-  <main className="container">
-    <PageFirstBlock title={title} img={emoji} webp={webp} />
+  <main>
+    <div className="container">
+      <PageFirstBlock title={title} img={emoji} webp={webp} />
 
-    <PageText>
-      {text.map((paragraph, id) => (
-        <p key={id}>{paragraph}</p>
-      ))}
-    </PageText>
+      <PageText>
+        {text.map((paragraph, id) => (
+          <p key={id}>{paragraph}</p>
+        ))}
+      </PageText>
 
-    <section className={styles.section}>
-      <p>{sale}</p>
+      <section className={styles.section}>
+        <p>{sale}</p>
 
-      <Sale number={1200.0} prefix={before} />
-      <Sale number={999.99} prefix={now} />
-    </section>
+        <Sale number={1200.0} prefix={before} />
+        <Sale number={999.99} prefix={now} />
+      </section>
 
-    <section className={styles.beforeChart}>
-      <Parallax
-        component="p"
-        animation={{ y: 0, opacity: 1 }}
-        style={{
-          transform: 'translateY(-100%)',
-          opacity: '0',
-        }}
-      >
-        {graphText}
-      </Parallax>
-    </section>
+      <section className={styles.beforeChart}>
+        <Parallax
+          component="p"
+          animation={{ y: 0, opacity: 1 }}
+          style={{
+            transform: 'translateY(-100%)',
+            opacity: '0',
+          }}
+        >
+          {graphText}
+        </Parallax>
+      </section>
+    </div>
 
     <section>
       <div className={styles.chart}>
@@ -81,20 +83,22 @@ const Salary: React.FC<Props> = ({
       </div>
     </section>
 
-    <section className={styles.end}>
-      <Parallax
-        component="p"
-        animation={{ y: 0, opacity: 1 }}
-        style={{
-          transform: 'translateY(-100%)',
-          opacity: '0',
-        }}
-      >
-        {endText}
-      </Parallax>
-    </section>
+    <div className="container">
+      <section className={styles.end}>
+        <Parallax
+          component="p"
+          animation={{ y: 0, opacity: 1 }}
+          style={{
+            transform: 'translateY(-100%)',
+            opacity: '0',
+          }}
+        >
+          {endText}
+        </Parallax>
+      </section>
 
-    <SplitLink path="/contacts" text={relink} />
+      <SplitLink path="/contacts" text={relink} />
+    </div>
   </main>
 );
 

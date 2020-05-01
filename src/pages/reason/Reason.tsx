@@ -23,58 +23,96 @@ interface Props {
 
 const Reason: React.FC<Props> = ({
   content: { title, firstText, secondText, relink },
-}) => (
-  <main className="container">
-    <PageFirstBlock title={title} img={emoji} webp={webp} />
+}) => {
+  const mobile = window.innerWidth < 768;
 
-    <section className={styles.content}>
-      <div className={styles.blockLeft}>
-        <Parallax
-          animation={{ y: -100, scale: 1 }}
-          style={{ transform: 'translateY(100px) scale(0.9)' }}
-        >
-          <video className={styles.video} loop autoPlay>
-            <source src={videoOneWeb} type="video/webm" />
-            <source src={videoOne} type="video/mp4" />
-          </video>
-        </Parallax>
+  return (
+    <main className="container">
+      <PageFirstBlock title={title} img={emoji} webp={webp} />
 
-        <Parallax
-          className={styles.text + ' background'}
-          animation={{ y: -180 }}
-          style={{ transform: 'translateY(50px)' }}
-        >
-          {firstText.map((text, index) => (
-            <p key={index}>{text}</p>
-          ))}
-        </Parallax>
-      </div>
+      <section className={styles.content}>
+        <div className={styles.blockLeft}>
+          {mobile ? (
+            <>
+              <video autoPlay loop muted playsInline className={styles.video}>
+                <source src={videoOneWeb} type="video/webm" />
+                <source src={videoOne} type="video/mp4" />
+              </video>
 
-      <div className={styles.blockRight}>
-        <Parallax
-          animation={{ y: -100, scale: 1 }}
-          style={{ transform: 'translateY(100px)  scale(0.9)' }}
-        >
-          <video className={styles.video} loop autoPlay>
-            <source src={videoTwoWeb} type="video/webm" />
-            <source src={videoTwo} type="video/mp4" />
-          </video>
-        </Parallax>
+              <div className={styles.text + ' background'}>
+                {firstText.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <Parallax
+                animation={{ y: -100, scale: 1 }}
+                style={{ transform: 'translateY(100px) scale(0.9)' }}
+              >
+                <video autoPlay loop muted playsInline className={styles.video}>
+                  <source src={videoOneWeb} type="video/webm" />
+                  <source src={videoOne} type="video/mp4" />
+                </video>
+              </Parallax>
 
-        <Parallax
-          className={styles.text + ' background'}
-          animation={{ y: -180 }}
-          style={{ transform: 'translateY(50px)' }}
-        >
-          {secondText.map((text, index) => (
-            <p key={index}>{text}</p>
-          ))}
-        </Parallax>
-      </div>
-    </section>
+              <Parallax
+                className={styles.text + ' background'}
+                animation={{ y: -180 }}
+                style={{ transform: 'translateY(50px)' }}
+              >
+                {firstText.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </Parallax>
+            </>
+          )}
+        </div>
 
-    <SplitLink path="/general" text={relink} />
-  </main>
-);
+        <div className={styles.blockRight}>
+          {mobile ? (
+            <>
+              <video autoPlay loop muted playsInline className={styles.video}>
+                <source src={videoTwoWeb} type="video/webm" />
+                <source src={videoTwo} type="video/mp4" />
+              </video>
+
+              <div className={styles.text + ' background'}>
+                {secondText.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </div>
+            </>
+          ) : (
+            <>
+              <Parallax
+                animation={{ y: -100, scale: 1 }}
+                style={{ transform: 'translateY(100px)  scale(0.9)' }}
+              >
+                <video autoPlay loop muted playsInline className={styles.video}>
+                  <source src={videoTwoWeb} type="video/webm" />
+                  <source src={videoTwo} type="video/mp4" />
+                </video>
+              </Parallax>
+
+              <Parallax
+                className={styles.text + ' background'}
+                animation={{ y: -180 }}
+                style={{ transform: 'translateY(50px)' }}
+              >
+                {secondText.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </Parallax>
+            </>
+          )}
+        </div>
+      </section>
+
+      <SplitLink path="/general" text={relink} />
+    </main>
+  );
+};
 
 export default Reason;

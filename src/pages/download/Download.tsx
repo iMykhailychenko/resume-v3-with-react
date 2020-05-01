@@ -44,15 +44,13 @@ const Download: React.FC<Props> = ({
       <p>{text}</p>
     </PageText>
 
-    <section className={styles.section}>
-      <Parallax
-        className={styles.block}
-        animation={{ x: 0, y: 0, opacity: 1 }}
-        style={{
-          transform: 'translateY(100px) translateX(-100px)',
-          opacity: 0,
-        }}
-      >
+    <Parallax
+      component="section"
+      className={styles.section}
+      animation={{ y: 0, opacity: 1 }}
+      style={{ transform: 'translateY(100px)', opacity: 0 }}
+    >
+      <div className={styles.block}>
         <picture className={styles.img}>
           <source srcSet={pdfImgWeb} type="image/webp" />
           <img src={pdfImg} alt="" />
@@ -91,13 +89,9 @@ const Download: React.FC<Props> = ({
 
           <p className={styles.text}>{pdf}</p>
         </div>
-      </Parallax>
+      </div>
 
-      <Parallax
-        className={styles.block}
-        animation={{ x: 0, y: 0, opacity: 1 }}
-        style={{ transform: 'translateY(100px) translateX(100px)', opacity: 0 }}
-      >
+      <div className={styles.block}>
         <picture className={styles.img}>
           <source srcSet={wordImgWeb} type="image/webp" />
           <img src={wordImg} alt="" />
@@ -136,8 +130,8 @@ const Download: React.FC<Props> = ({
 
           <p className={styles.text}>{doc}</p>
         </div>
-      </Parallax>
-    </section>
+      </div>
+    </Parallax>
 
     <SplitLink path="/reason" text={relink} />
   </main>

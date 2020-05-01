@@ -28,3 +28,32 @@
   z-index: 1;
   border: none;
 }
+
+@media (max-width: 900px) {
+  .formWrp {
+    margin: 0 auto;
+  }
+
+  .mapWrp {
+    position: static;
+    transform: unset;
+    height: 450px;
+    margin-top: 100px;
+  }
+
+  .formWrp {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mapWrp {
+    height: 550px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formWrp {
+    width: 100%;
+  }
+}
