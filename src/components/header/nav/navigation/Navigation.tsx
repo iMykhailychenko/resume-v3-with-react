@@ -12,10 +12,12 @@ interface Props {
 const Navigation: React.FC<Props> = ({ content, menu, toggleMenu }) => (
   <nav className={styles.nav}>
     <div className={styles.scroll}>
-      {navigationData.map(({ to, contentKey, source, img }) => (
+      {navigationData.map(({ to, contentKey, source, img }, index) => (
         <NavLink
           to={to}
+          exact={to === '/' ? true : false}
           onClick={() => toggleMenu(menu)}
+          key={index}
           className={styles.link}
           activeClassName={styles.active}
         >
