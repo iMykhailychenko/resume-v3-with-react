@@ -6,6 +6,11 @@
   margin-bottom: 80px;
 }
 
+.link:focus,
+.link:hover {
+  text-decoration: underline;
+}
+
 .wrp {
   display: flex;
   align-items: center;
@@ -24,6 +29,7 @@
   margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
+  transition: 0.3s ease-in-out;
 }
 
 :global(.page-relink-circle::after),
@@ -43,10 +49,12 @@
   background: url('../../images//svg/next-blue.svg') no-repeat;
 }
 
+.link:focus :global(.page-relink-circle::after),
 .link:hover :global(.page-relink-circle::after) {
   left: 54%;
 }
 
+.link:focus :global(.page-relink-circle::before),
 .link:hover :global(.page-relink-circle::before) {
   left: 150%;
 }

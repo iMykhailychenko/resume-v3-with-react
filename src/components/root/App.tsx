@@ -4,54 +4,61 @@ import { Route, Switch } from 'react-router-dom';
 // components
 import Header from '../header/Header';
 import Footer from '../footer/FooterContainer';
-import Popup from '../popup/PopupContainer';
-import FormComponent from '../form/FormContainer';
 
 //styles
 import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
 
-// chunks
+// == CHUNKS ==
+// conponents
+const AsyncForm = lazy(() =>
+  import('../form/FormContainer' /* webpackChunkName: "form-component" */),
+);
+const AsyncPopup = lazy(() =>
+  import('../popup/PopupContainer' /* webpackChunkName: "popup-component" */),
+);
+
+// pages
 const AsyncMain = lazy(() =>
-  import('../../pages/main/MainContainer' /* webpackChunkName: "home-page" */),
+  import('../../pages/main/MainContainer' /* webpackChunkName: "main-page" */),
 );
 const AsyncContacts = lazy(() =>
   import(
-    '../../pages/contacts/ContactsContainer' /* webpackChunkName: "home-page" */
+    '../../pages/contacts/ContactsContainer' /* webpackChunkName: "contacts-page" */
   ),
 );
 const AsyncDownload = lazy(() =>
   import(
-    '../../pages/download/DownloadContainer' /* webpackChunkName: "home-page" */
+    '../../pages/download/DownloadContainer' /* webpackChunkName: "download-page" */
   ),
 );
 const AsyncEducation = lazy(() =>
   import(
-    '../../pages/education/EducationContainer' /* webpackChunkName: "home-page" */
+    '../../pages/education/EducationContainer' /* webpackChunkName: "education-page" */
   ),
 );
 const AsyncExperience = lazy(() =>
   import(
-    '../../pages/experience/ExperienceContainer' /* webpackChunkName: "home-page" */
+    '../../pages/experience/ExperienceContainer' /* webpackChunkName: "experience-page" */
   ),
 );
 const AsyncGeneral = lazy(() =>
   import(
-    '../../pages/general/GeneralContainer' /* webpackChunkName: "home-page" */
+    '../../pages/general/GeneralContainer' /* webpackChunkName: "general-page" */
   ),
 );
 const AsyncReason = lazy(() =>
   import(
-    '../../pages/reason/ReasonContainer' /* webpackChunkName: "home-page" */
+    '../../pages/reason/ReasonContainer' /* webpackChunkName: "reason-page" */
   ),
 );
 const AsyncSalary = lazy(() =>
   import(
-    '../../pages/salary/SalaryContainer' /* webpackChunkName: "home-page" */
+    '../../pages/salary/SalaryContainer' /* webpackChunkName: "salary-page" */
   ),
 );
 const AsyncSkills = lazy(() =>
   import(
-    '../../pages/skills/SkillsContainer' /* webpackChunkName: "home-page" */
+    '../../pages/skills/SkillsContainer' /* webpackChunkName: "skills-page" */
   ),
 );
 const AsyncNotFound = lazy(() =>
@@ -71,11 +78,11 @@ const App: React.FC<Props> = ({ theme, menu }) => (
 
     <Header />
 
-    <Popup>
-      <FormComponent />
-    </Popup>
-
     <Suspense fallback={<div className="loder"></div>}>
+      <AsyncPopup>
+        <AsyncForm />
+      </AsyncPopup>
+
       <Switch>
         <Route path="/" exact component={AsyncMain} />
         <Route path="/contacts" component={AsyncContacts} />

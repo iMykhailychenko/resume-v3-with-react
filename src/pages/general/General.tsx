@@ -28,7 +28,6 @@ const General: React.FC<Props> = ({
 
     <section className={styles.container}>
       <div className={styles.left}>
-        
         <picture className={styles.img}>
           <source srcSet={imgWeb} type="image/webp" />
           <img src={img} alt="" />

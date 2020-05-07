@@ -1,6 +1,6 @@
 import React from 'react';
 import FusionCharts from 'fusioncharts';
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
 import Column2D from 'fusioncharts/fusioncharts.charts';
 import ReactFC from 'react-fusioncharts';
 
@@ -12,7 +12,7 @@ const dataSource = {
     xaxisname: 'Years',
     yaxisname: '%',
     numbersuffix: '%',
-    theme: 'candy'
+    theme: 'candy',
   },
   data: [
     {
@@ -38,7 +38,7 @@ const dataSource = {
     {
       label: '2025',
       value: '403',
-    }
+    },
   ],
 };
 

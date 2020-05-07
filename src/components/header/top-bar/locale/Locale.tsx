@@ -8,8 +8,8 @@ interface Props {
 }
 
 const Locale: React.FC<Props> = ({ locale, toggleLocale }) => {
-  const ua = locale === 'UA' ? styles.active : styles.item;
-  const ru = locale === 'RU' ? styles.active : styles.item;
+  const ua: string = locale === 'UA' ? styles.active : styles.item;
+  const ru: string = locale === 'RU' ? styles.active : styles.item;
 
   return (
     <>
@@ -18,11 +18,15 @@ const Locale: React.FC<Props> = ({ locale, toggleLocale }) => {
       </Helmet>
 
       <ul className={styles.list}>
-        <li className={ua} onClick={() => toggleLocale('UA')}>
-          UA
+        <li>
+          <button className={ua} onClick={() => toggleLocale('UA')}>
+            UA
+          </button>
         </li>
-        <li className={ru} onClick={() => toggleLocale('RU')}>
-          RU
+        <li>
+          <button className={ru} onClick={() => toggleLocale('RU')}>
+            RU
+          </button>
         </li>
       </ul>
     </>

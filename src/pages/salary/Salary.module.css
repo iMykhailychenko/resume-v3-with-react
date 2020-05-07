@@ -3,6 +3,7 @@
   width: 50%;
   margin: 0 auto 250px;
   text-align: center;
+  outline: none;
 }
 
 .beforeChart {
@@ -30,7 +31,7 @@
   .end {
     width: 100%;
   }
-  
+
   .chart {
     width: 100%;
   }

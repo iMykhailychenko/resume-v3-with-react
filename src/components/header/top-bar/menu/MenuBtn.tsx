@@ -10,9 +10,17 @@ interface Props {
 }
 
 const MenuBtn: React.FC<Props> = ({ content, theme, menu, toggleMenu }) => {
-  const color: string = theme === 'light' ? '#000' : '#F8F8F8';
+  // set a color of menu btn according to globat theme color
+  const color: string =
+    theme === 'light' ? 'rgb(0, 0, 0)' : 'rgb(248, 248, 248)';
+
+  // set position of menu according to nav menu position (open/close)
   const svg: string = menu ? 'menu__svg menu__svg--rotate' : 'menu__svg';
+
+  // 25 - is a radius of the circle. this func return a width of the circle
   const width: number = getCircleWidth(25);
+
+  // get distance between dash items
   const strokeDasharray: string = menu ? `${width}, ${width}` : `0, ${width}`;
 
   return (
@@ -40,7 +48,7 @@ const MenuBtn: React.FC<Props> = ({ content, theme, menu, toggleMenu }) => {
         <rect x="11" y="17" width="3" height="3" rx="1.5" fill={color} />
       </svg>
 
-  <span className="menu__text">{content}</span>
+      <span className="menu__text">{content}</span>
     </button>
   );
 };

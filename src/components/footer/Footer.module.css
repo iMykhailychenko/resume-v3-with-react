@@ -7,12 +7,12 @@
   width: 86%;
   margin: 70px auto 0;
   padding: 10px 60px;
-  background: #707070;
+  background: rgb(112, 112, 112);
   border-radius: 8px 8px 0 0;
 }
 
 .footer span {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .left,
@@ -34,12 +34,17 @@
   padding: 16px 6px;
   text-decoration: underline;
   transition: 0.3s ease-in-out;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
+.link:focus,
 .link:hover {
   text-decoration: none;
   letter-spacing: 2px;
+}
+
+.link:focus {
+  color: rgba(79, 168, 250, 0.8);
 }
 
 @media (max-width: 950px) {
@@ -55,7 +60,7 @@
     border-radius: 0;
     padding: 50px 0;
   }
-  
+
   .left {
     margin-bottom: 40px;
   }

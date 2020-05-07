@@ -7,6 +7,8 @@ interface Props {
 }
 
 const SwitchTheme: React.FC<Props> = ({ theme, toggleTheme }) => {
+  // we use global css classes name becouse styles for this component depends on current theme
+  // and generates at global level
   const btnClass = theme === 'light' ? 'btn-toggle light' : 'btn-toggle';
 
   return (

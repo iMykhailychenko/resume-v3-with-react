@@ -2,9 +2,13 @@
   position: relative;
   display: flex;
   margin: 0 auto;
-  background: #c4c4c4;
-  border: 3px solid #c4c4c4;
+  background: rgb(196, 196, 196);
+  border: 3px solid rgb(196, 196, 196);
   border-radius: 8px;
+}
+
+.btn-toggle:focus {
+  box-shadow: 0px 0px 0px 1px rgb(54, 159, 255);
 }
 
 .btn-toggle::before {
@@ -14,7 +18,7 @@
   height: 100%;
   width: 61px;
   border-radius: 6px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   transition: 0.3s ease-in-out;
 }
 

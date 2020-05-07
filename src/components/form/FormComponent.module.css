@@ -5,14 +5,14 @@
 
 .title {
   margin-bottom: 16px;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 
 .errors {
   position: relative;
   top: -13px;
   max-width: 300px;
-  color: #fa6666;
+  color: rgb(250, 102, 102);
 }
 
 .input,
@@ -33,7 +33,7 @@
 .input::placeholder,
 .textarea::placeholder {
   font-size: 1.2rem;
-  color: #707070;
+  color: rgb(112, 112, 112);
 }
 
 .btn {
@@ -54,31 +54,35 @@
 .label {
   position: relative;
   margin-bottom: 20px;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 
 .label input {
+  position: absolute;
+  height: 1;
+  width: 1;
   opacity: 0;
   visibility: hidden;
 }
 
 .checkmark {
   position: absolute;
-  top: 73%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
   height: 15px;
   width: 15px;
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
   border-radius: 4px;
 }
 
+.label:focus input ~ .checkmark,
 .label:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
 }
 
 .label input:checked ~ .checkmark {
-  background-color: #2196f3;
+  background-color: rgb(33, 150, 243);
 }
 
 .checkmark::after {
@@ -96,13 +100,14 @@
   top: 1px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid rgb(255, 255, 255);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 
 .checktext {
   display: block;
+  max-width: 240px;
   padding-left: 23px;
   user-select: none;
 }
@@ -111,13 +116,12 @@
   max-width: 328px;
   border-radius: 8px;
   padding: 10px;
-  background: #369fff;
-  color: #fff;
+  background: rgb(54, 159, 255);
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
 }
 
 @media (max-width: 460px) {
-
   .success,
   .errors,
   .input,

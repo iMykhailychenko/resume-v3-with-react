@@ -18,7 +18,6 @@ const TopBar: React.FC<Props> = () => (
     <Clock />
 
     <LinkMessenger />
-
   </div>
 );
 

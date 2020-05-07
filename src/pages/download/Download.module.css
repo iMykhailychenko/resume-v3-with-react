@@ -40,6 +40,7 @@
   transition: 0.3s ease-in-out;
 }
 
+.link:focus,
 .link:hover {
   opacity: 0.6;
 }

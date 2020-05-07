@@ -8,7 +8,7 @@ const mapSTP = (state: IState): Pick<IState, 'theme'> => ({
 });
 
 const mapDTP = (dispatch: Dispatch<string>) => ({
-  toggleTheme: (theme: string) => dispatch(themeActions(theme))
+  toggleTheme: (theme: string) => dispatch(themeActions(theme)),
 });
 
 export default connect(mapSTP, mapDTP)(SwitchTheme);

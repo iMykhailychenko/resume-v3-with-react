@@ -50,7 +50,7 @@ const Salary: React.FC<Props> = ({
         ))}
       </PageText>
 
-      <section className={styles.section}>
+      <section tabIndex={0} className={styles.section}>
         <p>{sale}</p>
 
         <Sale number={1200.0} prefix={before} />

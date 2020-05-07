@@ -129,6 +129,7 @@ export default class Experiance extends Component<Props, State> {
                     href={slide.linkt}
                     target="_blank"
                     rel="noopener noreferrer"
+                    tabIndex={-1}
                   >
                     {slide.company}
                   </a>
@@ -168,7 +169,7 @@ export default class Experiance extends Component<Props, State> {
             <p>{content.textOne}</p>
           </Parallax>
 
-          <div className={styles.border + " border-top"}>
+          <div className={styles.border + ' border-top'}>
             <ul className={styles.works}>
               <li>
                 <a

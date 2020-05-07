@@ -28,8 +28,8 @@
   height: max-content;
   margin: 5% auto;
   padding: 50px;
-  background: #fff;
-  color: #000;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: 0.3s ease-in-out;
 }
 
@@ -54,7 +54,7 @@
   transform: translate(-50%, -50%) rotateZ(45deg);
   height: 40%;
   width: 1px;
-  background: #000;
+  background: rgb(0, 0, 0);
 }
 
 .close::before {

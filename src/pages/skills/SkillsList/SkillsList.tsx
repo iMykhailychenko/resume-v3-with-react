@@ -16,7 +16,7 @@ interface Props {
 const SkillsList: React.FC<Props> = ({ props }) => (
   <ul className={styles.list}>
     {props.map(({ img, logoColor, title, text }, id) => (
-      <li key={id} className={styles.item + ' border'}>
+      <li key={id} tabIndex={0} className={styles.item + ' border'}>
         <div className={styles.logo} style={{ background: `${logoColor}` }}>
           <img className={styles.img} src={icons[img]} alt="" />
         </div>

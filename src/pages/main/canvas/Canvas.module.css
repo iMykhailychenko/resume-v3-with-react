@@ -27,7 +27,7 @@
   height: 30px;
   width: 30px;
   z-index: 1;
-  background: #369fff;
+  background: rgb(54, 159, 255);
   animation: preloader 1s ease-in-out infinite;
 }
 

@@ -33,6 +33,7 @@
   transition: 0.3s ease-in-out;
 }
 
+.btn:focus span,
 .btn:hover span {
   margin-left: 20px;
 }
@@ -56,7 +57,7 @@
 }
 
 .instruction p {
-  color: #474747;
+  color: rgb(71, 71, 71);
   font-size: 1rem;
   margin-bottom: 5px;
   text-align: right;
@@ -87,7 +88,6 @@
 }
 
 @media (max-height: 680px) {
-
   .left {
     flex-basis: 60%;
   }

@@ -7,6 +7,11 @@
   align-items: center;
   background: none;
   border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.menu__btn:focus {
+  text-decoration: underline;
 }
 
 .menu__text {

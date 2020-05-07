@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   font-size: 1.4rem;
+  transition: 0.3s ease-in-out;
+}
+
+.link:focus {
+  text-decoration: underline;
 }
 
 .logo {
@@ -9,7 +14,6 @@
   width: auto;
   margin-left: 16px;
 }
-
 
 @media (max-width: 670px) {
   .link {

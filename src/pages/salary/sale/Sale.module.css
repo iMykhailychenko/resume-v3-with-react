@@ -4,7 +4,7 @@
 }
 
 .number:nth-last-of-type(1) {
-  color: #ffc56d;
+  color: rgb(255, 197, 109);
   font-size: 3rem;
   opacity: 1;
 }
