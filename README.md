@@ -1,5 +1,4 @@
 # RESUME 
-```In process...```
 
 #### [Ссылка для просмотра резюме](https://ihor-mykhailychenko.netlify.app)
 
