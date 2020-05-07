@@ -20,7 +20,7 @@ export default class Clock extends Component<Props, State> {
   };
 
   componentDidMount() {
-    this.intervalID = setInterval(() => this.tick(), 30000);
+    this.intervalID = setInterval(() => this.tick(), 10000);
   }
 
   componentWillUnmount() {

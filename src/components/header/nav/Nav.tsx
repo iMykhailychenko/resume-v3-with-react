@@ -9,17 +9,15 @@ interface Props {
   menu: boolean;
 }
 
-const Nav: React.FC<Props> = ({ menu }) => {
-  return (
-    <CSSTransition in={menu} timeout={500} classNames={slideNav} unmountOnExit>
-      <div className={styles.wrp}>
-        <div className="container">
-          <SwitchTheme />
-          <Navigation />
-        </div>
+const Nav: React.FC<Props> = ({ menu }) => (
+  <CSSTransition in={menu} timeout={500} classNames={slideNav} unmountOnExit>
+    <div className={styles.wrp}>
+      <div className="container">
+        <SwitchTheme />
+        <Navigation />
       </div>
-    </CSSTransition>
-  );
-};
+    </div>
+  </CSSTransition>
+);
 
 export default Nav;

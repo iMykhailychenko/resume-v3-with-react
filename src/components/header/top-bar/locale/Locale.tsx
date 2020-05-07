@@ -16,6 +16,7 @@ const Locale: React.FC<Props> = ({ locale, toggleLocale }) => {
       <Helmet>
         <html lang={locale.toLowerCase()} />
       </Helmet>
+
       <ul className={styles.list}>
         <li className={ua} onClick={() => toggleLocale('UA')}>
           UA

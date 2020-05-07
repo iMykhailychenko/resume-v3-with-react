@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
-import navigationData from './navigationData';
+import navigationData from './utils';
 
 interface Props {
   content: { [key: string]: string };
@@ -12,12 +12,10 @@ interface Props {
 const Navigation: React.FC<Props> = ({ content, menu, toggleMenu }) => (
   <nav className={styles.nav}>
     <div className={styles.scroll}>
-      {navigationData.map(({to, contentKey, source, img}) => (
+      {navigationData.map(({ to, contentKey, source, img }) => (
         <NavLink
           to={to}
-          onClick={() => {
-            toggleMenu(menu);
-          }}
+          onClick={() => toggleMenu(menu)}
           className={styles.link}
           activeClassName={styles.active}
         >

@@ -7,6 +7,7 @@ interface Props {
 
 const LinkMessenger: React.FC<Props> = ({ theme }) => {
   const color = theme === 'light' ? '#000' : '#fff';
+  
   return (
     <a
       className={styles.link}

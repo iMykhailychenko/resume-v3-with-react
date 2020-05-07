@@ -1,12 +1,10 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { CSSTransition } from 'react-transition-group';
+import { validEmail, initialValues, encode } from './utils';
+
 import popTransition from '../../transitions/pop.module.css';
 import styles from './FormComponent.module.css';
-
-interface Props {
-  content: { [key: string]: string };
-}
 
 interface Values {
   name: string;
@@ -21,21 +19,9 @@ interface Errors {
   confirm?: string;
 }
 
-const validEmail: RegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-
-const initialValues: Values = {
-  name: '',
-  email: '',
-  company: '',
-  text: '',
-  confirm: false,
-};
-
-const encode = (data: { [key: string]: any }): string => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
+interface Props {
+  content: { [key: string]: string };
+}
 
 const FormComponent: React.FC<Props> = ({ content }) => (
   <Formik
