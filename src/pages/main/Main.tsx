@@ -29,11 +29,11 @@ const Main: React.FC<Props> = ({ content: { title, text, relink } }) => {
         <section className={styles.container}>
           <div className={styles.left}>
             <CSSTransition in timeout={600} classNames="slideUp" appear>
-              <h1 className="easeInOut">{title}</h1>
+              <h1 className={styles.title + " easeInOut"}>{title}</h1>
             </CSSTransition>
 
             <CSSTransition in timeout={800} classNames="slideUp" appear>
-              <p className="easeInOut">{text}</p>
+              <p className={styles.text + " easeInOut"}>{text}</p>
             </CSSTransition>
 
             <CSSTransition in timeout={1000} classNames="slideUp" appear>

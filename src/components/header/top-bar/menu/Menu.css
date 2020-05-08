@@ -16,6 +16,7 @@
 
 .menu__text {
   display: block;
+  margin-bottom: 5px;
   margin-left: 12px;
   font-size: 1.4rem;
   line-height: 1;
@@ -34,7 +35,7 @@
   transform: rotateZ(90deg);
 }
 
-@media (max-width: 370px) {
+@media (max-width: 415px) {
   .menu__text {
     font-size: 0;
   }

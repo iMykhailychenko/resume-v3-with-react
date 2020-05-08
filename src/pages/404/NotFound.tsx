@@ -33,7 +33,7 @@ const NotFound: React.FC<Props> = ({ content: { title, text, relink } }) => {
             </CSSTransition>
 
             <CSSTransition in timeout={800} classNames="slideUp" appear>
-              <p className="easeInOut">{text}</p>
+              <p className={styles.text + ' easeInOut'}>{text}</p>
             </CSSTransition>
 
             <CSSTransition in timeout={1000} classNames="slideUp" appear>

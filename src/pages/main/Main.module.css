@@ -9,6 +9,12 @@
   flex-basis: 40%;
 }
 
+.title,
+.text,
+.btn {
+  user-select: none;
+}
+
 .left {
   display: flex;
   flex-direction: column;

@@ -10,6 +10,7 @@ interface Props {
 const Locale: React.FC<Props> = ({ locale, toggleLocale }) => {
   const ua: string = locale === 'UA' ? styles.active : styles.item;
   const ru: string = locale === 'RU' ? styles.active : styles.item;
+  const en: string = locale === 'EN' ? styles.active : styles.item;
 
   return (
     <>
@@ -26,6 +27,11 @@ const Locale: React.FC<Props> = ({ locale, toggleLocale }) => {
         <li>
           <button className={ru} onClick={() => toggleLocale('RU')}>
             RU
+          </button>
+        </li>
+        <li>
+          <button className={en} onClick={() => toggleLocale('EN')}>
+            EN
           </button>
         </li>
       </ul>
