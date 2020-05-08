@@ -2,6 +2,7 @@
   perspective: 1000px;
   transform-style: preserve-3d;
   margin-bottom: 300px;
+  outline: none;
 }
 
 .block {

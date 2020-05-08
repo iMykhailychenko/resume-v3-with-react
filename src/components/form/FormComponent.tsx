@@ -107,7 +107,7 @@ const FormComponent: React.FC<Props> = ({ content }) => (
           placeholder={content.text}
         />
 
-        <label className={styles.label}>
+        <label className={styles.label} tabIndex={0}>
           <Field type="checkbox" name="confirm" />
           <span className={styles.checkmark}></span>
           <span className={styles.checktext}>{content.confirm}</span>

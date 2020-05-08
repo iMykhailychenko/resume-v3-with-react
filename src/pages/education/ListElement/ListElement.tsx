@@ -21,7 +21,7 @@ const ListElement: React.FC<Props> = ({
   x,
   y,
 }) => (
-  <li className={styles.item}>
+  <li className={styles.item} tabIndex={0}>
     <Parallax
       className={styles.block}
       animation={{ x: 0, rotateX: 0, rotateY: 0 }}

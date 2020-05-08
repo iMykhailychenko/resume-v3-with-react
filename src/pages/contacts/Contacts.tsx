@@ -36,7 +36,7 @@ const Contacts: React.FC<Props> = ({ content }) => {
           ) : (
             <Parallax
               className={styles.formWrp}
-              animation={{ y: 0, scale: 1 }}
+              animation={{ y: 0, scale: 1, playScale: [0, 0.8]}}
               style={{ transform: 'translateY(200px) scale(0.9)' }}
             >
               <FormComponent />

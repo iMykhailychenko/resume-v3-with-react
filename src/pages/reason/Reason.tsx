@@ -59,6 +59,7 @@ const Reason: React.FC<Props> = ({
 
               <Parallax
                 className={styles.text + ' background'}
+                tabIndex={0}
                 animation={{ y: -180 }}
                 style={{ transform: 'translateY(50px)' }}
               >
@@ -99,6 +100,7 @@ const Reason: React.FC<Props> = ({
               <Parallax
                 className={styles.text + ' background'}
                 animation={{ y: -180 }}
+                tabIndex={0}
                 style={{ transform: 'translateY(50px)' }}
               >
                 {secondText.map((text, index) => (
