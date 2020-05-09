@@ -69,10 +69,6 @@ const FormComponent: React.FC<Props> = ({ content }) => (
           placeholder={content.name}
           autoComplete="off"
         />
-        <ErrorMessage
-          name="name"
-          render={msg => <span className={styles.errors}>{msg}</span>}
-        />
 
         <Field
           className={styles.input}
@@ -92,10 +88,6 @@ const FormComponent: React.FC<Props> = ({ content }) => (
           name="company"
           placeholder={content.company}
           autoComplete="off"
-        />
-        <ErrorMessage
-          name="company"
-          render={msg => <span className={styles.errors}>{msg}</span>}
         />
 
         <Field
