@@ -21,18 +21,18 @@ export default class PageFirstBlock extends Component<Props> {
 
     return (
       <section className={styles.section}>
-        <CSSTransition in timeout={600} classNames="slideUp" appear>
+        <CSSTransition in timeout={0} classNames="slideUp" appear>
           <picture className={styles.emoji + ' easeInOut'}>
             <source srcSet={webp} type="image/webp" />
             <img src={img} alt="" />
           </picture>
         </CSSTransition>
 
-        <CSSTransition in timeout={800} classNames="slideUp" appear>
+        <CSSTransition in timeout={150} classNames="slideUp" appear>
           <h2 className={styles.title + ' easeInOut'}>{title}</h2>
         </CSSTransition>
 
-        <CSSTransition in timeout={1000} classNames="slideUp" appear>
+        <CSSTransition in timeout={300} classNames="slideUp" appear>
           <div className="page-scroll easeInOut"></div>
         </CSSTransition>
       </section>
