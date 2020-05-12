@@ -28,11 +28,11 @@ export default class PageFirstBlock extends Component<Props> {
           </picture>
         </CSSTransition>
 
-        <CSSTransition in timeout={150} classNames="slideUp" appear>
+        <CSSTransition in timeout={200} classNames="slideUp" appear>
           <h2 className={styles.title + ' easeInOut'}>{title}</h2>
         </CSSTransition>
 
-        <CSSTransition in timeout={300} classNames="slideUp" appear>
+        <CSSTransition in timeout={400} classNames="slideUp" appear>
           <div className="page-scroll easeInOut"></div>
         </CSSTransition>
       </section>
