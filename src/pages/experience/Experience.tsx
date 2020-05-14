@@ -185,7 +185,7 @@ export default class Experiance extends Component<Props, State> {
               </li>
               <li>
                 <a
-                  href="http://stalkanat-silur.hd.kiev.ua/"
+                  href="https://stalkanatsilur.com.ua/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
