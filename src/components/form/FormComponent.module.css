@@ -126,7 +126,8 @@
   .errors,
   .input,
   .textarea {
-    max-width: 280px;
+    max-width: unset;
+    width: 100%;
   }
 
   .label {
