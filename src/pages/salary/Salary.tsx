@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Parallax } from 'rc-scroll-anim';
 import PageFirstBlock from '../../components/page-first-block/PageFirstBlock';
 import SplitLink from '../../components/split-link/SplitLink';
 import PageText from '../../components/page-text/PageText';
-import ChartEffectiveness from './chart/ChartEffectiveness';
-import ChartCompany from './chart/ChartCompany';
 import Sale from './sale/Sale';
-
 import styles from './Salary.module.css';
 import webp from '../../images/emoji/salary.webp';
 import emoji from '../../images/emoji/salary.png';
+
+const AsyncChartEffectiveness = lazy(() =>
+  import('./chart/ChartEffectiveness' /* webpackChunkName: "chart-effectiveness" */),
+);
+const AsyncChartCompany = lazy(() =>
+  import('./chart/ChartCompany' /* webpackChunkName: "chart-company" */),
+);
 
 interface Props {
   content: {
@@ -72,15 +76,17 @@ const Salary: React.FC<Props> = ({
     </div>
 
     <section>
-      <div className={styles.chart}>
-        <ChartEffectiveness />
-        <p className={styles.chartText}>{captionOne}</p>
-      </div>
+      <Suspense fallback={<div className="loder"></div>}>
+        <div className={styles.chart}>
+          <AsyncChartEffectiveness />
+          <p className={styles.chartText}>{captionOne}</p>
+        </div>
 
-      <div className={styles.chart}>
-        <ChartCompany />
-        <p className={styles.chartText}>{captionTwo}</p>
-      </div>
+        <div className={styles.chart}>
+          <AsyncChartCompany />
+          <p className={styles.chartText}>{captionTwo}</p>
+        </div>
+      </Suspense>
     </section>
 
     <div className="container">
