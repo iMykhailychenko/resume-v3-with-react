@@ -9,7 +9,9 @@ import webp from '../../images/emoji/salary.webp';
 import emoji from '../../images/emoji/salary.png';
 
 const AsyncChartEffectiveness = lazy(() =>
-  import('./chart/ChartEffectiveness' /* webpackChunkName: "chart-effectiveness" */),
+  import(
+    './chart/ChartEffectiveness' /* webpackChunkName: "chart-effectiveness" */
+  ),
 );
 const AsyncChartCompany = lazy(() =>
   import('./chart/ChartCompany' /* webpackChunkName: "chart-company" */),
@@ -76,7 +78,7 @@ const Salary: React.FC<Props> = ({
     </div>
 
     <section>
-      <Suspense fallback={<div className="loder"></div>}>
+      <Suspense fallback={<span></span>}>
         <div className={styles.chart}>
           <AsyncChartEffectiveness />
           <p className={styles.chartText}>{captionOne}</p>
@@ -93,7 +95,7 @@ const Salary: React.FC<Props> = ({
       <section className={styles.end}>
         <Parallax
           component="p"
-          animation={{ y: 0, opacity: 1 }}
+          animation={{ y: 0, opacity: 1, playScale: [0, 0.8] }}
           style={{
             transform: 'translateY(-100%)',
             opacity: '0',
