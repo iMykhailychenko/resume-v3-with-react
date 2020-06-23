@@ -45,15 +45,15 @@
   "general": {
     "title": "General information",
     "tablet": [
-      ["Name:", "Ihor", "20"],
-      ["Surname:", "Mykhailychenko", "90"],
-      ["Date of birth:", "09/12/1995", "160"],
-      ["Address:", "Kiev, Holosiivskyi district, 4 Vasylkivska St.,", "230"],
-      ["Languages:", "Upper Intermediate - English language", "300"],
+      ["Name:", "Ihor", "2"],
+      ["Surname:", "Mykhailychenko", "9"],
+      ["Date of birth:", "09/12/1995", "16"],
+      ["Address:", "Kiev, Holosiivskyi district, 4 Vasylkivska St.,", "23"],
+      ["Languages:", "Upper Intermediate - English language", "30"],
       [
         "Personal qualities:",
         "I combine creativity and analytical thinking, ready to learn a lot, focus on results, sociable, attentive to details, punctual, responsible. I have no bad habits.",
-        "370"
+        "37"
       ]
     ],
     "text": "Soft skills: Can convey my thoughts correctly, work in a team, I want to receive and share knowledge, I have a good sense of humor, but it's not accurate.",

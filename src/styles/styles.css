@@ -8,9 +8,9 @@
 }
 
 .btn-blue {
-  padding: 6px 16px;
+  padding: 0.6rem 1.6rem;
   background: rgba(54, 159, 255, 0.8);
-  border-radius: 16px;
+  border-radius: 1.6rem;
   border: none;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -18,12 +18,12 @@
 }
 
 .btn-blue:focus {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.23);
 }
 
 /* hide scrollbar */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
   background: transparent;
 }
 

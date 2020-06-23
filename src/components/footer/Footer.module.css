@@ -5,10 +5,10 @@
   justify-content: space-between;
   align-items: center;
   width: 86%;
-  margin: 70px auto 0;
-  padding: 10px 60px;
+  margin: 7rem auto 0;
+  padding: 1rem 6rem;
   background: rgb(112, 112, 112);
-  border-radius: 8px 8px 0 0;
+  border-radius: 0.8rem 0.8rem 0 0;
 }
 
 .footer span {
@@ -23,15 +23,15 @@
 }
 
 .left {
-  flex-basis: 200px;
+  flex-basis: 20rem;
 }
 
 .right {
-  min-width: 450px;
+  min-width: 45rem;
 }
 
 .link {
-  padding: 16px 6px;
+  padding: 1.6rem 0.6rem;
   text-decoration: underline;
   transition: 0.3s ease-in-out;
   color: rgb(255, 255, 255);
@@ -40,7 +40,7 @@
 .link:focus,
 .link:hover {
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
 }
 
 .link:focus {
@@ -58,15 +58,15 @@
   .footer {
     width: 100%;
     border-radius: 0;
-    padding: 50px 0;
+    padding: 5rem 0;
   }
 
   .left {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
 
   .left span {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 
   .right {
@@ -74,13 +74,13 @@
   }
 
   .right li {
-    margin: 6px 0;
+    margin: 0.6rem 0;
   }
 }
 
 @media (max-height: 440px) {
   .footer {
-    padding: 6px 10px;
-    margin-top: 10px;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
   }
 }

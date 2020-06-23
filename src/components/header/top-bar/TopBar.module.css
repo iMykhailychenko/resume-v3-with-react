@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 40px 0;
+  padding: 4rem 0;
 }
 
 .leftBlock {
@@ -16,6 +16,6 @@
 
 @media (max-height: 600px) {
   .inner {
-    padding: 20px 0;
+    padding: 2rem 0;
   }
 }

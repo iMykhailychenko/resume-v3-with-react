@@ -1,10 +1,10 @@
 @keyframes scroll {
   0% {
-    top: 5px;
+    top: 0.5rem;
   }
 
   100% {
-    top: 15px;
+    top: 1.5rem;
     opacity: 0;
   }
 }

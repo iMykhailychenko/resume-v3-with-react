@@ -1,7 +1,7 @@
 .item {
-  perspective: 1000px;
+  perspective: 100rem;
   transform-style: preserve-3d;
-  margin-bottom: 300px;
+  margin-bottom: 30rem;
   outline: none;
 }
 
@@ -11,39 +11,39 @@
 
 .text {
   width: 100%;
-  max-width: 350px;
+  max-width: 35rem;
 }
 
 .inner {
   position: relative;
-  height: 400px;
+  height: 40rem;
   width: 100%;
-  max-width: 350px;
-  margin-bottom: 40px;
+  max-width: 35rem;
+  margin-bottom: 4rem;
   background: rgb(255, 255, 255);
   transform-style: preserve-3d;
 }
 
 .title {
   transform-style: preserve-3d;
-  transform: translateX(25%) translateY(90%) translateZ(200px);
-  width: 250px;
+  transform: translateX(25%) translateY(90%) translateZ(20rem);
+  width: 25rem;
   font-size: 4.3rem;
   font-weight: 700;
 }
 
 @media (max-width: 400px) {
   .item {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
   }
 
   .inner {
-    height: 350px;
+    height: 35rem;
   }
 
   .title {
     width: 60%;
-    transform: translateX(35%) translateY(160%) translateZ(200px);
+    transform: translateX(35%) translateY(160%) translateZ(20rem);
     font-size: 3rem;
   }
 }

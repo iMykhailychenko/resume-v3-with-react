@@ -21,31 +21,31 @@ const MenuBtn: React.FC<Props> = ({ content, theme, menu, toggleMenu }) => {
   const width: number = getCircleWidth(25);
 
   // get distance between dash items
-  const strokeDasharray: string = menu ? `${width}, ${width}` : `0, ${width}`;
+  const strokeDasharray: string = menu ? `${width}rem, ${width}rem` : `0, ${width}rem`;
 
   return (
     <button className="menu__btn" onClick={() => toggleMenu(menu)}>
       <svg
         className={svg}
-        width="25"
-        height="25"
-        viewBox="0 0 25 25"
+        width="2.5rem"
+        height="2.5rem"
+        viewBox="0 0 2.5rem 2.5rem"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <rect
-          x="0.5"
-          y="0.5"
-          width="24"
-          height="24"
-          rx="12"
-          strokeWidth="1"
+          x="0.05rem"
+          y="0.05rem"
+          width="2.4rem"
+          height="2.4rem"
+          rx="1.2rem"
+          strokeWidth="0.1rem"
           stroke={color}
           strokeDasharray={strokeDasharray}
         />
-        <rect x="11" y="5" width="3" height="3" rx="1.5" fill={color} />
-        <rect x="11" y="11" width="3" height="3" rx="1.5" fill={color} />
-        <rect x="11" y="17" width="3" height="3" rx="1.5" fill={color} />
+        <rect x="1.1rem" y="0.5rem" width="0.3rem" height="0.3rem" rx="0.15rem" fill={color} />
+        <rect x="1.1rem" y="1.1rem" width="0.3rem" height="0.3rem" rx="0.15rem" fill={color} />
+        <rect x="1.1rem" y="1.7rem" width="0.3rem" height="0.3rem" rx="0.15rem" fill={color} />
       </svg>
 
       <span className="menu__text">{content}</span>

@@ -1,14 +1,14 @@
 .container {
   position: relative;
-  margin: 200px 0;
+  margin: 20rem 0;
 }
 
 .formWrp {
   position: relative;
   width: max-content;
-  padding: 40px;
+  padding: 4rem;
   background: rgb(255, 255, 255);
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1.9rem 3.8rem rgba(0, 0, 0, 0.3), 0 1.5rem 1.2rem rgba(0, 0, 0, 0.22);
   z-index: 2;
 }
 
@@ -19,7 +19,7 @@
   transform: translateY(-50%);
   height: 90%;
   width: 100%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.19), 0 0.6rem 0.6rem rgba(0, 0, 0, 0.23);
 }
 
 .map {
@@ -37,18 +37,18 @@
   .mapWrp {
     position: static;
     transform: unset;
-    height: 450px;
-    margin-top: 100px;
+    height: 45rem;
+    margin-top: 10rem;
   }
 
   .formWrp {
-    padding: 40px 20px;
+    padding: 4rem 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .mapWrp {
-    height: 550px;
+    height: 55rem;
   }
 }
 

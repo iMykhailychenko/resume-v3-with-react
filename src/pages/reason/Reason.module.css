@@ -1,6 +1,6 @@
 .blockLeft,
 .blockRight {
-  margin: 130px 0 180px;
+  margin: 13rem 0 18rem;
 }
 
 .blockRight .text,
@@ -9,35 +9,35 @@
 }
 
 .video {
-  max-width: 1000px;
+  max-width: 100rem;
   width: 100%;
-  border-radius: -10px;
+  border-radius: -1rem;
 }
 
 .text {
-  max-width: 700px;
+  max-width: 70rem;
   width: 90%;
-  margin-top: 100px;
-  padding: 40px 100px 40px 40px;
+  margin-top: 10rem;
+  padding: 4rem 10rem 4rem 4rem;
   outline: hidden;
 }
 
 @media (max-width: 768px) {
   .text {
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
   }
 }
 
 @media (max-width: 470px) {
   .text {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 3rem;
   }
 
   .blockLeft,
   .blockRight {
-    margin: 10px 0 40px;
+    margin: 1rem 0 4rem;
   }
 
   .blockRight .text,

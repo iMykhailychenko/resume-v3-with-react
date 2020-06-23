@@ -10,9 +10,9 @@
 }
 
 .logo {
-  height: 28px;
+  height: 2.8rem;
   width: auto;
-  margin-left: 16px;
+  margin-left: 1.6rem;
 }
 
 @media (max-width: 670px) {

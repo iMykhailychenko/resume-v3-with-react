@@ -1,10 +1,10 @@
 .article {
-  margin-top: 400px;
+  margin-top: 40rem;
 }
 
 .desc {
   width: 60%;
-  margin: 100px auto 500px;
+  margin: 10rem auto 50rem;
   text-align: center;
 }
 
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 80vh;
+  margin-bottom: 90vh;
   padding-right: 15%;
 }
 
@@ -29,17 +29,18 @@
 .left,
 .leftRevers {
   position: sticky;
-  top: 150px;
+  top: 15rem;
 }
 
 .left::before,
 .leftRevers::before {
   content: '';
   position: absolute;
-  top: 45vh;
+  top: 90vh;
   left: 0;
+  transform: translateY(-100%);
   width: 75vw;
-  height: 400px;
+  height: 40rem;
   z-index: 105;
 }
 
@@ -61,17 +62,17 @@
 
 @media (max-width: 860px) {
   .article {
-    margin-top: 100px;
+    margin-top: 10rem;
   }
 
   .section {
     flex-direction: column;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 40rem;
   }
 
   .section:nth-last-of-type(1) {
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
   }
 
   .left::before,
@@ -86,7 +87,7 @@
   .left,
   .leftRevers {
     position: static;
-    margin: 80px 0 40px;
+    margin: 8rem 0 4rem;
     text-align: center;
   }
 }

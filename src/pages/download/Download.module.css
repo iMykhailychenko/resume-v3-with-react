@@ -1,8 +1,8 @@
 .section {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 250px;
+  margin-top: 10rem;
+  margin-bottom: 25rem;
 }
 
 .block {
@@ -10,9 +10,9 @@
 }
 
 .img {
-  height: 90px;
+  height: 9rem;
   width: auto;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .img img {
@@ -24,7 +24,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 6rem 0;
 }
 
 .list {
@@ -34,9 +34,9 @@
 .link {
   display: block;
   width: max-content;
-  padding: 10px 20px;
-  margin-bottom: 16px;
-  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-bottom: 1.6rem;
+  border-radius: 1rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -79,8 +79,8 @@
 
 @media (max-width: 400px) {
   .section {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
   }
 
   .files {
@@ -89,7 +89,7 @@
 
   .img {
     width: max-content;
-    margin: 100px auto 50px;
+    margin: 10rem auto 5rem;
   }
 
   .list {
@@ -100,7 +100,7 @@
 
   .text {
     flex-basis: unset;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     text-align: center;
   }
 }

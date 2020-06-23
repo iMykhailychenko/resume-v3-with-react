@@ -44,11 +44,13 @@ const dataSource = {
   dataset: [...data],
 };
 
+const height = window.innerWidth > 1500 ? '900' : '500';
+
 const ChartEffectiveness = () => (
   <ReactFC
     type="msline"
     width="100%"
-    height="500"
+    height={height}
     dataFormat="JSON"
     dataSource={dataSource}
   />

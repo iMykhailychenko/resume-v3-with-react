@@ -8,7 +8,7 @@ interface Props {
 }
 
 const InfoBlock: React.FC<Props> = ({ param, value, top }) => (
-  <div className={styles.container} style={{ top: top + 'px' }}>
+  <div className={styles.container} style={{ top: top + 'rem' }}>
     <p className={styles.param}>{param}</p>
     <p className={styles.value}>{value}</p>
   </div>

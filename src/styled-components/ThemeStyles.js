@@ -47,7 +47,7 @@ export const ThemeStyles = createGlobalStyle`
 
   .page-scroll {
     border: ${props =>
-      props.theme === 'light' ? '1px solid rgb(0, 0, 0)' : '1px solid rgb(255, 255, 255)'};
+      props.theme === 'light' ? '0.1rem solid rgb(0, 0, 0)' : '0.1rem solid rgb(255, 255, 255)'};
   }
 
   .page-scroll::before {
@@ -57,7 +57,7 @@ export const ThemeStyles = createGlobalStyle`
 
   .page-relink-circle {
     border: ${props =>
-      props.theme === 'light' ? '1px solid rgb(0, 0, 0)' : '1px solid rgb(255, 255, 255)'};
+      props.theme === 'light' ? '0.1rem solid rgb(0, 0, 0)' : '0.1rem solid rgb(255, 255, 255)'};
   }
   
   .page-relink-circle::before {
@@ -76,12 +76,12 @@ export const ThemeStyles = createGlobalStyle`
 
   .border {
     border: ${props =>
-      props.theme === 'light' ? '1px solid rgb(0, 0, 0)' : '1px solid rgb(255, 255, 255)'};
+      props.theme === 'light' ? '0.1rem solid rgb(0, 0, 0)' : '0.1rem solid rgb(255, 255, 255)'};
   }
 
   .border-top {
     border-top: ${props =>
-      props.theme === 'light' ? '1px solid rgb(0, 0, 0)' : '1px solid rgb(255, 255, 255)'};
+      props.theme === 'light' ? '0.1rem solid rgb(0, 0, 0)' : '0.1rem solid rgb(255, 255, 255)'};
   }
 
   .background {

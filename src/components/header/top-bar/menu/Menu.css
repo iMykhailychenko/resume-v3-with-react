@@ -16,13 +16,14 @@
 
 .menu__text {
   display: block;
-  margin-bottom: 5px;
-  margin-left: 12px;
+  margin-bottom: 0.3rem;
+  margin-left: 1.2rem;
   font-size: 1.4rem;
   line-height: 1;
 }
 
 .menu__svg {
+  margin-bottom: 0.3rem;
   position: relative;
   transition: 0.3s ease-in-out;
 }

@@ -4,7 +4,7 @@
 
 .title {
   position: relative;
-  max-width: 450px;
+  max-width: 45rem;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
@@ -12,32 +12,32 @@
 
 .emoji {
   position: relative;
-  height: 140px;
-  width: 140px;
+  height: 14rem;
+  width: 14rem;
   margin: 0 auto 5%;
 }
 
 :global(.page-scroll) {
   position: relative;
-  height: 30px;
-  width: 18px;
+  height: 3rem;
+  width: 1.8rem;
   margin: 10% auto 14%;
-  border-radius: 18px;
+  border-radius: 1.8rem;
 }
 
 :global(.page-scroll::before) {
   content: '';
   position: absolute;
-  top: 5px;
+  top: 0.5rem;
   left: 57%;
   transform: translateX(-50%);
-  height: 6px;
-  width: 1px;
+  height: 0.6rem;
+  width: 0.1rem;
 }
 
 @media (max-height: 750px) {
   .section {
-    height: 100vh;
-    padding: 100px 0;
+    min-height: 100vh;
+    padding: 10rem 0;
   }
 }

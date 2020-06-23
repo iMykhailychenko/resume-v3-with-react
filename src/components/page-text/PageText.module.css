@@ -1,12 +1,12 @@
 .content {
   width: 55%;
-  margin: 300px auto 200px;
+  margin: 30rem auto 20rem;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .content {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 5rem;
   }
 }

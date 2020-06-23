@@ -13,12 +13,11 @@ const Navigation: React.FC<Props> = ({ content, menu, toggleMenu }) => (
   <nav className={styles.nav}>
     <ul className={styles.scroll}>
       {navigationData.map(({ to, contentKey, source, img, id }) => (
-        <li>
+        <li key={id}>
           <NavLink
             to={to}
             exact={to === '/' ? true : false}
             onClick={() => toggleMenu(menu)}
-            key={id}
             className={styles.link}
             activeClassName={styles.active}
           >

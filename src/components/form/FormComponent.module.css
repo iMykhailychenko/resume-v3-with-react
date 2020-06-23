@@ -4,30 +4,30 @@
 }
 
 .title {
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   color: rgb(0, 0, 0);
 }
 
 .errors {
   position: relative;
-  top: -13px;
-  max-width: 300px;
+  top: -1.3rem;
+  max-width: 30rem;
   color: rgb(250, 102, 102);
 }
 
 .input,
 .textarea {
   display: block;
-  width: 328px;
-  margin-bottom: 15px;
-  padding: 10px 15px;
+  width: 32.8rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
   background: rgba(112, 112, 112, 0.13);
-  border-radius: 8px;
+  border-radius: 0.8rem;
   border: none;
 }
 
 .textarea {
-  height: 180px;
+  height: 18rem;
 }
 
 .input::placeholder,
@@ -38,7 +38,7 @@
 
 .btn {
   width: max-content;
-  margin-top: 10px;
+  margin-top: 1rem;
   font-size: 1.4rem;
 }
 
@@ -53,7 +53,7 @@
 /* Create a custom checkbox */
 .label {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   color: rgb(0, 0, 0);
 }
 
@@ -70,10 +70,10 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  height: 15px;
-  width: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: rgb(238, 238, 238);
-  border-radius: 4px;
+  border-radius: 0.4rem;
 }
 
 .label:focus input ~ .checkmark,
@@ -96,26 +96,26 @@
 }
 
 .label .checkmark::after {
-  left: 5px;
-  top: 1px;
-  width: 5px;
-  height: 10px;
+  left: 0.5rem;
+  top: 0.1rem;
+  width: 0.5rem;
+  height: 1rem;
   border: solid rgb(255, 255, 255);
-  border-width: 0 2px 2px 0;
+  border-width: 0 0.2rem 0.2rem 0;
   transform: rotate(45deg);
 }
 
 .checktext {
   display: block;
-  max-width: 240px;
-  padding-left: 23px;
+  max-width: 24rem;
+  padding-left: 2.3rem;
   user-select: none;
 }
 
 .success {
-  max-width: 328px;
-  border-radius: 8px;
-  padding: 10px;
+  max-width: 32.8rem;
+  border-radius: 0.8rem;
+  padding: 1rem;
   background: rgb(54, 159, 255);
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
@@ -131,7 +131,7 @@
   }
 
   .label {
-    max-width: 200px;
+    max-width: 20rem;
   }
 
   .checkmark {

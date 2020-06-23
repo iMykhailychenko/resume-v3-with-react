@@ -44,11 +44,13 @@ const dataSource = {
 
 type Props = {};
 
+const height = window.innerWidth > 1500 ? '900' : '500';
+
 const ChartCompany: React.FC<Props> = () => (
   <ReactFC
     type="column2d"
     width="100%"
-    height="500"
+    height={height}
     dataFormat="JSON"
     dataSource={dataSource}
   />

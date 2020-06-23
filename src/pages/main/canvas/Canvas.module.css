@@ -24,8 +24,8 @@
   position: absolute;
   top: 50%;
   left: 55%;
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   z-index: 1;
   background: rgb(54, 159, 255);
   animation: preloader 1s ease-in-out infinite;
@@ -45,9 +45,9 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1250rem) {
   .preloader::after {
-    top: calc(50% + 30px);
+    top: calc(50% + 3rem);
     left: 50%;
   }
 }
