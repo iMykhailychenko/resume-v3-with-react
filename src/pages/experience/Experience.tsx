@@ -12,6 +12,7 @@ import img3Web from '../../images/content/experiance/experiance-3.webp';
 import img4Web from '../../images/content/experiance/experiance-4.webp';
 import img5Web from '../../images/content/experiance/experiance-5.webp';
 import img6Web from '../../images/content/experiance/experiance-6.webp';
+import img7Web from '../../images/content/experiance/experiance-7.webp';
 
 import emoji from '../../images/emoji/experiance.png';
 import img1 from '../../images/content/experiance/experiance-1.png';
@@ -20,6 +21,7 @@ import img3 from '../../images/content/experiance/experiance-3.png';
 import img4 from '../../images/content/experiance/experiance-4.png';
 import img5 from '../../images/content/experiance/experiance-5.png';
 import img6 from '../../images/content/experiance/experiance-6.png';
+import img7 from '../../images/content/experiance/experiance-7.jpg';
 
 interface Props {
   content: {
@@ -68,7 +70,7 @@ export default class Experiance extends Component<Props, State> {
     const mobile = window.innerWidth < 960;
     const { content } = this.props;
     const { count } = this.state;
-    const y: number = count * 500;
+    const y: number = count * 50;
     const rotate: number = count * 45;
 
     return (
@@ -120,7 +122,7 @@ export default class Experiance extends Component<Props, State> {
           <div className={styles.block}>
             <div
               className={styles.wrp}
-              style={{ transform: `translateY(-${y}px)` }}
+              style={{ transform: `translateY(-${y}rem)` }}
             >
               {content.slider.map((slide, index) => (
                 <div key={index} className={styles.inner}>
@@ -171,6 +173,18 @@ export default class Experiance extends Component<Props, State> {
 
           <div className={styles.border + ' border-top'}>
             <ul className={styles.works}>
+              <li>
+                <a
+                  href="http://ilyashev.hd.kiev.ua"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <picture className={styles.img}>
+                    <source srcSet={img7Web} type="image/webp" />
+                    <img src={img7} alt="" />
+                  </picture>
+                </a>
+              </li>
               <li>
                 <a
                   href="https://remens.ua/"
