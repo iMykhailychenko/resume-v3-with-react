@@ -1,6 +1,6 @@
 # [RESUME](https://ihor-mykhailychenko.netlify.app)
 
-> At this time I'm not seeking to change jobs. 
+> At this time I'm not seeking to change jobs.  
 > Also, the information in this summary is out of date
 
 ### [Ссылка для просмотра резюме](https://ihor-mykhailychenko.netlify.app)
