@@ -4,14 +4,14 @@
 
 ### [Ссылка для просмотра резюме](https://ihor-mykhailychenko.netlify.app)
 
-Для просмотра предыдущей версия резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/dist/)
-
 ## Стек технологий:
 ```
 - typescript
 - react
 - redux
 ```
+
+Для просмотра предыдущей версия резюме переходите по этой [ссылке](https://imykhailychenko.github.io/resume-v2/dist/)
 
 ## Персональные данные
 
