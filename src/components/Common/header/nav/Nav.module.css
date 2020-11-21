@@ -6,9 +6,8 @@
   right: 0;
   z-index: 5;
   padding-top: 12rem;
-  background-color: rgb(40, 40, 40);
-  background-color: rgba(40, 40, 40, 0.4);
-  backdrop-filter: blur(12px);
+  background-color: rgb(200, 200, 200);
+  background-color: rgba(200, 200, 200, 0.8);
 }
 
 @media (max-width: 420px) {

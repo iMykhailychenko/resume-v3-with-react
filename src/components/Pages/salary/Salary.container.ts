@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
 
-import { IState } from '../../../types';
+import { IState, Theme } from '../../../types';
 import Salary from './Salary.component';
 
 interface Props {
+  theme: Theme;
   content: {
     title: string;
     text: string[];
@@ -19,6 +20,7 @@ interface Props {
 }
 
 const mapSTP = (state: IState): Props => ({
+  theme: state.theme as Theme,
   content: state.content.salary,
 });
 

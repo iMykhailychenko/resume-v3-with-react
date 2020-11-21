@@ -96,9 +96,23 @@
     "title": "My work experience",
     "slider": [
       {
+        "linkt": "https://merehead.com/ru/",
+        "company": "Merehead",
+        "title": "July 2020 - present. Front-end developer (react.js).",
+        "responsibility": "Responsibilities:",
+        "list": [
+          "developing user-facing features using React.js;",
+          "setuping applications from scratch;",
+          "building reusable components and front-end libraries for future use;",
+          "translating designs and wireframes into high quality code;",
+          "optimizing components for maximum performance across a vast array of web-capable devices and browsers;",
+          "deploying code to staging/production;"
+        ]
+      },
+      {
         "linkt": "https://dl.agency/",
         "company": "DL.Agency",
-        "title": "January 2020 Junior front-end developer.",
+        "title": "January 2020 - July 2020. Junior front-end developer.",
         "responsibility": "Responsibilities:",
         "list": [
           "adaptive, valid and cross-browser layout of sites;",
@@ -372,16 +386,16 @@
   "salary": {
     "title": "Expected salary",
     "text": [
-      "On average, the front-end developer in Kiev earns UAH 34,000. This is the median of wages according to the data of 95 vacancies posted on work.ua site over the past 3 months. Also, according to the djinni portal, the largest number of offers were sent to candidates with the expected salary in the range from $ 500 to $ 1000 (among candidates with experience up to 1 year)",
-      "Regarding the DOU portal, the range was from $ 1100 to $ 1850 for developers with knowledge of the javascript programming language, but this is information for December 2019, which is a less relevant indicator."
+      "On average, the front-end developer in Kiev earns ~$1200. This is the median of wages according to the data of 137 vacancies posted on work.ua site over the past 3 months. Also, according to the djinni portal, the largest number of offers were sent to candidates with the expected salary in the range from $1000+ to $2000+ (Among candidates with work experience from 1 to 2 years)",
+      "Regarding the DOU portal, the range was from $1000 to $1600 for developers with knowledge of the javascript programming language, but this is information for June 2020, which is a less relevant indicator."
     ],
-    "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $ 200.01",
+    "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $200.01",
     "before": "before - ",
     "now": "now - ",
     "graphText": "Still in doubt? Then the abstruse charts presented below should remove all your doubts",
     "captionOne": "In this graph, the blue line shows the effectiveness of my work compared to other candidates who also want to get to your company. In my opinion, the choice is obvious.",
     "captionTwo": "If you are not convinced by the first schedule, then see how your company's revenue will increase after I get to work for you.",
-    "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $ 1K, but in any case write to me, we can discuss it.",
+    "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $1.4K, but in any case write to me, we can discuss it.",
     "relink": "Contacts"
   },
   "download": {

@@ -1,13 +1,17 @@
 import { Parallax } from 'rc-scroll-anim';
 import React, { ReactElement } from 'react';
 
+import { Theme } from '../../../types';
 import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.component';
 import PageText from '../../Common/page-text/PageText.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
+import ChartCompany from './chart/ChartCompany';
+import ChartEffectiveness from './chart/ChartEffectiveness';
 import css from './Salary.module.css';
 import Sale from './sale/Sale.component';
 
 interface Props {
+  theme: Theme;
   content: {
     title: string;
     text: string[];
@@ -23,6 +27,7 @@ interface Props {
 }
 
 const Salary = ({
+  theme,
   content: {
     title,
     text,
@@ -53,8 +58,8 @@ const Salary = ({
       <section className={css.section}>
         <p>{sale}</p>
 
-        <Sale number={1200.0} prefix={before} />
-        <Sale number={999.99} prefix={now} />
+        <Sale number={1600.0} prefix={before} />
+        <Sale number={1399.99} prefix={now} />
       </section>
 
       <section className={css.beforeChart}>
@@ -73,12 +78,12 @@ const Salary = ({
 
     <section>
       <div className={css.chart}>
-        {/* <AsyncChartEffectiveness /> */}
+        <ChartEffectiveness theme={theme} />
         <p className={css.chartText}>{captionOne}</p>
       </div>
 
       <div className={css.chart}>
-        {/* <AsyncChartCompany /> */}
+        <ChartCompany theme={theme} />
         <p className={css.chartText}>{captionTwo}</p>
       </div>
     </section>
