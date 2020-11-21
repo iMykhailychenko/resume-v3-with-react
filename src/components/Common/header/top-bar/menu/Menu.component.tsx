@@ -2,14 +2,14 @@ import './Menu.css';
 
 import React, { ReactElement } from 'react';
 
-import { getCircleWidth } from './utils';
-
 interface Props {
   content: string;
   menu: boolean;
   theme: string;
   toggleMenu(menu: boolean): void;
 }
+
+export const getCircleWidth = (diameter: number): number => diameter * Math.PI;
 
 const MenuBtn = ({ content, theme, menu, toggleMenu }: Props): ReactElement => {
   // set a color of menu btn according to globat theme color

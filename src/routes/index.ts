@@ -15,7 +15,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/contacts/ContactsContainer' /* webpackChunkName: "contacts-page" */
+          '../components/Pages/contacts/Contacts.container' /* webpackChunkName: "contacts-page" */
         ),
     ),
   },
@@ -24,7 +24,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/download/DownloadContainer' /* webpackChunkName: "download-page" */
+          '../components/Pages/download/Download.container' /* webpackChunkName: "download-page" */
         ),
     ),
   },
@@ -33,7 +33,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/education/EducationContainer' /* webpackChunkName: "education-page" */
+          '../components/Pages/education/Education.container' /* webpackChunkName: "education-page" */
         ),
     ),
   },
@@ -42,7 +42,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/experience/ExperienceContainer' /* webpackChunkName: "experience-page" */
+          '../components/Pages/experience/Experience.container' /* webpackChunkName: "experience-page" */
         ),
     ),
   },
@@ -51,7 +51,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/general/GeneralContainer' /* webpackChunkName: "general-page" */
+          '../components/Pages/general/General.container' /* webpackChunkName: "general-page" */
         ),
     ),
   },
@@ -60,7 +60,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/reason/ReasonContainer' /* webpackChunkName: "reason-page" */
+          '../components/Pages/reason/Reason.container' /* webpackChunkName: "reason-page" */
         ),
     ),
   },
@@ -69,7 +69,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/salary/SalaryContainer' /* webpackChunkName: "salary-page" */
+          '../components/Pages/salary/Salary.container' /* webpackChunkName: "salary-page" */
         ),
     ),
   },
@@ -78,7 +78,7 @@ const routes = {
     component: lazy(
       () =>
         import(
-          '../components/Pages/skills/SkillsContainer' /* webpackChunkName: "skills-page" */
+          '../components/Pages/skills/Skills.container' /* webpackChunkName: "skills-page" */
         ),
     ),
   },

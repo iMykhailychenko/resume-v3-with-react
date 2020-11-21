@@ -3,7 +3,11 @@ import { connect } from 'react-redux';
 import { IState } from '../../../types';
 import Form from './Form.component';
 
-const mapSTP = (state: IState): Pick<IState, 'content'> => ({
+interface Props {
+  content: { [key: string]: string };
+}
+
+const mapSTP = (state: IState): Props => ({
   content: state.content.form,
 });
 

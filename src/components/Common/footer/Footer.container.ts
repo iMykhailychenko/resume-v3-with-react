@@ -1,16 +1,25 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-import { popupActions } from '../../redux/popup/popupActions';
-import { Dispatch, IState } from '../../types';
+import { popup } from '../../../redux/popup/actions';
+import { IState } from '../../../types';
 import Footer from './Footer.component';
 
-const mapSTP = (state: IState): Pick<IState, 'popup' | 'content'> => ({
-  popup: state.popup,
+interface Props {
+  content: {
+    text: string;
+    btn: string;
+  };
+}
+
+const mapSTP = (state: IState): Props => ({
   content: state.content.footer,
 });
 
-const mapDTP = (dispatch: Dispatch<boolean>) => ({
-  openPopup: (popup: boolean) => dispatch(popupActions(popup)),
+const mapDTP = (dispatch: Dispatch) => ({
+  openPopup: (): void => {
+    dispatch(popup());
+  },
 });
 
 export default connect(mapSTP, mapDTP)(Footer);

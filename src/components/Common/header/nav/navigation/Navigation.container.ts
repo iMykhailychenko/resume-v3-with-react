@@ -1,16 +1,22 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-import { menuActions } from '../../../../redux/menu/menuActions';
-import { Dispatch, IState } from '../../../../types';
+import { menu } from '../../../../../redux/menu/actions';
+import { IState } from '../../../../../types';
 import Navigation from './Navigation.component';
 
-const mapSTP = (state: IState): Pick<IState, 'menu' | 'content'> => ({
-  menu: state.menu,
+interface Props {
+  content: { [key: string]: string };
+}
+
+const mapSTP = (state: IState): Props => ({
   content: state.content.header,
 });
 
-const mapDTP = (dispatch: Dispatch<boolean>) => ({
-  toggleMenu: (menu: boolean) => dispatch(menuActions(menu)),
+const mapDTP = (dispatch: Dispatch) => ({
+  toggleMenu: (): void => {
+    dispatch(menu());
+  },
 });
 
 export default connect(mapSTP, mapDTP)(Navigation);

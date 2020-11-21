@@ -1,15 +1,13 @@
 import '../../transitions/slideUp.css';
 
-import React from 'react';
+import clsx from 'clsx';
+import React, { ReactElement } from 'react';
 import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
 import { FooterStyles } from '../../../styled-components/FooterStyles.js';
-import right from '../../images/emoji/right.png';
-import rightWeb from '../../images/emoji/right.webp';
-import move from '../../images/svg/move.svg';
 import Canvas from './canvas/Canvas.container';
-import styles from './Main.module.css';
+import css from './Main.module.css';
 
 interface Props {
   content: {
@@ -19,7 +17,7 @@ interface Props {
   };
 }
 
-const Main: React.FC<Props> = ({ content: { title, text, relink } }) => {
+const Main = ({ content: { title, text, relink } }: Props): ReactElement => {
   const mobile = window.innerWidth < 768;
 
   return (
@@ -27,21 +25,21 @@ const Main: React.FC<Props> = ({ content: { title, text, relink } }) => {
       <FooterStyles />
 
       <main className="container">
-        <section className={styles.container}>
-          <div className={styles.left}>
+        <section className={css.container}>
+          <div className={css.left}>
             <CSSTransition in timeout={600} classNames="slideUp" appear>
-              <h1 className={styles.title + ' easeInOut'}>{title}</h1>
+              <h1 className={clsx(css.title, 'easeInOut')}>{title}</h1>
             </CSSTransition>
 
             <CSSTransition in timeout={800} classNames="slideUp" appear>
-              <p className={styles.text + ' easeInOut'}>{text}</p>
+              <p className={clsx(css.title, 'easeInOut')}>{text}</p>
             </CSSTransition>
 
             <CSSTransition in timeout={1000} classNames="slideUp" appear>
-              <Link to="/reason" className={styles.btn + ' easeInOut'}>
-                <picture className={styles.img}>
-                  <source srcSet={rightWeb} type="image/webp" />
-                  <img src={right} alt="" />
+              <Link to="/reason" className={clsx(css.title, 'easeInOut')}>
+                <picture className={css.img}>
+                  <source srcSet="/images/emoji/right.webp" type="image/webp" />
+                  <img src="/images/emoji/right.png" alt="" />
                 </picture>
                 <span>{relink}</span>
               </Link>
@@ -49,11 +47,11 @@ const Main: React.FC<Props> = ({ content: { title, text, relink } }) => {
           </div>
 
           {!mobile && (
-            <div className={styles.right}>
+            <div className={css.right}>
               <Canvas />
 
-              <div className={styles.instruction}>
-                <img className={styles.move} src={move} alt="" />
+              <div className={css.instruction}>
+                <img className={css.move} src="/images/svg/move.svg" alt="" />
                 <p>Press Space button to change animation</p>
                 <p>You can rotate animation with your mouse</p>
                 <p>You can zoom animation by scroll</p>

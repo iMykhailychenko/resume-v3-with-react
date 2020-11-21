@@ -1,17 +1,17 @@
 import { combineReducers } from 'redux';
 
-import { contentReducer } from './content/contentReducer';
-import { localeReducer } from './locale/localeReducer';
-import { menuReducer } from './menu/menuReducer';
-import { popupReducer } from './popup/popupReducer';
-import { themeReducer } from './theme/themeReducer';
+import content from './content/reducer';
+import locale from './locale/reducer';
+import menu from './menu/reducer';
+import popup from './popup/reducer';
+import theme from './theme/reducer';
 
 const rootReducer = combineReducers({
-  theme: themeReducer,
-  menu: menuReducer,
-  locale: localeReducer,
-  content: contentReducer,
-  popup: popupReducer,
+  content,
+  locale,
+  menu,
+  popup,
+  theme,
 });
 
 export default rootReducer;

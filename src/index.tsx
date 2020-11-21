@@ -1,20 +1,21 @@
-// import base styles before app to make it styles more priority
 import './styles/styles.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import { PersistGate } from 'redux-persist/integration/react';
 
-// app
 import App from './components/App/App.container';
-import store from './redux/store';
+import { persistor, store } from './redux/store';
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <PersistGate loading={null} persistor={persistor}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </PersistGate>
   </Provider>,
   document.getElementById('root'),
 );

@@ -33,6 +33,7 @@ export default class Clock extends Component<unknown, State> {
       minutes: minutes(),
     });
   }
+
   render(): ReactElement {
     const { hours, minutes } = this.state;
     return (

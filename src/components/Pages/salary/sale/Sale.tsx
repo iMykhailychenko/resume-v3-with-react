@@ -2,7 +2,7 @@ import React from 'react';
 import CountUp from 'react-countup';
 import { InView } from 'react-intersection-observer';
 
-import styles from './Sale.module.css';
+import css from './Sale.module.css';
 
 interface Props {
   number: number;
@@ -12,7 +12,7 @@ interface Props {
 const Sale: React.FC<Props> = ({ number, prefix }) => (
   <InView threshold={0.4} triggerOnce>
     {({ inView, ref }) => (
-      <div ref={ref} className={styles.number}>
+      <div ref={ref} className={css.number}>
         {inView && (
           <CountUp
             start={0}

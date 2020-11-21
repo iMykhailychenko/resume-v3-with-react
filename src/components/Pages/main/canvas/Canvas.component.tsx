@@ -4,7 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import MODEL_PATH from '../../../../assets/soldier.glb';
-import styles from './Canvas.module.css';
+import css from './Canvas.module.css';
 
 export default class Canvas extends Component {
   canvasRef = createRef<HTMLDivElement>();
@@ -155,8 +155,8 @@ export default class Canvas extends Component {
 
   render(): ReactElement {
     return (
-      <div className={styles.canvas} ref={this.canvasRef}>
-        <p className={styles.preloader} ref={this.preloaderRef}>
+      <div className={css.canvas} ref={this.canvasRef}>
+        <p className={css.preloader} ref={this.preloaderRef}>
           ... Loading
         </p>
       </div>

@@ -8,17 +8,16 @@ interface Props {
     text: string;
     btn: string;
   };
-  popup: boolean;
-  openPopup(popup: boolean): void;
+  openPopup: () => void;
 }
 
-const Footer = ({ content, popup, openPopup }: Props): ReactElement => {
+const Footer = ({ content, openPopup }: Props): ReactElement => {
   return (
     <footer className={clsx(css.footer, 'footer')}>
       <div className={css.left}>
         <span>{content.text}</span>
 
-        <button className="btn-blue" onClick={() => openPopup(popup)}>
+        <button className="btn-blue" onClick={openPopup}>
           {content.btn}
         </button>
       </div>
