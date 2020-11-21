@@ -9,17 +9,6 @@ export const ThemeStyles = createGlobalStyle`
     overflow: ${props => (props.menu ? 'hidden' : 'auto')};
   }
 
-  .loder {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 8;
-    background: ${props =>
-      props.theme === 'light' ? 'rgb(238, 238, 238)' : 'rgb(0, 0, 0)'};
-  }
-
   a {
     color: ${props =>
       props.theme === 'light' ? 'rgb(0, 0, 0)' : 'rgb(255, 255, 255)'};

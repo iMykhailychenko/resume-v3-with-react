@@ -6,8 +6,7 @@
   bottom: 0;
   z-index: 1000;
   background-color: rgb(40, 40, 40);
-  background-color: rgba(40, 40, 40, 0.4);
-  backdrop-filter: blur(12px);
+  background-color: rgba(40, 40, 40, 0.6);
   overflow: hidden;
 }
 

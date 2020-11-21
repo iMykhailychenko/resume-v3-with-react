@@ -165,7 +165,7 @@ export default class Experiance extends Component<Props, State> {
                       src="/images/content/experiance/experiance-7.webp"
                       type="image/webp"
                     />
-                    <img src="/images/content/experiance/experiance-7.png" alt="" />
+                    <img src="/images/content/experiance/experiance-7.jpg" alt="" />
                   </picture>
                 </a>
               </li>

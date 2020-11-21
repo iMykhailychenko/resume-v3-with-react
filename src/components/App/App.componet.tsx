@@ -19,28 +19,32 @@ const App = ({ theme, menu }: Props): ReactElement => (
 
     <Header />
 
-    <Suspense fallback={null}>
-      <Popup>
-        <Form />
-      </Popup>
+    <div className="main">
+      <Suspense fallback={<div className="loader" />}>
+        <Popup>
+          <Form />
+        </Popup>
 
-      <Switch>
-        <Route path={routes.Root.path} exact component={routes.Root.component} />
-        <Route path={routes.Contacts.path} component={routes.Contacts.component} />
-        <Route path={routes.Download.path} component={routes.Download.component} />
-        <Route path={routes.Education.path} component={routes.Education.component} />
-        <Route
-          path={routes.Experience.path}
-          component={routes.Experience.component}
-        />
-        <Route path={routes.General.path} component={routes.General.component} />
-        <Route path={routes.Reason.path} component={routes.Reason.component} />
-        <Route path={routes.Salary.path} component={routes.Salary.component} />
-        <Route path={routes.Skills.path} component={routes.Skills.component} />
-        <Route component={routes.NotFound.component} />
-      </Switch>
-    </Suspense>
-
+        <Switch>
+          <Route path={routes.Root.path} exact component={routes.Root.component} />
+          <Route path={routes.Contacts.path} component={routes.Contacts.component} />
+          <Route path={routes.Download.path} component={routes.Download.component} />
+          <Route
+            path={routes.Education.path}
+            component={routes.Education.component}
+          />
+          <Route
+            path={routes.Experience.path}
+            component={routes.Experience.component}
+          />
+          <Route path={routes.General.path} component={routes.General.component} />
+          <Route path={routes.Reason.path} component={routes.Reason.component} />
+          <Route path={routes.Salary.path} component={routes.Salary.component} />
+          <Route path={routes.Skills.path} component={routes.Skills.component} />
+          <Route component={routes.NotFound.component} />
+        </Switch>
+      </Suspense>
+    </div>
     <Footer />
   </>
 );

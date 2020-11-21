@@ -9,6 +9,19 @@ import css from './Canvas.module.css';
 export default class Canvas extends Component {
   canvasRef = createRef<HTMLDivElement>();
   preloaderRef = createRef<HTMLParagraphElement>();
+  handleKeydown: ((event: KeyboardEvent) => void) | null = null;
+
+  // variables
+  camera?: THREE.PerspectiveCamera | null;
+  clock?: THREE.Clock | null;
+  scene?: THREE.Scene | null;
+  hemiLight?: THREE.HemisphereLight | null;
+  dirLight?: THREE.DirectionalLight | null;
+  renderer?: THREE.WebGLRenderer | null;
+  mesh?: THREE.Mesh | null;
+  controls?: OrbitControls | null;
+  loader?: GLTFLoader | null;
+  animate?: (() => void) | null;
 
   componentDidMount(): void {
     // GENERAL OPERATORS
@@ -21,57 +34,58 @@ export default class Canvas extends Component {
     if (!container || !preloader) return;
 
     // THREE JS INIT
-    const camera = new THREE.PerspectiveCamera(20, width / height, 1, 1000);
-    const clock = new THREE.Clock();
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x909090);
-    scene.position.y = -1;
-    scene.fog = new THREE.Fog(0x909090, 1, 60);
+    this.camera = new THREE.PerspectiveCamera(20, width / height, 1, 1000);
+    this.clock = new THREE.Clock();
+    this.scene = new THREE.Scene();
+    this.scene.background = new THREE.Color(0x909090);
+    this.scene.position.y = -1;
+    this.scene.fog = new THREE.Fog(0x909090, 1, 60);
 
-    const hemiLight = new THREE.HemisphereLight(0x909090, 0xe0e0e0);
-    hemiLight.position.set(0, 10, 0);
-    scene.add(hemiLight);
+    this.hemiLight = new THREE.HemisphereLight(0x909090, 0xe0e0e0);
+    this.hemiLight.position.set(0, 10, 0);
+    this.scene.add(this.hemiLight);
 
-    const dirLight = new THREE.DirectionalLight(0xffffff);
-    dirLight.position.set(4, 6, -8);
-    dirLight.castShadow = true;
-    dirLight.shadow.camera.top = 2;
-    dirLight.shadow.camera.bottom = -2;
-    dirLight.shadow.camera.left = -2;
-    dirLight.shadow.camera.right = 2;
-    dirLight.shadow.camera.near = 0.1;
-    dirLight.shadow.camera.far = 40;
-    scene.add(dirLight);
+    this.dirLight = new THREE.DirectionalLight(0xffffff);
+    this.dirLight.position.set(4, 6, -8);
+    this.dirLight.castShadow = true;
+    this.dirLight.shadow.camera.top = 2;
+    this.dirLight.shadow.camera.bottom = -2;
+    this.dirLight.shadow.camera.left = -2;
+    this.dirLight.shadow.camera.right = 2;
+    this.dirLight.shadow.camera.near = 0.1;
+    this.dirLight.shadow.camera.far = 40;
+    this.scene.add(this.dirLight);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(width, height);
-    renderer.outputEncoding = THREE.sRGBEncoding;
-    renderer.shadowMap.enabled = true;
-    container.appendChild(renderer.domElement);
+    this.renderer = new THREE.WebGLRenderer({ antialias: true });
+    this.renderer.setPixelRatio(window.devicePixelRatio);
+    this.renderer.setSize(width, height);
+    this.renderer.outputEncoding = THREE.sRGBEncoding;
+    this.renderer.shadowMap.enabled = true;
+    container.appendChild(this.renderer.domElement);
 
-    const mesh = new THREE.Mesh(
+    this.mesh = new THREE.Mesh(
       new THREE.PlaneBufferGeometry(100, 100),
       new THREE.MeshPhongMaterial({ color: 0x909090, depthWrite: false }),
     );
-    mesh.rotation.x = -Math.PI / 2;
-    mesh.receiveShadow = true;
-    scene.add(mesh);
+    this.mesh.rotation.x = -Math.PI / 2;
+    this.mesh.receiveShadow = true;
+    this.scene.add(this.mesh);
 
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.maxPolarAngle = 1.45;
-    controls.minDistance = 5;
-    controls.maxDistance = 55;
-    controls.screenSpacePanning = true;
+    this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.maxPolarAngle = 1.45;
+    this.controls.minDistance = 5;
+    this.controls.maxDistance = 55;
+    this.controls.screenSpacePanning = true;
 
-    camera.position.set(8, 10, 14);
-    controls.update();
+    this.camera.position.set(8, 10, 14);
+    this.controls.update();
 
-    const loader = new GLTFLoader();
+    this.loader = new GLTFLoader();
 
-    loader.load(MODEL_PATH, gltf => {
+    this.loader.load(MODEL_PATH, gltf => {
       const model = gltf.scene;
-      scene.add(model);
+      if (!this.scene) return;
+      this.scene.add(model);
 
       model.traverse((object: THREE.Object3D): void => {
         if ((object as THREE.Mesh).isMesh) object.castShadow = true;
@@ -79,7 +93,7 @@ export default class Canvas extends Component {
 
       const skeleton = new THREE.SkeletonHelper(model);
       skeleton.visible = false;
-      scene.add(skeleton);
+      this.scene.add(skeleton);
 
       const animations = gltf.animations;
 
@@ -98,8 +112,9 @@ export default class Canvas extends Component {
       preloader.style.display = 'none';
       walkAction.play();
 
-      const animate = () => {
-        requestAnimationFrame(animate);
+      this.animate = () => {
+        if (!this.animate) return;
+        requestAnimationFrame(this.animate as FrameRequestCallback);
 
         const idleWeight = idleAction.getEffectiveWeight();
         const walkWeight = walkAction.getEffectiveWeight();
@@ -108,24 +123,26 @@ export default class Canvas extends Component {
         setWeight(idleAction, idleWeight);
         setWeight(walkAction, walkWeight);
         setWeight(runAction, runWeight);
+        if (!this.renderer || !this.scene || !this.clock || !this.camera) return;
 
-        renderer.render(scene, camera);
+        this.renderer.render(this.scene, this.camera);
 
-        const mixerUpdateDelta = clock.getDelta();
+        const mixerUpdateDelta = this.clock.getDelta();
         mixer.update(mixerUpdateDelta);
       };
 
-      animate();
+      this.animate();
 
       window.onresize = () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
+        if (!this.renderer || !this.camera) return;
+        this.camera.aspect = window.innerWidth / window.innerHeight;
+        this.camera.updateProjectionMatrix();
 
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
       };
 
       let animCount = 0;
-      window.addEventListener('keydown', event => {
+      this.handleKeydown = (event: KeyboardEvent) => {
         if (event.code !== 'Space') return;
 
         animCount += 1;
@@ -149,8 +166,29 @@ export default class Canvas extends Component {
           animCount = 0;
           return;
         }
-      });
+      };
+
+      window.addEventListener('keydown', this.handleKeydown);
     });
+  }
+
+  clear = (): void => {
+    this.camera = null;
+    this.clock = null;
+    this.scene = null;
+    this.hemiLight = null;
+    this.dirLight = null;
+    this.renderer = null;
+    this.mesh = null;
+    this.controls = null;
+    this.loader = null;
+    this.animate = null;
+  };
+
+  componentWillUnmount(): void {
+    this.clear();
+    if (!this.handleKeydown) return;
+    window.removeEventListener('keydown', this.handleKeydown);
   }
 
   render(): ReactElement {

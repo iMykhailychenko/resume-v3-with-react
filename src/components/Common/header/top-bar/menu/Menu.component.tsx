@@ -32,44 +32,42 @@ const MenuBtn = ({ content, theme, menu, toggleMenu }: Props): ReactElement => {
     <button className="menu__btn" onClick={toggleMenu}>
       <svg
         className={svg}
-        width="2.5rem"
-        height="2.5rem"
-        viewBox="0 0 2.5rem 2.5rem"
+        width="3rem"
+        height="3rem"
+        viewBox="0 0 30 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          x="0.05rem"
-          y="0.05rem"
-          width="2.4rem"
-          height="2.4rem"
-          rx="1.2rem"
+          cx="1.21rem"
+          cy="1.21em"
+          r="1.1rem"
           strokeWidth="0.1rem"
           stroke={color}
           strokeDasharray={strokeDasharray}
         />
-        <rect
-          x="1.1rem"
-          y="0.5rem"
-          width="0.3rem"
-          height="0.3rem"
-          rx="0.15rem"
+        <circle
+          cx="1.2rem"
+          cy="0.7rem"
+          width="0.2rem"
+          height="0.2rem"
+          r="0.1rem"
           fill={color}
         />
-        <rect
-          x="1.1rem"
-          y="1.1rem"
-          width="0.3rem"
-          height="0.3rem"
-          rx="0.15rem"
+        <circle
+          cx="1.2rem"
+          cy="1.2rem"
+          width="0.2rem"
+          height="0.2rem"
+          r="0.1rem"
           fill={color}
         />
-        <rect
-          x="1.1rem"
-          y="1.7rem"
-          width="0.3rem"
-          height="0.3rem"
-          rx="0.15rem"
+        <circle
+          cx="1.2rem"
+          cy="1.7rem"
+          width="0.2rem"
+          height="0.2rem"
+          r="0.1rem"
           fill={color}
         />
       </svg>

@@ -31,7 +31,7 @@
 }
 
 .link {
-  padding: 1.6rem 0.6rem;
+  padding: 0.6rem;
   text-decoration: underline;
   transition: 0.3s ease-in-out;
   color: rgb(255, 255, 255);
