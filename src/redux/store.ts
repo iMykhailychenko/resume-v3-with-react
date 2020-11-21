@@ -1,7 +1,8 @@
-import { createStore, applyMiddleware } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from './reducers';
+
 import setData from './middleware/setDataToStorage';
+import rootReducer from './reducers';
 
 const enhancer = applyMiddleware(setData);
 

@@ -1,9 +1,6 @@
-import { TOGGLE_MENU, ActionTypes } from '../../types';
+import { ActionTypes, TOGGLE_MENU } from '../../types';
 
-export const menuReducer = (
-  menu: boolean = false,
-  action: ActionTypes,
-): boolean => {
+export const menuReducer = (menu = false, action: ActionTypes): boolean => {
   switch (action.type) {
     case TOGGLE_MENU:
       return !menu;

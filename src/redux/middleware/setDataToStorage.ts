@@ -1,5 +1,5 @@
-import { TOGGLE_LOCALE, SWITCH_THEME, ActionTypes } from '../../types';
-import { setDataToLocalStorage } from '../../helpers/storage';
+import { setDataToLocalStorage } from '../../services/helpers';
+import { ActionTypes, SWITCH_THEME, TOGGLE_LOCALE } from '../../types';
 
 const setData = (store: any) => (next: (action: ActionTypes) => any) => (
   action: ActionTypes,

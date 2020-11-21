@@ -1,11 +1,10 @@
-import { TOGGLE_LOCALE, ActionTypes } from '../../types';
-import { getDataFromLocalStorage } from '../../helpers/storage';
-
-import UA from '../../content/ua/content.json';
-import RU from '../../content/ru/content.json';
 import EN from '../../content/en/content.json';
+import RU from '../../content/ru/content.json';
+import UA from '../../content/ua/content.json';
+import { getDataFromLocalStorage } from '../../services/helpers';
+import { ActionTypes, TOGGLE_LOCALE } from '../../types';
 
-const init = getDataFromLocalStorage('locale', 'UA')
+const init = getDataFromLocalStorage('locale', 'UA');
 const content: { [key: string]: {} } = { UA, RU, EN };
 
 export const contentReducer = (

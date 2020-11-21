@@ -1,4 +1,4 @@
-import { SWITCH_THEME, ActionTypes } from '../../types';
+import { ActionTypes, SWITCH_THEME } from '../../types';
 
 export const themeActions = (theme: string): ActionTypes => ({
   type: SWITCH_THEME,
