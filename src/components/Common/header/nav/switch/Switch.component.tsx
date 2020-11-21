@@ -1,4 +1,4 @@
-import './Switch.module.css';
+import './Switch.css';
 
 import React, { ReactElement } from 'react';
 

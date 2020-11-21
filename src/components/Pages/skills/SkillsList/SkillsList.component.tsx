@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 
-import icons from './icons';
+import icons from '../../../../assets/icons';
 import css from './SkillsList.module.css';
 
 interface Values {

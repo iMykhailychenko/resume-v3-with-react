@@ -3,8 +3,8 @@ import React, { ReactElement } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { encode, initialValues, validEmail } from '../../../services/utils';
-import popTransition from '../../transitions/pop.module.css';
-import css from './FormComponent.module.css';
+import popTransition from '../../../transitions/pop.module.css';
+import css from './Form.module.css';
 
 interface Values {
   name: string;

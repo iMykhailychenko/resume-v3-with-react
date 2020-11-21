@@ -3,7 +3,16 @@ import { connect } from 'react-redux';
 import { IState } from '../../../types';
 import General from './General.component';
 
-const mapSTP = (state: IState): Pick<IState, 'content'> => ({
+interface Props {
+  content: {
+    title: string;
+    tablet: string[][];
+    text: string;
+    relink: string;
+  };
+}
+
+const mapSTP = (state: IState): Props => ({
   content: state.content.general,
 });
 

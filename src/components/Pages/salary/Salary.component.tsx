@@ -5,7 +5,7 @@ import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.compone
 import PageText from '../../Common/page-text/PageText.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
 import css from './Salary.module.css';
-import Sale from './sale/Sale';
+import Sale from './sale/Sale.component';
 
 interface Props {
   content: {

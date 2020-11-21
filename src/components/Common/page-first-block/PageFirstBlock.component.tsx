@@ -1,4 +1,4 @@
-import '../../transitions/slideUp.css';
+import '../../../transitions/slideUp.css';
 
 import clsx from 'clsx';
 import React, { Component, ReactElement } from 'react';

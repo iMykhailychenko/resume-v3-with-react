@@ -27,12 +27,12 @@ export default class Clock extends Component<unknown, State> {
     clearInterval(this.intervalID);
   }
 
-  tick(): void {
+  tick = (): void => {
     this.setState({
       hours: hours(),
       minutes: minutes(),
     });
-  }
+  };
 
   render(): ReactElement {
     const { hours, minutes } = this.state;

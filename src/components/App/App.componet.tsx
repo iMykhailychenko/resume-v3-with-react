@@ -1,7 +1,7 @@
 import React, { ReactElement, Suspense } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import routes from '../../routes/index.js';
+import routes from '../../routes';
 import { ThemeStyles } from '../../styled-components/ThemeStyles.js';
 import Footer from '../Common/footer/Footer.container';
 import Form from '../Common/form/Form.container';

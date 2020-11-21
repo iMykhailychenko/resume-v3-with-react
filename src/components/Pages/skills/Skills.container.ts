@@ -3,7 +3,27 @@ import { connect } from 'react-redux';
 import { IState } from '../../../types';
 import Skills from './Skills.component';
 
-const mapSTP = (state: IState): Pick<IState, 'content'> => ({
+interface Values {
+  img: string;
+  logoColor: string;
+  title: string;
+  text: string;
+}
+
+interface Props {
+  content: {
+    title: string;
+    text: string[];
+    relink: string;
+    list: {
+      title: string;
+      text: string;
+      item: Values[];
+    }[];
+  };
+}
+
+const mapSTP = (state: IState): Props => ({
   content: state.content.skills,
 });
 

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-import slideNav from '../../../transitions/slideNav.module.css';
+import slideNav from '../../../../transitions/slideNav.module.css';
 import css from './Nav.module.css';
 import Navigation from './navigation/Navigation.container';
 import Switch from './switch/Switch.container';

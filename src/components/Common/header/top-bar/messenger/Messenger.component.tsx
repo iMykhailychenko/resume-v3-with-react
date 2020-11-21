@@ -1,9 +1,10 @@
 import React, { ReactElement } from 'react';
 
+import { Theme } from '../../../../../types';
 import css from './Messenger.module.css';
 
 interface Props {
-  theme: string;
+  theme: Theme;
 }
 
 const Messenger = ({ theme }: Props): ReactElement => {

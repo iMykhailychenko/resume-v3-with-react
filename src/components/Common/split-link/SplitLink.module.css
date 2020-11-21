@@ -46,7 +46,7 @@
 
 :global(.page-relink-circle::after) {
   left: -50%;
-  background: url('../../images//svg/next-blue.svg') no-repeat;
+  background: url('/images/svg/next-blue.svg') no-repeat;
 }
 
 .link:focus :global(.page-relink-circle::after),

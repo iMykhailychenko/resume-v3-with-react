@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import SplitLink from '../../Common//split-link/SplitLink.component';
 import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.component';
@@ -8,22 +8,20 @@ import ListElement from './ListElement/ListElement.component';
 interface Props {
   content: {
     title: string;
-    item: [
-      {
-        title: string;
-        text: string;
-        background: string;
-        color: string;
-        translate: string;
-        x: string;
-        y: string;
-      },
-    ];
+    item: {
+      title: string;
+      text: string;
+      background: string;
+      color: string;
+      translate: string;
+      x: string;
+      y: string;
+    }[];
     relink: string;
   };
 }
 
-const Education: React.FC<Props> = ({ content: { title, item, relink } }) => (
+const Education = ({ content: { title, item, relink } }: Props): ReactElement => (
   <main className={css.overflow}>
     <div className="container">
       <PageFirstBlock

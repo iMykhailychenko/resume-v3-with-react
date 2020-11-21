@@ -2,11 +2,13 @@ import './Menu.css';
 
 import React, { ReactElement } from 'react';
 
+import { Theme } from '../../../../../types';
+
 interface Props {
   content: string;
   menu: boolean;
-  theme: string;
-  toggleMenu(menu: boolean): void;
+  theme: Theme;
+  toggleMenu(): void;
 }
 
 export const getCircleWidth = (diameter: number): number => diameter * Math.PI;
@@ -27,7 +29,7 @@ const MenuBtn = ({ content, theme, menu, toggleMenu }: Props): ReactElement => {
     : `0, ${width}rem`;
 
   return (
-    <button className="menu__btn" onClick={() => toggleMenu(menu)}>
+    <button className="menu__btn" onClick={toggleMenu}>
       <svg
         className={svg}
         width="2.5rem"
@@ -36,7 +38,7 @@ const MenuBtn = ({ content, theme, menu, toggleMenu }: Props): ReactElement => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect
+        <circle
           x="0.05rem"
           y="0.05rem"
           width="2.4rem"

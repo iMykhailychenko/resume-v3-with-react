@@ -1,5 +1,5 @@
 import { Parallax } from 'rc-scroll-anim';
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import FormComponent from '../../Common/form/Form.container';
 import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.component';
@@ -7,13 +7,13 @@ import PageText from '../../Common/page-text/PageText.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
 import css from './Contacts.module.css';
 
-type Props = {
+interface Props {
   content: {
     [key: string]: string;
   };
-};
+}
 
-const Contacts: React.FC<Props> = ({ content }) => {
+const Contacts = ({ content }: Props): ReactElement => {
   const mobile = window.innerWidth < 768;
 
   return (

@@ -1,8 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import nextBlack from '../images/svg/next-black.svg';
-import nextWhite from '../images/svg/next-white.svg';
-
 export const ThemeStyles = createGlobalStyle`
   body {
     background: ${props =>
@@ -78,8 +75,8 @@ export const ThemeStyles = createGlobalStyle`
   .page-relink-circle::before {
     background: ${props =>
       props.theme === 'light'
-        ? `url(${nextBlack}) no-repeat`
-        : `url(${nextWhite}) no-repeat`};
+        ? 'url("/images/svg/next-black.svg") no-repeat'
+        : 'url("/images/svg/next-white.svg") no-repeat'};
   }
 
   .gradient::before {

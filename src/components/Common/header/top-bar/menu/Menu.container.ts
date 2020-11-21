@@ -1,17 +1,26 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-import { menuActions } from '../../../../../redux/menu/actions';
-import { Dispatch, IState } from '../../../../../types';
-import MenuBtn from './Menu.component';
+import { menu } from '../../../../../redux/menu/actions';
+import { IState, Theme } from '../../../../../types';
+import Menu from './Menu.component';
 
-const mapSTP = (state: IState): Pick<IState, 'menu' | 'theme' | 'content'> => ({
+interface Props {
+  menu: boolean;
+  theme: Theme;
+  content: string;
+}
+
+const mapSTP = (state: IState): Props => ({
   menu: state.menu,
-  theme: state.theme,
+  theme: state.theme as Theme,
   content: state.content.header.menu,
 });
 
 const mapDTP = (dispatch: Dispatch) => ({
-  toggleMenu: (menu: boolean) => dispatch(menuActions(menu)),
+  toggleMenu: (): void => {
+    dispatch(menu());
+  },
 });
 
-export default connect(mapSTP, mapDTP)(MenuBtn);
+export default connect(mapSTP, mapDTP)(Menu);

@@ -3,7 +3,13 @@ import { connect } from 'react-redux';
 import { IState } from '../../../types';
 import Contacts from './Contacts.component';
 
-const mapSTP = (state: IState): Pick<IState, 'content'> => ({
+interface Props {
+  content: {
+    [key: string]: string;
+  };
+}
+
+const mapSTP = (state: IState): Props => ({
   content: state.content.contacts,
 });
 

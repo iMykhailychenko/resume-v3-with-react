@@ -1,15 +1,18 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-import { localeActions } from '../../../../../redux/locale/actions';
-import { Dispatch, IState } from '../../../../../types';
-import Locale from './Locale.component';
+import { locale } from '../../../../../redux/locale/actions';
+import { IState, Locale } from '../../../../../types';
+import LocaleComponent from './Locale.component';
 
-const mapSTP = (state: IState): Pick<IState, 'locale'> => ({
-  locale: state.locale,
+const mapSTP = (state: IState): { locale: Locale } => ({
+  locale: state.locale as Locale,
 });
 
 const mapDTP = (dispatch: Dispatch) => ({
-  toggleLocale: (locale: string) => dispatch(localeActions(locale)),
+  toggleLocale: (data: Locale): void => {
+    dispatch(locale(data));
+  },
 });
 
-export default connect(mapSTP, mapDTP)(Locale);
+export default connect(mapSTP, mapDTP)(LocaleComponent);

@@ -1,47 +1,46 @@
-import React, { MouseEvent, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { Helmet } from 'react-helmet';
 
+import { Locale } from '../../../../../types';
 import css from './Locale.module.css';
 
 interface Props {
-  locale: string;
-  toggleLocale(locale: string): void;
+  locale: Locale;
+  toggleLocale(data: Locale): void;
 }
 
-const Locale = ({ locale, toggleLocale }: Props): ReactElement => {
-  const handleLang = (event: MouseEvent<HTMLElement>): void => {
-    toggleLocale(event.target.dataset.lang);
+const LocaleComponent = ({ locale, toggleLocale }: Props): ReactElement => {
+  const handleLang = (data: Locale) => () => {
+    toggleLocale(data);
   };
+
   return (
     <>
       <Helmet>
-        <html lang={locale.toLowerCase()} />
+        <html lang={locale?.toLowerCase()} />
       </Helmet>
 
       <ul className={css.list}>
         <li>
           <button
-            data-lang="UA"
             className={locale === 'UA' ? css.active : css.item}
-            onClick={handleLang}
+            onClick={handleLang('UA')}
           >
             UA
           </button>
         </li>
         <li>
           <button
-            data-lang="RU"
             className={locale === 'RU' ? css.active : css.item}
-            onClick={handleLang}
+            onClick={handleLang('RU')}
           >
             RU
           </button>
         </li>
         <li>
           <button
-            data-lang="EN"
             className={locale === 'EN' ? css.active : css.item}
-            onClick={handleLang}
+            onClick={handleLang('EN')}
           >
             EN
           </button>
@@ -51,4 +50,4 @@ const Locale = ({ locale, toggleLocale }: Props): ReactElement => {
   );
 };
 
-export default Locale;
+export default LocaleComponent;

@@ -16,7 +16,9 @@ export const initialValues: Values = {
   confirm: false,
 };
 
-export const encode = (data: { [key: string]: string }): string => {
+export const encode = (data: {
+  [key: string]: string | number | boolean;
+}): string => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');

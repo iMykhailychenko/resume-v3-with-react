@@ -22,6 +22,7 @@
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.1",
     "three": "^0.115.0",
     "three-gltf-loader": "^1.111.0",
     "typescript": "^3.7.5"
@@ -61,7 +62,6 @@
     "@types/react-transition-group": "^4.2.4",
     "@typescript-eslint/eslint-plugin": "^4.3.0",
     "@typescript-eslint/parser": "^4.3.0",
-    "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-import": "^2.22.1",

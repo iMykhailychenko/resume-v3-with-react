@@ -1,7 +1,7 @@
 import React, { Component, createRef, MouseEvent, ReactElement } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-import popupAppear from '../../transitions/popupAppear.module.css';
+import popupAppear from '../../../transitions/popupAppear.module.css';
 import css from './Popup.module.css';
 
 interface Props {

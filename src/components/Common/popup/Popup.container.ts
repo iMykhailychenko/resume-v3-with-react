@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-import { popupActions } from '../../../redux/popup/actions';
-import { Dispatch, IState } from '../../../types';
+import { popup } from '../../../redux/popup/actions';
+import { IState } from '../../../types';
 import Popup from './Popup.component';
 
 const mapSTP = (state: IState): Pick<IState, 'popup'> => ({
@@ -9,7 +10,9 @@ const mapSTP = (state: IState): Pick<IState, 'popup'> => ({
 });
 
 const mapDTP = (dispatch: Dispatch) => ({
-  togglePopup: (popup: boolean) => dispatch(popupActions(popup)),
+  togglePopup: (): void => {
+    dispatch(popup());
+  },
 });
 
 export default connect(mapSTP, mapDTP)(Popup);

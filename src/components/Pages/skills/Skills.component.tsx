@@ -4,7 +4,7 @@ import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.compone
 import PageText from '../../Common/page-text/PageText.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
 import css from './Skills.module.css';
-import SkillsList from './SkillsList/SkillsList';
+import SkillsList from './SkillsList/SkillsList.component';
 
 interface Values {
   img: string;
