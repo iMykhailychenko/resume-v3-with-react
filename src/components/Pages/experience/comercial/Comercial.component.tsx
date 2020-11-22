@@ -5,33 +5,33 @@ import css from '../Experiance.module.css';
 const projects: { link: string; src: string; source: string }[] = [
   {
     link: 'http://ilyashev.hd.kiev.ua/',
-    src: '/images/content/experiance/experiance-7.webp',
-    source: '/images/content/experiance/experiance-7.jpg',
+    source: '/images/content/experiance/experiance-7.webp',
+    src: '/images/content/experiance/experiance-7.jpg',
   },
   {
     link: 'https://remens.ua/',
-    src: '/images/content/experiance/experiance-1.webp',
-    source: '/images/content/experiance/experiance-1.png',
+    source: '/images/content/experiance/experiance-1.webp',
+    src: '/images/content/experiance/experiance-1.png',
   },
   {
     link: 'https://stalkanatsilur.com.ua/',
-    src: '/images/content/experiance/experiance-2.webp',
-    source: '/images/content/experiance/experiance-2.png',
+    source: '/images/content/experiance/experiance-2.webp',
+    src: '/images/content/experiance/experiance-2.png',
   },
   {
     link: 'http://kraina.hd.kiev.ua/',
-    src: '/images/content/experiance/experiance-3.webp',
-    source: '/images/content/experiance/experiance-3.png',
+    source: '/images/content/experiance/experiance-3.webp',
+    src: '/images/content/experiance/experiance-3.png',
   },
   {
     link: 'https://horizoncapital.com.ua/uk/',
-    src: '/images/content/experiance/experiance-4.webp',
-    source: '/images/content/experiance/experiance-4.png',
+    source: '/images/content/experiance/experiance-4.webp',
+    src: '/images/content/experiance/experiance-4.png',
   },
   {
     link: 'https://taslife.com.ua/doktor-tas',
-    src: '/images/content/experiance/experiance-8.webp',
-    source: '/images/content/experiance/experiance-8.png',
+    source: '/images/content/experiance/experiance-8.webp',
+    src: '/images/content/experiance/experiance-8.png',
   },
 ];
 

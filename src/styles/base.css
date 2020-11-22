@@ -34,6 +34,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   flex-grow: 2;
+  min-height: 7rem;
 }
 
 .loader {

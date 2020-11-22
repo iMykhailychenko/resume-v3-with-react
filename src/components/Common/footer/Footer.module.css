@@ -5,10 +5,11 @@
   justify-content: space-between;
   align-items: center;
   width: 86%;
-  margin: 7rem auto 0;
-  padding: 1rem 6rem;
+  margin: 0 auto;
+  padding: 1.1rem 6rem;
   background: rgb(112, 112, 112);
   border-radius: 0.8rem 0.8rem 0 0;
+  box-sizing: border-box;
 }
 
 .footer span {
