@@ -3,7 +3,10 @@ import React, { Component, ReactElement } from 'react';
 
 import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
+import Comercial from './comercial/Comercial.component';
 import css from './Experiance.module.css';
+import Learning from './learning/Learning.component';
+import Resume from './resume/Resume.component';
 
 interface Props {
   content: {
@@ -11,6 +14,7 @@ interface Props {
     secondTitle: string;
     textOne: string;
     textTwo: string;
+    textThree: string;
     relink: string;
     slider: {
       linkt: string;
@@ -34,7 +38,7 @@ export default class Experiance extends Component<Props, State> {
   handleUp = (): void => {
     this.setState(
       (prev: State): State => {
-        const count = !prev.count ? 2 : prev.count - 1;
+        const count = !prev.count ? 3 : prev.count - 1;
         return { count };
       },
     );
@@ -43,7 +47,7 @@ export default class Experiance extends Component<Props, State> {
   handleDown = (): void => {
     this.setState(
       (prev: State): State => {
-        const count = prev.count >= 2 ? 0 : prev.count + 1;
+        const count = prev.count >= 3 ? 0 : prev.count + 1;
         return { count };
       },
     );
@@ -100,6 +104,14 @@ export default class Experiance extends Component<Props, State> {
                     }, ${count === 2 ? '-20%' : '-50%'})`,
                   }}
                 />
+                <span
+                  className={css.point + ' reversBackground'}
+                  style={{
+                    transform: `scale(${count === 3 ? 2.5 : 1}) translate(${
+                      count === 3 ? '44%' : '50%'
+                    }, ${count === 3 ? '-45%' : '-50%'})`,
+                  }}
+                />
               </div>
 
               <span className={css.current}>{`0${count + 1}`}</span>
@@ -132,8 +144,8 @@ export default class Experiance extends Component<Props, State> {
 
             {!mobile && (
               <>
-                <button className={css.btn} onClick={this.handleDown}></button>
                 <button className={css.btn} onClick={this.handleUp}></button>
+                <button className={css.btn} onClick={this.handleDown}></button>
               </>
             )}
           </div>
@@ -153,83 +165,7 @@ export default class Experiance extends Component<Props, State> {
           </Parallax>
 
           <div className={css.border + ' border-top'}>
-            <ul className={css.works}>
-              <li>
-                <a
-                  href="http://ilyashev.hd.kiev.ua"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-7.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-7.jpg" alt="" />
-                  </picture>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://remens.ua/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-1.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-1.png" alt="" />
-                  </picture>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://stalkanatsilur.com.ua/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-2.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-2.png" alt="" />
-                  </picture>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://kraina.hd.kiev.ua/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-3.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-3.png" alt="" />
-                  </picture>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://horizon-capital.hd.kiev.ua/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-4.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-4.png" alt="" />
-                  </picture>
-                </a>
-              </li>
-            </ul>
+            <Comercial />
 
             <Parallax
               className={css.title}
@@ -242,40 +178,31 @@ export default class Experiance extends Component<Props, State> {
               <p>{content.textTwo}</p>
             </Parallax>
 
-            <ul className={css.works}>
-              <li>
-                <a
-                  href="https://imykhailychenko.github.io/resume-v2/dist/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-5.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-5.png" alt="" />
-                  </picture>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://imykhailychenko.github.io/resume/build/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <picture className={css.img}>
-                    <source
-                      src="/images/content/experiance/experiance-6.webp"
-                      type="image/webp"
-                    />
-                    <img src="/images/content/experiance/experiance-6.png" alt="" />
-                  </picture>
-                </a>
-              </li>
-            </ul>
+            <Resume />
+
+            <Parallax
+              className={css.title}
+              animation={{ y: 0, opacity: 1 }}
+              style={{
+                transform: 'translateY(50%)',
+                opacity: '0',
+              }}
+            >
+              <p>{content.textThree}</p>
+            </Parallax>
+            <Parallax
+              className={css.title}
+              animation={{ y: 0, opacity: 1 }}
+              style={{
+                transform: 'translateY(20%)',
+                opacity: '0',
+              }}
+            >
+              <Learning />
+            </Parallax>
           </div>
         </div>
+
         <SplitLink path="/skills" text="Hard skills" />
       </main>
     );

@@ -153,13 +153,18 @@
       }
     ],
     "secondTitle": "Examples of my commercial works",
-    "textOne": "Below are the sites in the creation of which I took an active part. These are not all my works! For the sake of a fair assessment, I highlighted only those sites that I created on my own or played a major role in their creation.",
+    "textOne": "Below are the sites in the creation of which I took an active part. These are not all my works! For obvious reasons, I can not show all the commercial projects in which I was participated.",
     "textTwo": "For comparison, the earlier versions of my resumes are presented below. Do not judge strictly, they were created a long time ago.",
+    "textThree": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them end up on github.",
     "relink": "Hard skills"
   },
   "skills": {
     "title": "Hard skills",
     "text": [
+      "Unfortunately or fortunately, but I learn new technologies faster than I can update this site.",
+      "Therefore, if you have not found the information you need - write to me! Perhaps I just did not mentioned it on the site"
+    ],
+    "end": [
       "In this section I will indicate the basic skills and knowledge that I mastered during the GoIT courses, as well as those that I have mastered in practice. Some of these skills are presented on this site.",
       "Also, you can visit my page on GitHub and make sure that all the indicated skills have been passed by me in practice. The link to the GitHub profile is in the footer of the site."
     ],
@@ -343,10 +348,64 @@
             "text": "Using the Redux Library with React, Redux Toolkit"
           },
           {
+            "img": "saga",
+            "logoColor": "rgb(54,159,255)",
+            "title": "Saga / thunk",
+            "text": "Library that aims to make application side effects"
+          },
+          {
+            "img": "hooks",
+            "logoColor": "rgb(54,159,255)",
+            "title": "Hooks",
+            "text": "Modern syntax of React.js library"
+          },
+          {
+            "img": "next",
+            "logoColor": "rgb(54,159,255)",
+            "title": "SSR",
+            "text": "Server side rendering (Next.js)"
+          },
+          {
             "img": "password",
             "logoColor": "rgb(54,159,255)",
-            "title": "JWT(JSON Web Token)",
-            "text": "Authorization and user authentication"
+            "title": "Authorization",
+            "text": "Authorization and user authentication (client side)"
+          }
+        ]
+      },
+      {
+        "title": "NODE.JS",
+        "text": "Writing server-side code using Node.js",
+        "item": [
+          {
+            "img": "file",
+            "logoColor": "rgb(60,179,113)",
+            "title": "File system",
+            "text": "Working with files using Node.js"
+          },
+          {
+            "img": "express",
+            "logoColor": "rgb(60,179,113)",
+            "title": "Express",
+            "text": "Working with files using Node.js"
+          },
+          {
+            "img": "mongo",
+            "logoColor": "rgb(60,179,113)",
+            "title": "Mongodb",
+            "text": "MongoDB and Mongoose ODM"
+          },
+          {
+            "img": "password",
+            "logoColor": "rgb(60,179,113)",
+            "title": "Authorization",
+            "text": "Authorization and user authentication (server side)"
+          },
+          {
+            "img": "asynchronous",
+            "logoColor": "rgb(60,179,113)",
+            "title": "WebSockets",
+            "text": "Persistent bi-directional network connection"
           }
         ]
       },

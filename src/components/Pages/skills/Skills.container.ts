@@ -14,6 +14,7 @@ interface Props {
   content: {
     title: string;
     text: string[];
+    end: string[];
     relink: string;
     list: {
       title: string;

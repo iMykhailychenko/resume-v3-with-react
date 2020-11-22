@@ -29,6 +29,12 @@ const icons: { [key: string]: string } = {
   storage: '/images/content/skills/storage.svg',
   ts: '/images/content/skills/ts.svg',
   wordpress: '/images/content/skills/wordpress.svg',
+  saga: '/images/content/skills/saga.svg',
+  hooks: '/images/content/skills/hooks.svg',
+  file: '/images/content/skills/file.svg',
+  express: '/images/content/skills/form.svg',
+  next: '/images/content/skills/next.svg',
+  mongo: '/images/content/skills/mongo.svg',
 };
 
 export default icons;

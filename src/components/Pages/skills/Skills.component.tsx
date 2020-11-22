@@ -17,6 +17,7 @@ interface Props {
   content: {
     title: string;
     text: string[];
+    end: string[];
     relink: string;
     list: {
       title: string;
@@ -26,7 +27,9 @@ interface Props {
   };
 }
 
-const Skills: React.FC<Props> = ({ content: { title, text, relink, list } }) => (
+const Skills: React.FC<Props> = ({
+  content: { title, text, end, relink, list },
+}) => (
   <main className="container">
     <PageFirstBlock
       title={title}
@@ -67,6 +70,12 @@ const Skills: React.FC<Props> = ({ content: { title, text, relink, list } }) => 
         ),
       )}
     </article>
+
+    <PageText>
+      {end.map((paragraph, id) => (
+        <p key={id}>{paragraph}</p>
+      ))}
+    </PageText>
 
     <SplitLink path="/salary" text={relink} />
   </main>

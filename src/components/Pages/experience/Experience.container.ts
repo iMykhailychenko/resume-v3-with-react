@@ -9,6 +9,7 @@ interface Props {
     secondTitle: string;
     textOne: string;
     textTwo: string;
+    textThree: string;
     relink: string;
     slider: {
       linkt: string;

@@ -51,6 +51,11 @@
   right: 30rem;
 }
 
+.point:nth-of-type(4) {
+  top: 16%;
+  right: 52rem;
+}
+
 .current {
   position: absolute;
   top: 49%;
@@ -182,6 +187,33 @@
   border: 0.2rem solid transparent;
 }
 
+/* table  */
+.table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.table td {
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.tableLink {
+  width: 12rem;
+  text-decoration: underline;
+  text-align: right;
+}
+
+.tableLink:nth-of-type(2n) {
+  width: 8rem;
+}
+
+.tableLink a:hover {
+  color: rgb(54, 159, 255);
+}
+
 @media (max-width: 1400px) {
   .btn {
     left: unset;
@@ -254,5 +286,20 @@
     max-width: 32rem;
     margin: 0 auto;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .table td {
+    padding: 1rem 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .tableLink {
+    width: auto;
+  }
+  
+  .tableLink:nth-of-type(2n) {
+    width: auto;
   }
 }

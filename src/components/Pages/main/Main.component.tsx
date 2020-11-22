@@ -36,9 +36,9 @@ const Main = ({ content: { title, text, relink } }: Props): ReactElement => {
             </CSSTransition>
 
             <CSSTransition in timeout={1000} classNames="slideUp" appear>
-              <Link to="/reason" className={clsx(css.title, 'easeInOut')}>
+              <Link to="/reason" className={clsx(css.btn, 'easeInOut')}>
                 <picture className={css.img}>
-                  <source srcSet="/images/emoji/right.webp" type="image/webp" />
+                  <source src="/images/emoji/right.webp" type="image/webp" />
                   <img src="/images/emoji/right.png" alt="" />
                 </picture>
                 <span>{relink}</span>

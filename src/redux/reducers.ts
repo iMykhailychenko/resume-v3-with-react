@@ -12,7 +12,8 @@ import theme from './theme/reducer';
 const config = {
   storage,
   key: 'resume',
-  white: ['locale', 'theme', 'content'],
+  white: ['locale', 'theme'],
+  blacklist: ['content'],
   transforms: [encryptor],
 };
 
