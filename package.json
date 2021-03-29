@@ -26,7 +26,7 @@
         "redux-persist": "^6.0.0",
         "redux-thunk": "^2.3.0",
         "styled-components": "^5.2.1",
-        "three": "^0.115.0",
+        "three": "^0.125.0",
         "three-gltf-loader": "^1.111.0",
         "typescript": "^3.7.5"
     },
