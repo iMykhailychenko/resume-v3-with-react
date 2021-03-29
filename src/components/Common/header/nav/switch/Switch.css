@@ -1,38 +1,38 @@
 .btn-toggle {
-  position: relative;
-  display: flex;
-  margin: 0 auto;
-  background: rgb(196, 196, 196);
-  border: 0.3rem solid rgb(196, 196, 196);
-  border-radius: 0.8rem;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    background: rgb(196, 196, 196);
+    border: 0.3rem solid rgb(196, 196, 196);
+    border-radius: 0.8rem;
 }
 
 .btn-toggle:focus {
-  box-shadow: 0 0 0 0.1rem rgb(54, 159, 255);
+    box-shadow: 0 0 0 0.1rem rgb(54, 159, 255);
 }
 
 .btn-toggle::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  height: 100%;
-  width: 6.1rem;
-  border-radius: 0.6rem;
-  background: rgb(255, 255, 255);
-  transition: 0.3s ease-in-out;
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 6.1rem;
+    border-radius: 0.6rem;
+    background: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
 }
 
 .light::before {
-  left: 0;
-  right: auto;
-  transition: 0.3s ease-in-out;
+    left: 0;
+    right: auto;
+    transition: 0.3s ease-in-out;
 }
 
 .btn-toggle__elem {
-  position: relative;
-  display: block;
-  padding: 1rem 1.8rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  transition: 0.3s ease-in-out;
+    position: relative;
+    display: block;
+    padding: 1rem 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
 }

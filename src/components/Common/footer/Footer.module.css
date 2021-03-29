@@ -1,87 +1,87 @@
 .footer {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 86%;
-  margin: 0 auto;
-  padding: 1.1rem 6rem;
-  background: rgb(112, 112, 112);
-  border-radius: 0.8rem 0.8rem 0 0;
-  box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86%;
+    margin: 0 auto;
+    padding: 1.1rem 6rem;
+    background: rgb(112, 112, 112);
+    border-radius: 0.8rem 0.8rem 0 0;
+    box-sizing: border-box;
 }
 
 .footer span {
-  color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .left,
 .right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .left {
-  flex-basis: 20rem;
+    flex-basis: 20rem;
 }
 
 .right {
-  min-width: 45rem;
+    min-width: 45rem;
 }
 
 .link {
-  padding: 0.6rem;
-  text-decoration: underline;
-  transition: 0.3s ease-in-out;
-  color: rgb(255, 255, 255);
+    padding: 0.6rem;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
 }
 
 .link:focus,
 .link:hover {
-  text-decoration: none;
-  letter-spacing: 0.2rem;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
 }
 
 .link:focus {
-  color: rgba(79, 168, 250, 0.8);
+    color: rgba(79, 168, 250, 0.8);
 }
 
 @media (max-width: 950px) {
-  .footer,
-  .right,
-  .left {
-    flex-basis: unset;
-    flex-direction: column;
-  }
+    .footer,
+    .right,
+    .left {
+        flex-basis: unset;
+        flex-direction: column;
+    }
 
-  .footer {
-    width: 100%;
-    border-radius: 0;
-    padding: 5rem 0;
-  }
+    .footer {
+        width: 100%;
+        border-radius: 0;
+        padding: 5rem 0;
+    }
 
-  .left {
-    margin-bottom: 4rem;
-  }
+    .left {
+        margin-bottom: 4rem;
+    }
 
-  .left span {
-    margin-bottom: 2rem;
-  }
+    .left span {
+        margin-bottom: 2rem;
+    }
 
-  .right {
-    min-width: unset;
-  }
+    .right {
+        min-width: unset;
+    }
 
-  .right li {
-    margin: 0.6rem 0;
-  }
+    .right li {
+        margin: 0.6rem 0;
+    }
 }
 
 @media (max-height: 440px) {
-  .footer {
-    padding: 0.6rem 1rem;
-    margin-top: 1rem;
-  }
+    .footer {
+        padding: 0.6rem 1rem;
+        margin-top: 1rem;
+    }
 }

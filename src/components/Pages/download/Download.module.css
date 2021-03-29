@@ -1,106 +1,106 @@
 .section {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10rem;
-  margin-bottom: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 25rem;
 }
 
 .block {
-  flex-basis: 45%;
+    flex-basis: 45%;
 }
 
 .img {
-  height: 9rem;
-  width: auto;
-  margin-bottom: 6rem;
+    height: 9rem;
+    width: auto;
+    margin-bottom: 6rem;
 }
 
 .img img {
-  height: 100%;
-  width: auto;
+    height: 100%;
+    width: auto;
 }
 
 .files {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 6rem 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
 }
 
 .list {
-  flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 .link {
-  display: block;
-  width: max-content;
-  padding: 1rem 2rem;
-  margin-bottom: 1.6rem;
-  border-radius: 1rem;
-  transition: 0.3s ease-in-out;
+    display: block;
+    width: max-content;
+    padding: 1rem 2rem;
+    margin-bottom: 1.6rem;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
 }
 
 .link:focus,
 .link:hover {
-  opacity: 0.6;
+    opacity: 0.6;
 }
 
 .text {
-  flex-basis: 70%;
+    flex-basis: 70%;
 }
 
 @media (max-width: 1400px) {
-  .text {
-    flex-basis: 60%;
-  }
+    .text {
+        flex-basis: 60%;
+    }
 }
 
 @media (max-width: 1070px) {
-  .text {
-    flex-basis: 50%;
-  }
+    .text {
+        flex-basis: 50%;
+    }
 }
 
 @media (max-width: 900px) {
-  .section {
-    flex-direction: column;
-  }
+    .section {
+        flex-direction: column;
+    }
 
-  .text {
-    flex-basis: 60%;
-  }
+    .text {
+        flex-basis: 60%;
+    }
 }
 
 @media (max-width: 480px) {
-  .text {
-    flex-basis: 50%;
-  }
+    .text {
+        flex-basis: 50%;
+    }
 }
 
 @media (max-width: 400px) {
-  .section {
-    margin-top: 5rem;
-    margin-bottom: 8rem;
-  }
+    .section {
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+    }
 
-  .files {
-    flex-direction: column-reverse;
-  }
+    .files {
+        flex-direction: column-reverse;
+    }
 
-  .img {
-    width: max-content;
-    margin: 10rem auto 5rem;
-  }
+    .img {
+        width: max-content;
+        margin: 10rem auto 5rem;
+    }
 
-  .list {
-    flex-basis: unset;
-    width: max-content;
-    margin: 0 auto;
-  }
+    .list {
+        flex-basis: unset;
+        width: max-content;
+        margin: 0 auto;
+    }
 
-  .text {
-    flex-basis: unset;
-    margin-bottom: 5rem;
-    text-align: center;
-  }
+    .text {
+        flex-basis: unset;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
 }

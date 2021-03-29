@@ -1,47 +1,47 @@
 .blockLeft,
 .blockRight {
-  margin: 13rem 0 18rem;
+    margin: 13rem 0 18rem;
 }
 
 .blockRight .text,
 .blockRight .video {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .video {
-  max-width: 100rem;
-  width: 100%;
-  border-radius: -1rem;
+    max-width: 100rem;
+    width: 100%;
+    border-radius: -1rem;
 }
 
 .text {
-  max-width: 70rem;
-  width: 90%;
-  margin-top: 10rem;
-  padding: 4rem 10rem 4rem 4rem;
-  outline: hidden;
+    max-width: 70rem;
+    width: 90%;
+    margin-top: 10rem;
+    padding: 4rem 10rem 4rem 4rem;
+    outline: hidden;
 }
 
 @media (max-width: 768px) {
-  .text {
-    margin-top: 1rem;
-    margin-bottom: 10rem;
-  }
+    .text {
+        margin-top: 1rem;
+        margin-bottom: 10rem;
+    }
 }
 
 @media (max-width: 470px) {
-  .text {
-    padding: 0;
-    padding-top: 3rem;
-  }
+    .text {
+        padding: 0;
+        padding-top: 3rem;
+    }
 
-  .blockLeft,
-  .blockRight {
-    margin: 1rem 0 4rem;
-  }
+    .blockLeft,
+    .blockRight {
+        margin: 1rem 0 4rem;
+    }
 
-  .blockRight .text,
-  .blockRight .video {
-    margin-left: 0;
-  }
+    .blockRight .text,
+    .blockRight .video {
+        margin-left: 0;
+    }
 }

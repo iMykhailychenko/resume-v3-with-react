@@ -7,9 +7,7 @@ import { IState } from '../types';
 import reducers from './reducers';
 
 const enhancer =
-  process.env.NODE_ENV === 'development'
-    ? composeWithDevTools(applyMiddleware(thunk))
-    : applyMiddleware(thunk);
+    process.env.NODE_ENV === 'development' ? composeWithDevTools(applyMiddleware(thunk)) : applyMiddleware(thunk);
 
 export const store: Store<IState, AnyAction> = createStore(reducers, enhancer);
 export const persistor = persistStore(store);

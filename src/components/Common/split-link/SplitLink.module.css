@@ -1,70 +1,70 @@
 .link {
-  position: relative;
-  display: block;
-  width: 30rem;
-  margin: 0 auto;
-  margin-bottom: 8rem;
+    position: relative;
+    display: block;
+    width: 30rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
 }
 
 .link:focus,
 .link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .wrp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text {
-  max-width: 20rem;
-  margin: 0;
+    max-width: 20rem;
+    margin: 0;
 }
 
 :global(.page-relink-circle) {
-  position: relative;
-  height: 4rem;
-  width: 4rem;
-  margin-right: 2rem;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: 0.3s ease-in-out;
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
 }
 
 :global(.page-relink-circle::after),
 :global(.page-relink-circle::before) {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 54%;
-  transform: translate(-50%, -50%);
-  height: 1rem;
-  width: 1rem;
-  transition: 250ms ease-in-out;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    height: 1rem;
+    width: 1rem;
+    transition: 250ms ease-in-out;
 }
 
 :global(.page-relink-circle::after) {
-  left: -50%;
-  background: url('/images/svg/next-blue.svg') no-repeat;
+    left: -50%;
+    background: url('/images/svg/next-blue.svg') no-repeat;
 }
 
 .link:focus :global(.page-relink-circle::after),
 .link:hover :global(.page-relink-circle::after) {
-  left: 54%;
+    left: 54%;
 }
 
 .link:focus :global(.page-relink-circle::before),
 .link:hover :global(.page-relink-circle::before) {
-  left: 150%;
+    left: 150%;
 }
 
 @media (max-width: 450px) {
-  .wrp {
-    justify-content: flex-start;
-  }
+    .wrp {
+        justify-content: flex-start;
+    }
 
-  .link {
-    width: 27rem;
-  }
+    .link {
+        width: 27rem;
+    }
 }

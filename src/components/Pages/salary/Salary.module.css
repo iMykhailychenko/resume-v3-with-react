@@ -1,48 +1,48 @@
 .section,
 .beforeChart {
-  width: 50%;
-  margin: 0 auto 25rem;
-  text-align: center;
-  outline: none;
+    width: 50%;
+    margin: 0 auto 25rem;
+    text-align: center;
+    outline: none;
 }
 
 .beforeChart {
-  margin-bottom: 8rem;
+    margin-bottom: 8rem;
 }
 
 .chart {
-  width: 80%;
-  margin: 0 auto 10rem;
+    width: 80%;
+    margin: 0 auto 10rem;
 }
 
 .chartText {
-  width: 60%;
-  margin-top: 2rem;
-  font-size: 1.2rem;
+    width: 60%;
+    margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 .end {
-  width: 50%;
-  text-align: center;
-  margin: 20rem auto 18rem;
+    width: 50%;
+    text-align: center;
+    margin: 20rem auto 18rem;
 }
 
 @media (max-width: 880px) {
-  .end {
-    width: 100%;
-  }
+    .end {
+        width: 100%;
+    }
 
-  .chart {
-    width: 100%;
-  }
+    .chart {
+        width: 100%;
+    }
 
-  .chartText {
-    width: 80%;
-    margin: 2rem auto 0;
-  }
+    .chartText {
+        width: 80%;
+        margin: 2rem auto 0;
+    }
 
-  .section,
-  .beforeChart {
-    width: 100%;
-  }
+    .section,
+    .beforeChart {
+        width: 100%;
+    }
 }

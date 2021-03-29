@@ -1,93 +1,93 @@
 .article {
-  margin-top: 40rem;
+    margin-top: 40rem;
 }
 
 .desc {
-  width: 60%;
-  margin: 10rem auto 50rem;
-  text-align: center;
+    width: 60%;
+    margin: 10rem auto 50rem;
+    text-align: center;
 }
 
 .section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 90vh;
-  padding-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 90vh;
+    padding-right: 15%;
 }
 
 .section:nth-last-of-type(1) {
-  margin-bottom: 50vh;
+    margin-bottom: 50vh;
 }
 
 .left,
 .leftRevers,
 .right {
-  flex-basis: 40%;
+    flex-basis: 40%;
 }
 
 .left,
 .leftRevers {
-  position: sticky;
-  top: 15rem;
+    position: sticky;
+    top: 15rem;
 }
 
 .left::before,
 .leftRevers::before {
-  content: '';
-  position: absolute;
-  top: 90vh;
-  left: 0;
-  transform: translateY(-100%);
-  width: 75vw;
-  height: 40rem;
-  z-index: 105;
+    content: '';
+    position: absolute;
+    top: 90vh;
+    left: 0;
+    transform: translateY(-100%);
+    width: 75vw;
+    height: 40rem;
+    z-index: 105;
 }
 
 .leftRevers::before {
-  left: unset;
-  right: 0;
+    left: unset;
+    right: 0;
 }
 
 @media (max-width: 980px) {
-  .section {
-    padding-right: 0;
-  }
+    .section {
+        padding-right: 0;
+    }
 
-  .left::before,
-  .leftRevers::before {
-    width: 90vw;
-  }
+    .left::before,
+    .leftRevers::before {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 860px) {
-  .article {
-    margin-top: 10rem;
-  }
+    .article {
+        margin-top: 10rem;
+    }
 
-  .section {
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 40rem;
-  }
+    .section {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 40rem;
+    }
 
-  .section:nth-last-of-type(1) {
-    margin-bottom: 10rem;
-  }
+    .section:nth-last-of-type(1) {
+        margin-bottom: 10rem;
+    }
 
-  .left::before,
-  .leftRevers::before {
-    display: none;
-  }
+    .left::before,
+    .leftRevers::before {
+        display: none;
+    }
 
-  .section:not(:nth-of-type(2n-1)) {
-    flex-direction: column-reverse;
-  }
+    .section:not(:nth-of-type(2n-1)) {
+        flex-direction: column-reverse;
+    }
 
-  .left,
-  .leftRevers {
-    position: static;
-    margin: 8rem 0 4rem;
-    text-align: center;
-  }
+    .left,
+    .leftRevers {
+        position: static;
+        margin: 8rem 0 4rem;
+        text-align: center;
+    }
 }

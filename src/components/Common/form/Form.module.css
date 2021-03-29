@@ -1,140 +1,140 @@
 .form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .title {
-  margin-bottom: 1.6rem;
-  color: rgb(0, 0, 0);
+    margin-bottom: 1.6rem;
+    color: rgb(0, 0, 0);
 }
 
 .errors {
-  position: relative;
-  top: -1.3rem;
-  max-width: 30rem;
-  color: rgb(250, 102, 102);
+    position: relative;
+    top: -1.3rem;
+    max-width: 30rem;
+    color: rgb(250, 102, 102);
 }
 
 .input,
 .textarea {
-  display: block;
-  width: 32.8rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem 1.5rem;
-  background: rgba(112, 112, 112, 0.13);
-  border-radius: 0.8rem;
-  border: none;
+    display: block;
+    width: 32.8rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    background: rgba(112, 112, 112, 0.13);
+    border-radius: 0.8rem;
+    border: none;
 }
 
 .textarea {
-  height: 18rem;
+    height: 18rem;
 }
 
 .input::placeholder,
 .textarea::placeholder {
-  font-size: 1.2rem;
-  color: rgb(112, 112, 112);
+    font-size: 1.2rem;
+    color: rgb(112, 112, 112);
 }
 
 .btn {
-  width: max-content;
-  margin-top: 1rem;
-  font-size: 1.4rem;
+    width: max-content;
+    margin-top: 1rem;
+    font-size: 1.4rem;
 }
 
 .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Create a custom checkbox */
 .label {
-  position: relative;
-  margin-bottom: 2rem;
-  color: rgb(0, 0, 0);
+    position: relative;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
 }
 
 .label input {
-  position: absolute;
-  height: 1;
-  width: 1;
-  opacity: 0;
-  visibility: hidden;
+    position: absolute;
+    height: 1;
+    width: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .checkmark {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: rgb(238, 238, 238);
-  border-radius: 0.4rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: rgb(238, 238, 238);
+    border-radius: 0.4rem;
 }
 
 .label:focus input ~ .checkmark,
 .label:hover input ~ .checkmark {
-  background-color: rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
 }
 
 .label input:checked ~ .checkmark {
-  background-color: rgb(33, 150, 243);
+    background-color: rgb(33, 150, 243);
 }
 
 .checkmark::after {
-  content: '';
-  position: absolute;
-  display: none;
+    content: '';
+    position: absolute;
+    display: none;
 }
 
 .label input:checked ~ .checkmark::after {
-  display: block;
+    display: block;
 }
 
 .label .checkmark::after {
-  left: 0.5rem;
-  top: 0.1rem;
-  width: 0.5rem;
-  height: 1rem;
-  border: solid rgb(255, 255, 255);
-  border-width: 0 0.2rem 0.2rem 0;
-  transform: rotate(45deg);
+    left: 0.5rem;
+    top: 0.1rem;
+    width: 0.5rem;
+    height: 1rem;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 0.2rem 0.2rem 0;
+    transform: rotate(45deg);
 }
 
 .checktext {
-  display: block;
-  max-width: 24rem;
-  padding-left: 2.3rem;
-  user-select: none;
+    display: block;
+    max-width: 24rem;
+    padding-left: 2.3rem;
+    user-select: none;
 }
 
 .success {
-  max-width: 32.8rem;
-  border-radius: 0.8rem;
-  padding: 1rem;
-  background: rgb(54, 159, 255);
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+    max-width: 32.8rem;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    background: rgb(54, 159, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
 }
 
 @media (max-width: 460px) {
-  .success,
-  .errors,
-  .input,
-  .textarea {
-    max-width: unset;
-    width: 100%;
-  }
+    .success,
+    .errors,
+    .input,
+    .textarea {
+        max-width: unset;
+        width: 100%;
+    }
 
-  .label {
-    max-width: 20rem;
-  }
+    .label {
+        max-width: 20rem;
+    }
 
-  .checkmark {
-    top: 67%;
-  }
+    .checkmark {
+        top: 67%;
+    }
 }

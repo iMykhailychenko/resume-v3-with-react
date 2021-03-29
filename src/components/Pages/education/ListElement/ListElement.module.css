@@ -1,49 +1,49 @@
 .item {
-  perspective: 100rem;
-  transform-style: preserve-3d;
-  margin-bottom: 30rem;
-  outline: none;
+    perspective: 100rem;
+    transform-style: preserve-3d;
+    margin-bottom: 30rem;
+    outline: none;
 }
 
 .block {
-  transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 .text {
-  width: 100%;
-  max-width: 35rem;
+    width: 100%;
+    max-width: 35rem;
 }
 
 .inner {
-  position: relative;
-  height: 40rem;
-  width: 100%;
-  max-width: 35rem;
-  margin-bottom: 4rem;
-  background: rgb(255, 255, 255);
-  transform-style: preserve-3d;
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    max-width: 35rem;
+    margin-bottom: 4rem;
+    background: rgb(255, 255, 255);
+    transform-style: preserve-3d;
 }
 
 .title {
-  transform-style: preserve-3d;
-  transform: translateX(25%) translateY(90%) translateZ(20rem);
-  width: 25rem;
-  font-size: 4.3rem;
-  font-weight: 700;
+    transform-style: preserve-3d;
+    transform: translateX(25%) translateY(90%) translateZ(20rem);
+    width: 25rem;
+    font-size: 4.3rem;
+    font-weight: 700;
 }
 
 @media (max-width: 400px) {
-  .item {
-    margin-bottom: 10rem;
-  }
+    .item {
+        margin-bottom: 10rem;
+    }
 
-  .inner {
-    height: 35rem;
-  }
+    .inner {
+        height: 35rem;
+    }
 
-  .title {
-    width: 60%;
-    transform: translateX(35%) translateY(160%) translateZ(20rem);
-    font-size: 3rem;
-  }
+    .title {
+        width: 60%;
+        transform: translateX(35%) translateY(160%) translateZ(20rem);
+        font-size: 3rem;
+    }
 }

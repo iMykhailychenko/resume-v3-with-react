@@ -10,9 +10,9 @@ export type Locale = 'UA' | 'RU' | 'EN';
 export type Theme = 'light' | 'dark';
 
 export interface IState {
-  theme: string;
-  locale: string;
-  menu: boolean;
-  popup: boolean;
-  content: Content;
+    theme: string;
+    locale: string;
+    menu: boolean;
+    popup: boolean;
+    content: Content;
 }

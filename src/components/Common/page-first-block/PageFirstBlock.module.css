@@ -1,43 +1,43 @@
 .section {
-  min-height: 80vh;
+    min-height: 80vh;
 }
 
 .title {
-  position: relative;
-  max-width: 45rem;
-  margin: 0 auto;
-  text-align: center;
-  text-transform: uppercase;
+    position: relative;
+    max-width: 45rem;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .emoji {
-  position: relative;
-  height: 14rem;
-  width: 14rem;
-  margin: 0 auto 5%;
+    position: relative;
+    height: 14rem;
+    width: 14rem;
+    margin: 0 auto 5%;
 }
 
 :global(.page-scroll) {
-  position: relative;
-  height: 3rem;
-  width: 1.8rem;
-  margin: 10% auto 14%;
-  border-radius: 1.8rem;
+    position: relative;
+    height: 3rem;
+    width: 1.8rem;
+    margin: 10% auto 14%;
+    border-radius: 1.8rem;
 }
 
 :global(.page-scroll::before) {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  left: 57%;
-  transform: translateX(-50%);
-  height: 0.6rem;
-  width: 0.1rem;
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 57%;
+    transform: translateX(-50%);
+    height: 0.6rem;
+    width: 0.1rem;
 }
 
 @media (max-height: 750px) {
-  .section {
-    min-height: 100vh;
-    padding: 10rem 0;
-  }
+    .section {
+        min-height: 100vh;
+        padding: 10rem 0;
+    }
 }

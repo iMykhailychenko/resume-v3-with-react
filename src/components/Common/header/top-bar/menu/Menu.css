@@ -1,43 +1,43 @@
 .menu__circle {
-  stroke-dasharray: 138.286, 207.429;
+    stroke-dasharray: 138.286, 207.429;
 }
 
 .menu__btn {
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    transition: 0.3s ease-in-out;
 }
 
 .menu__btn:focus {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .menu__text {
-  display: block;
-  margin-bottom: 0.3rem;
-  margin-left: 1.2rem;
-  font-size: 1.4rem;
-  line-height: 1;
+    display: block;
+    margin-bottom: 0.3rem;
+    margin-left: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1;
 }
 
 .menu__svg {
-  margin-bottom: 0.3rem;
-  position: relative;
-  transition: 0.3s ease-in-out;
+    margin-bottom: 0.3rem;
+    position: relative;
+    transition: 0.3s ease-in-out;
 }
 
 .menu__svg rect {
-  transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .menu__svg--rotate {
-  transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
 }
 
 @media (max-width: 415px) {
-  .menu__text {
-    font-size: 0;
-  }
+    .menu__text {
+        font-size: 0;
+    }
 }

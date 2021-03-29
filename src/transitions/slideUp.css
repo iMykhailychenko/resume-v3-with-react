@@ -1,9 +1,9 @@
 .slideUp-appear {
-  top: 20rem;
-  opacity: 0;
+    top: 20rem;
+    opacity: 0;
 }
 
 .slideUp-appear-done {
-  top: 0;
-  opacity: 1;
+    top: 0;
+    opacity: 1;
 }

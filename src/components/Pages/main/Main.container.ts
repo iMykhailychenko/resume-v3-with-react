@@ -4,15 +4,15 @@ import { IState } from '../../../types';
 import Main from './Main.component';
 
 interface Props {
-  content: {
-    title: string;
-    text: string;
-    relink: string;
-  };
+    content: {
+        title: string;
+        text: string;
+        relink: string;
+    };
 }
 
 const mapSTP = (state: IState): Props => ({
-  content: state.content.main,
+    content: state.content.main,
 });
 
 export default connect(mapSTP)(Main);

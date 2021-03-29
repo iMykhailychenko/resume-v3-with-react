@@ -6,17 +6,17 @@ import { IState } from '../../../../../types';
 import Navigation from './Navigation.component';
 
 interface Props {
-  content: { [key: string]: string };
+    content: { [key: string]: string };
 }
 
 const mapSTP = (state: IState): Props => ({
-  content: state.content.header,
+    content: state.content.header,
 });
 
 const mapDTP = (dispatch: Dispatch) => ({
-  toggleMenu: (): void => {
-    dispatch(menu());
-  },
+    toggleMenu: (): void => {
+        dispatch(menu());
+    },
 });
 
 export default connect(mapSTP, mapDTP)(Navigation);

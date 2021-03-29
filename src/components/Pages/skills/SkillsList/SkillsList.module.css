@@ -1,21 +1,21 @@
 .item {
-  padding: 4rem;
-  min-height: 35rem;
-  margin-bottom: 4rem;
-  outline: none;
+    padding: 4rem;
+    min-height: 35rem;
+    margin-bottom: 4rem;
+    outline: none;
 }
 
 .itemTitle {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .logo {
-  width: max-content;
-  padding: 1.4rem;
-  margin-bottom: 2rem;
+    width: max-content;
+    padding: 1.4rem;
+    margin-bottom: 2rem;
 }
 
 .img {
-  height: 2.2rem;
-  width: 2.2rem;
+    height: 2.2rem;
+    width: 2.2rem;
 }

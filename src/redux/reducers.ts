@@ -10,18 +10,18 @@ import popup from './popup/reducer';
 import theme from './theme/reducer';
 
 const config = {
-  storage,
-  key: 'resume',
-  white: ['locale', 'theme', 'content'],
-  transforms: [encryptor],
+    storage,
+    key: 'resume',
+    white: ['locale', 'theme', 'content'],
+    transforms: [encryptor],
 };
 
 const rootReducer = combineReducers({
-  content,
-  locale,
-  menu,
-  popup,
-  theme,
+    content,
+    locale,
+    menu,
+    popup,
+    theme,
 });
 
 export default persistReducer(config, rootReducer);

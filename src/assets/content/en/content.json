@@ -1,484 +1,484 @@
 {
-  "header": {
-    "menu": "Site navigation",
-    "main": "Home",
-    "reason": "Why am I going to change job?",
-    "general": "General information",
-    "education": "Education and courses",
-    "experience": "My work experience",
-    "skills": "Hard skills",
-    "salary": "Expected salary",
-    "contacts": "Contacts",
-    "download": "Download CV"
-  },
-  "footer": {
-    "text": "Still have questions?",
-    "btn": "Write me"
-  },
-  "form": {
-    "title": "Feedback",
-    "name": "Your name ...",
-    "email": "*Your email ...",
-    "company": "Company / website link ...",
-    "text": "Your message ...",
-    "confirm": "I consent to the processing of personal information",
-    "submit": "Submit",
-    "success": "Your question has been sent successfully. I will try to answer it as quickly as possible.",
-    "errorMail": "Oops .. There seems to be a mistake here.",
-    "errorNoMail": "I will not be able to answer your question without knowing your email.",
-    "errorConfirm": "Do not forget to indicate consent to the processing of personal information."
-  },
-  "reason": {
-    "title": "Why am I going to change job?",
-    "firstText": [
-      "From childhood I was interested in mathematics, and especially geometry. Therefore, I decided that I had a successful future in the world of economics and finance. After graduation, I began to study and continue to work in this area.",
-      "Soon, I realized that design of documents and presentations make more sense to me than the content of these documents.",
-      "Missing a long period of mental anguish, I will go straight to the main point. About two years ago, I unexpectedly discovered the world of web development."
-    ],
-    "secondText": [
-      "Already at the end of May 2019, I finally set priorities and enrolled in full-stack developer courses in GoIT.",
-      "After weighing the pros and cons, I decided to change my profession as soon as possible to get a more relevant experience, so I got a job as a junior fron-end developer much earlier before graduation of the GoIT course.",
-      "As a result of this decision, I significantly improved my knowledge and skills, however, now I decided to go further to maximize my potential and fully apply the knowledge gained in GoIT course."
-    ],
-    "relink": "General information about me"
-  },
-  "general": {
-    "title": "General information",
-    "tablet": [
-      ["Name:", "Ihor", "2"],
-      ["Surname:", "Mykhailychenko", "9"],
-      ["Date of birth:", "09/12/1995", "16"],
-      ["Address:", "Kiev, Holosiivskyi district, 4 Vasylkivska St.,", "23"],
-      ["Languages:", "Upper Intermediate - English language", "30"],
-      [
-        "Personal qualities:",
-        "I combine creativity and analytical thinking, ready to learn a lot, focus on results, sociable, attentive to details, punctual, responsible. I have no bad habits.",
-        "37"
-      ]
-    ],
-    "text": "Soft skills: Can convey my thoughts correctly, work in a team, I want to receive and share knowledge, I have a good sense of humor, but it's not accurate.",
-    "relink": "Education and courses"
-  },
-  "education": {
-    "title": "Education and courses",
-    "item": [
-      {
-        "title": "Bachelor Degree",
-        "text": "2013 - 2017. Taras Shevchenko National University of Kyiv. Bachelor, specialty - management.",
-        "background": "#fff",
-        "color": "#404040",
-        "translate": "-100%",
-        "y": "90deg",
-        "x": "0"
-      },
-      {
-        "title": "Manager Degree",
-        "text": "2017 - 2019. Taras Shevchenko National University of Kyiv. Master's degree, specialty - innovation management. Project manager qualification.",
-        "background": "#369FFF",
-        "color": "#fff",
-        "translate": "100%",
-        "y": "-80deg",
-        "x": "0"
-      },
-      {
-        "title": "Full-stack Courses",
-        "text": "2019 - 2020. GoIT / Full stack development program, focuses on front-end: HTML / CSS, JavaScript, React.js and back-end: Node.js.",
-        "background": "#FFC56D",
-        "color": "#fff",
-        "translate": "-100%",
-        "y": "0",
-        "x": "-40deg"
-      }
-    ],
-    "relink": "See my work experience"
-  },
-  "experience": {
-    "title": "My work experience",
-    "slider": [
-      {
-        "linkt": "https://merehead.com/ru/",
-        "company": "Merehead",
-        "title": "July 2020 - present. Front-end developer (react.js).",
-        "responsibility": "Responsibilities:",
+    "header": {
+        "menu": "Site navigation",
+        "main": "Home",
+        "reason": "Why am I going to change job?",
+        "general": "General information",
+        "education": "Education and courses",
+        "experience": "My work experience",
+        "skills": "Hard skills",
+        "salary": "Expected salary",
+        "contacts": "Contacts",
+        "download": "Download CV"
+    },
+    "footer": {
+        "text": "Still have questions?",
+        "btn": "Write me"
+    },
+    "form": {
+        "title": "Feedback",
+        "name": "Your name ...",
+        "email": "*Your email ...",
+        "company": "Company / website link ...",
+        "text": "Your message ...",
+        "confirm": "I consent to the processing of personal information",
+        "submit": "Submit",
+        "success": "Your question has been sent successfully. I will try to answer it as quickly as possible.",
+        "errorMail": "Oops .. There seems to be a mistake here.",
+        "errorNoMail": "I will not be able to answer your question without knowing your email.",
+        "errorConfirm": "Do not forget to indicate consent to the processing of personal information."
+    },
+    "reason": {
+        "title": "Why am I going to change job?",
+        "firstText": [
+            "From childhood I was interested in mathematics, and especially geometry. Therefore, I decided that I had a successful future in the world of economics and finance. After graduation, I began to study and continue to work in this area.",
+            "Soon, I realized that design of documents and presentations make more sense to me than the content of these documents.",
+            "Missing a long period of mental anguish, I will go straight to the main point. About two years ago, I unexpectedly discovered the world of web development."
+        ],
+        "secondText": [
+            "Already at the end of May 2019, I finally set priorities and enrolled in full-stack developer courses in GoIT.",
+            "After weighing the pros and cons, I decided to change my profession as soon as possible to get a more relevant experience, so I got a job as a junior fron-end developer much earlier before graduation of the GoIT course.",
+            "As a result of this decision, I significantly improved my knowledge and skills, however, now I decided to go further to maximize my potential and fully apply the knowledge gained in GoIT course."
+        ],
+        "relink": "General information about me"
+    },
+    "general": {
+        "title": "General information",
+        "tablet": [
+            ["Name:", "Ihor", "2"],
+            ["Surname:", "Mykhailychenko", "9"],
+            ["Date of birth:", "09/12/1995", "16"],
+            ["Address:", "Kiev, Holosiivskyi district, 4 Vasylkivska St.,", "23"],
+            ["Languages:", "Upper Intermediate - English language", "30"],
+            [
+                "Personal qualities:",
+                "I combine creativity and analytical thinking, ready to learn a lot, focus on results, sociable, attentive to details, punctual, responsible. I have no bad habits.",
+                "37"
+            ]
+        ],
+        "text": "Soft skills: Can convey my thoughts correctly, work in a team, I want to receive and share knowledge, I have a good sense of humor, but it's not accurate.",
+        "relink": "Education and courses"
+    },
+    "education": {
+        "title": "Education and courses",
+        "item": [
+            {
+                "title": "Bachelor Degree",
+                "text": "2013 - 2017. Taras Shevchenko National University of Kyiv. Bachelor, specialty - management.",
+                "background": "#fff",
+                "color": "#404040",
+                "translate": "-100%",
+                "y": "90deg",
+                "x": "0"
+            },
+            {
+                "title": "Manager Degree",
+                "text": "2017 - 2019. Taras Shevchenko National University of Kyiv. Master's degree, specialty - innovation management. Project manager qualification.",
+                "background": "#369FFF",
+                "color": "#fff",
+                "translate": "100%",
+                "y": "-80deg",
+                "x": "0"
+            },
+            {
+                "title": "Full-stack Courses",
+                "text": "2019 - 2020. GoIT / Full stack development program, focuses on front-end: HTML / CSS, JavaScript, React.js and back-end: Node.js.",
+                "background": "#FFC56D",
+                "color": "#fff",
+                "translate": "-100%",
+                "y": "0",
+                "x": "-40deg"
+            }
+        ],
+        "relink": "See my work experience"
+    },
+    "experience": {
+        "title": "My work experience",
+        "slider": [
+            {
+                "linkt": "https://merehead.com/ru/",
+                "company": "Merehead",
+                "title": "July 2020 - present. Front-end developer (react.js).",
+                "responsibility": "Responsibilities:",
+                "list": [
+                    "developing user-facing features using React.js;",
+                    "setuping applications from scratch;",
+                    "building reusable components and front-end libraries for future use;",
+                    "translating designs and wireframes into high quality code;",
+                    "optimizing components for maximum performance across a vast array of web-capable devices and browsers;",
+                    "deploying code to staging/production;"
+                ]
+            },
+            {
+                "linkt": "https://dl.agency/",
+                "company": "DL.Agency",
+                "title": "January 2020 - July 2020. Junior front-end developer.",
+                "responsibility": "Responsibilities:",
+                "list": [
+                    "adaptive, valid and cross-browser layout of sites;",
+                    "creating complex animations using JavaScript and CSS;",
+                    "connection of new modules to ready sites;",
+                    "connecting sites to CMS (wordpress);",
+                    "optimization of site loading speed;",
+                    "site refinement."
+                ]
+            },
+            {
+                "linkt": "https://home.kpmg/ua/ru/home.html",
+                "company": "KPMG Ukraine",
+                "title": "May 2018 - October 2019. Transfer Pricing Consultant.",
+                "responsibility": "Responsibilities:",
+                "list": [
+                    "analysis of intra-group transactions conducted between Ukrainian and foreign companies for transfer pricing;",
+                    "analysis of the market in which the client operates (IT, agriculture, FMCG, etc.);",
+                    "identification of transfer pricing risks;",
+                    "work with databases ktMINE, Ruslana, SPARK, TP Catalyst;",
+                    "preparation of transfer pricing documentation;",
+                    "structuring of intragroup operations in accordance with Ukrainian tax legislation and international principles of transfer pricing."
+                ]
+            },
+            {
+                "linkt": "https://www.controlpay.com/",
+                "company": "ControlPay Ukraine",
+                "title": "February - May 2018 Invoice auditor",
+                "responsibility": "Responsibilities:",
+                "list": [
+                    "navigation and use of the ControlPay web platform and customer support tools;",
+                    "invoice details verification;",
+                    "audit of freight invoices;",
+                    "shipment data analysis;",
+                    "calculation logics check;",
+                    "communication with clients (e-mail / conference call)."
+                ]
+            }
+        ],
+        "secondTitle": "Examples of my commercial works",
+        "textOne": "Below are the sites in the creation of which I took an active part. These are not all my works! For obvious reasons, I can not show all the commercial projects in which I was participated.",
+        "textTwo": "For comparison, the earlier versions of my resumes are presented below. Do not judge strictly, they were created a long time ago.",
+        "textThree": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them end up on github.",
+        "relink": "Hard skills"
+    },
+    "skills": {
+        "title": "Hard skills",
+        "text": [
+            "Unfortunately or fortunately, but I learn new technologies faster than I can update this site.",
+            "Therefore, if you have not found the information you need - write to me! Perhaps I just did not mentioned it on the site"
+        ],
+        "end": [
+            "In this section I will indicate the basic skills and knowledge that I mastered during the GoIT courses, as well as those that I have mastered in practice. Some of these skills are presented on this site.",
+            "Also, you can visit my page on GitHub and make sure that all the indicated skills have been passed by me in practice. The link to the GitHub profile is in the footer of the site."
+        ],
         "list": [
-          "developing user-facing features using React.js;",
-          "setuping applications from scratch;",
-          "building reusable components and front-end libraries for future use;",
-          "translating designs and wireframes into high quality code;",
-          "optimizing components for maximum performance across a vast array of web-capable devices and browsers;",
-          "deploying code to staging/production;"
-        ]
-      },
-      {
-        "linkt": "https://dl.agency/",
-        "company": "DL.Agency",
-        "title": "January 2020 - July 2020. Junior front-end developer.",
-        "responsibility": "Responsibilities:",
-        "list": [
-          "adaptive, valid and cross-browser layout of sites;",
-          "creating complex animations using JavaScript and CSS;",
-          "connection of new modules to ready sites;",
-          "connecting sites to CMS (wordpress);",
-          "optimization of site loading speed;",
-          "site refinement."
-        ]
-      },
-      {
-        "linkt": "https://home.kpmg/ua/ru/home.html",
-        "company": "KPMG Ukraine",
-        "title": "May 2018 - October 2019. Transfer Pricing Consultant.",
-        "responsibility": "Responsibilities:",
-        "list": [
-          "analysis of intra-group transactions conducted between Ukrainian and foreign companies for transfer pricing;",
-          "analysis of the market in which the client operates (IT, agriculture, FMCG, etc.);",
-          "identification of transfer pricing risks;",
-          "work with databases ktMINE, Ruslana, SPARK, TP Catalyst;",
-          "preparation of transfer pricing documentation;",
-          "structuring of intragroup operations in accordance with Ukrainian tax legislation and international principles of transfer pricing."
-        ]
-      },
-      {
-        "linkt": "https://www.controlpay.com/",
-        "company": "ControlPay Ukraine",
-        "title": "February - May 2018 Invoice auditor",
-        "responsibility": "Responsibilities:",
-        "list": [
-          "navigation and use of the ControlPay web platform and customer support tools;",
-          "invoice details verification;",
-          "audit of freight invoices;",
-          "shipment data analysis;",
-          "calculation logics check;",
-          "communication with clients (e-mail / conference call)."
-        ]
-      }
-    ],
-    "secondTitle": "Examples of my commercial works",
-    "textOne": "Below are the sites in the creation of which I took an active part. These are not all my works! For obvious reasons, I can not show all the commercial projects in which I was participated.",
-    "textTwo": "For comparison, the earlier versions of my resumes are presented below. Do not judge strictly, they were created a long time ago.",
-    "textThree": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them end up on github.",
-    "relink": "Hard skills"
-  },
-  "skills": {
-    "title": "Hard skills",
-    "text": [
-      "Unfortunately or fortunately, but I learn new technologies faster than I can update this site.",
-      "Therefore, if you have not found the information you need - write to me! Perhaps I just did not mentioned it on the site"
-    ],
-    "end": [
-      "In this section I will indicate the basic skills and knowledge that I mastered during the GoIT courses, as well as those that I have mastered in practice. Some of these skills are presented on this site.",
-      "Also, you can visit my page on GitHub and make sure that all the indicated skills have been passed by me in practice. The link to the GitHub profile is in the footer of the site."
-    ],
-    "list": [
-      {
-        "title": "HTML & CSS",
-        "text": "Everything you need to make up a web page based on the design layout.",
-        "item": [
-          {
-            "img": "github",
-            "logoColor": "rgb(237,119,119)",
-            "title": "GITHUB",
-            "text": "GIT terminal skills, creating repositories, branches, etc."
-          },
-          {
-            "img": "html",
-            "logoColor": "rgb(237,119,119)",
-            "title": "HTML 5",
-            "text": "Semantic layout and working with specifications. Creating text blocks, adding links, posting images and much more."
-          },
-          {
-            "img": "css",
-            "logoColor": "rgb(237,119,119)",
-            "title": "CSS",
-            "text": "Priority and inheritance, working with colors, positioning elements, pseudo-classes and pseudo-elements, CSS filters and CSS counters, connecting custom fonts, etc."
-          },
-          {
-            "img": "responsive",
-            "logoColor": "rgb(237,119,119)",
-            "title": "Adaptive and responsive layout",
-            "text": "Page layout for various devices and screen widths. Mobile-first CSS."
-          },
-          {
-            "img": "brouser",
-            "logoColor": "rgb(237,119,119)",
-            "title": "Cross-browser compatibility. Layout methodologies",
-            "text": "Working with browser-specific properties. Using the BEM naming methodology"
-          },
-          {
-            "img": "sass",
-            "logoColor": "rgb(237,119,119)",
-            "title": "Automatization and preprocessors",
-            "text": "Automating the layout process with Gulp. SASS CSS preprocessor. PUG HTML preprocessor."
-          }
-        ]
-      },
-      {
-        "title": "JAVASCRIPT",
-        "text": "Creating interactive elements of the site and make its use comfortable",
-        "item": [
-          {
-            "img": "js",
-            "logoColor": "rgb(255,197,109)",
-            "title": "JavaScript Basics",
-            "text": "Variables, primitive data types, basic operators. Strings, numbers, type conversions. Comparison operators, logical operators. Branches. Loops."
-          },
-          {
-            "img": "array",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Arrays",
-            "text": "Arrays, elements, indexing. Array methods. Arrays destructuring and rest statement."
-          },
-          {
-            "img": "func",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Functions",
-            "text": "Function declarations and functional expressions. Call stack. Scope. Arguments pseudo-array and more."
-          },
-          {
-            "img": "obj",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Оbjects",
-            "text": "Properties and methods of an object. Passing by reference and by value. Enumerating objects. Merging objects. Destructuring objects. Context of function execution, etc."
-          },
-          {
-            "img": "bug",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Debugging code and catching errors",
-            "text": "Debugger. Try / catch. Throw."
-          },
-          {
-            "img": "oop",
-            "logoColor": "rgb(255,197,109)",
-            "title": "OOP basics",
-            "text": "Object prototype. Prototype inheritance. Constructors. ES6 Classes."
-          },
-          {
-            "img": "dom",
-            "logoColor": "rgb(255,197,109)",
-            "title": "DOM",
-            "text": "Search, create and add DOM nodes. Optimization of work with DOM. BOM. Feature detection."
-          },
-          {
-            "img": "event",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Events",
-            "text": "Delegation of events. Events of the mouse, keyboard, forms, touch. Using the throttling and debouncing techniques."
-          },
-          {
-            "img": "asynchronous",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Asynchronous JavaScript",
-            "text": "Timers. Promise API. Data Transfer Protocols. JSON. AJAX. XHR. Fetch API. CORS. WebSockets."
-          },
-          {
-            "img": "storage",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Data storage on the client side",
-            "text": "Cookies. WebStorage. IndexedDB"
-          },
-          {
-            "img": "auto",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Automatization",
-            "text": "Node.js and the npm package manager. Setting up Webpack. CommonJS and ES6 modules"
-          },
-          {
-            "img": "other",
-            "logoColor": "rgb(255,197,109)",
-            "title": "Additional",
-            "text": "Iterators, generators, async / await. Higher-order functions. Handlebars, PUG, etc."
-          }
-        ]
-      },
-      {
-        "title": "REACT",
-        "text": "Creating the client part of the SPA application using React",
-        "item": [
-          {
-            "img": "react",
-            "logoColor": "rgb(54,159,255)",
-            "title": "React components",
-            "text": "Component approach, using jsx syntax, passing data to components, working with collections"
-          },
-          {
-            "img": "css",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Component Styling",
-            "text": "Inline CSS, vanilla CSS or SASS, CSS Modules, CSS-in-JS"
-          },
-          {
-            "img": "event",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Events and state",
-            "text": "Creating stateful components, adding interactivity."
-          },
-          {
-            "img": "form",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Forms",
-            "text": "Creating controlled elements"
-          },
-          {
-            "img": "asynchronous",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Components life cycle",
-            "text": "Redefining the behavior of components within their life cycle"
-          },
-          {
-            "img": "route",
-            "logoColor": "rgb(54,159,255)",
-            "title": "React router",
-            "text": "Creating and managing client-side routing. Code splitting. React.lazy, react loadable"
-          },
-          {
-            "img": "pattern",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Patterns and context",
-            "text": "Creating and using the Higher-Order Component, Render Prop, Context API"
-          },
-          {
-            "img": "animation",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Animation",
-            "text": "Creating animated components with React Transition Group"
-          },
-          {
-            "img": "redux",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Redux",
-            "text": "Using the Redux Library with React, Redux Toolkit"
-          },
-          {
-            "img": "saga",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Saga / thunk",
-            "text": "Library that aims to make application side effects"
-          },
-          {
-            "img": "hooks",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Hooks",
-            "text": "Modern syntax of React.js library"
-          },
-          {
-            "img": "next",
-            "logoColor": "rgb(54,159,255)",
-            "title": "SSR",
-            "text": "Server side rendering (Next.js)"
-          },
-          {
-            "img": "password",
-            "logoColor": "rgb(54,159,255)",
-            "title": "Authorization",
-            "text": "Authorization and user authentication (client side)"
-          }
-        ]
-      },
-      {
-        "title": "NODE.JS",
-        "text": "Writing server-side code using Node.js",
-        "item": [
-          {
-            "img": "file",
-            "logoColor": "rgb(60,179,113)",
-            "title": "File system",
-            "text": "Working with files using Node.js"
-          },
-          {
-            "img": "express",
-            "logoColor": "rgb(60,179,113)",
-            "title": "Express",
-            "text": "Working with files using Node.js"
-          },
-          {
-            "img": "mongo",
-            "logoColor": "rgb(60,179,113)",
-            "title": "Mongodb",
-            "text": "MongoDB and Mongoose ODM"
-          },
-          {
-            "img": "password",
-            "logoColor": "rgb(60,179,113)",
-            "title": "Authorization",
-            "text": "Authorization and user authentication (server side)"
-          },
-          {
-            "img": "asynchronous",
-            "logoColor": "rgb(60,179,113)",
-            "title": "WebSockets",
-            "text": "Persistent bi-directional network connection"
-          }
-        ]
-      },
-      {
-        "title": "OTHER",
-        "text": "Other skills that are not included in the previous sections",
-        "item": [
-          {
-            "img": "ts",
-            "logoColor": "rgb(255,255,255)",
-            "title": "TypeScript",
-            "text": "Using TypeScript with React"
-          },
-          {
-            "img": "php",
-            "logoColor": "rgb(255,255,255)",
-            "title": "PHP skills",
-            "text": "PHP skills, syntax, basic concepts, creating php templates for Wordpress"
-          },
-          {
-            "img": "wordpress",
-            "logoColor": "rgb(255,255,255)",
-            "title": "Wordpress",
-            "text": "Сreating an admin panel using CMS - Wordpress"
-          },
-          {
-            "img": "jquery",
-            "logoColor": "rgb(255,255,255)",
-            "title": "JQuery",
-            "text": "JQuery Library Skills"
-          }
-        ]
-      }
-    ],
-    "relink": "Expected salary"
-  },
-  "salary": {
-    "title": "Expected salary",
-    "text": [
-      "On average, the front-end developer in Kiev earns ~$1200. This is the median of wages according to the data of 137 vacancies posted on work.ua site over the past 3 months. Also, according to the djinni portal, the largest number of offers were sent to candidates with the expected salary in the range from $1000+ to $2000+ (Among candidates with work experience from 1 to 2 years)",
-      "Regarding the DOU portal, the range was from $1000 to $1600 for developers with knowledge of the javascript programming language, but this is information for June 2020, which is a less relevant indicator."
-    ],
-    "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $200.01",
-    "before": "before - ",
-    "now": "now - ",
-    "graphText": "Still in doubt? Then the abstruse charts presented below should remove all your doubts",
-    "captionOne": "In this graph, the blue line shows the effectiveness of my work compared to other candidates who also want to get to your company. In my opinion, the choice is obvious.",
-    "captionTwo": "If you are not convinced by the first schedule, then see how your company's revenue will increase after I get to work for you.",
-    "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $1.4K, but in any case write to me, we can discuss it.",
-    "relink": "Contacts"
-  },
-  "download": {
-    "title": "Download CV",
-    "text": "As I promised on the main page, here you can download the resume in a format suitable for you",
-    "pdf": "This is a formatted version of the resume in PDF format. It looks the same on all devices.",
-    "doc": "This is a text version of the resume in DOC format, without registration. In case you are only interested in tex.",
-    "btn": "Download",
-    "relink": "Why am I going to change job?"
-  },
-  "main": {
-    "title": "The author of this page is looking for a front-end developer position",
-    "text": "If you don’t have time to familiarize yourself with all the information, or you are just too lazy, in the navigation section of the site you can go to the page for downloading resumes.",
-    "relink": "Here goes!"
-  },
-  "contacts": {
-    "title": "Contacts",
-    "secondTitle": "Will it be convenient for me to get to your office?",
-    "text": "None of my interviews have passed without this question. Looking ahead, I will answer that if you are in the aisles of the 30-minute walk from the metro, then this is just super. If your office is further, then I still not a big problem for me.",
-    "relink": "Download CV"
-  },
-  "notFound": {
-    "title": "404",
-    "text": "Oops, something went wrong and the page was not found",
-    "relink": "Go to Main page"
-  }
+            {
+                "title": "HTML & CSS",
+                "text": "Everything you need to make up a web page based on the design layout.",
+                "item": [
+                    {
+                        "img": "github",
+                        "logoColor": "rgb(237,119,119)",
+                        "title": "GITHUB",
+                        "text": "GIT terminal skills, creating repositories, branches, etc."
+                    },
+                    {
+                        "img": "html",
+                        "logoColor": "rgb(237,119,119)",
+                        "title": "HTML 5",
+                        "text": "Semantic layout and working with specifications. Creating text blocks, adding links, posting images and much more."
+                    },
+                    {
+                        "img": "css",
+                        "logoColor": "rgb(237,119,119)",
+                        "title": "CSS",
+                        "text": "Priority and inheritance, working with colors, positioning elements, pseudo-classes and pseudo-elements, CSS filters and CSS counters, connecting custom fonts, etc."
+                    },
+                    {
+                        "img": "responsive",
+                        "logoColor": "rgb(237,119,119)",
+                        "title": "Adaptive and responsive layout",
+                        "text": "Page layout for various devices and screen widths. Mobile-first CSS."
+                    },
+                    {
+                        "img": "brouser",
+                        "logoColor": "rgb(237,119,119)",
+                        "title": "Cross-browser compatibility. Layout methodologies",
+                        "text": "Working with browser-specific properties. Using the BEM naming methodology"
+                    },
+                    {
+                        "img": "sass",
+                        "logoColor": "rgb(237,119,119)",
+                        "title": "Automatization and preprocessors",
+                        "text": "Automating the layout process with Gulp. SASS CSS preprocessor. PUG HTML preprocessor."
+                    }
+                ]
+            },
+            {
+                "title": "JAVASCRIPT",
+                "text": "Creating interactive elements of the site and make its use comfortable",
+                "item": [
+                    {
+                        "img": "js",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "JavaScript Basics",
+                        "text": "Variables, primitive data types, basic operators. Strings, numbers, type conversions. Comparison operators, logical operators. Branches. Loops."
+                    },
+                    {
+                        "img": "array",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Arrays",
+                        "text": "Arrays, elements, indexing. Array methods. Arrays destructuring and rest statement."
+                    },
+                    {
+                        "img": "func",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Functions",
+                        "text": "Function declarations and functional expressions. Call stack. Scope. Arguments pseudo-array and more."
+                    },
+                    {
+                        "img": "obj",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Оbjects",
+                        "text": "Properties and methods of an object. Passing by reference and by value. Enumerating objects. Merging objects. Destructuring objects. Context of function execution, etc."
+                    },
+                    {
+                        "img": "bug",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Debugging code and catching errors",
+                        "text": "Debugger. Try / catch. Throw."
+                    },
+                    {
+                        "img": "oop",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "OOP basics",
+                        "text": "Object prototype. Prototype inheritance. Constructors. ES6 Classes."
+                    },
+                    {
+                        "img": "dom",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "DOM",
+                        "text": "Search, create and add DOM nodes. Optimization of work with DOM. BOM. Feature detection."
+                    },
+                    {
+                        "img": "event",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Events",
+                        "text": "Delegation of events. Events of the mouse, keyboard, forms, touch. Using the throttling and debouncing techniques."
+                    },
+                    {
+                        "img": "asynchronous",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Asynchronous JavaScript",
+                        "text": "Timers. Promise API. Data Transfer Protocols. JSON. AJAX. XHR. Fetch API. CORS. WebSockets."
+                    },
+                    {
+                        "img": "storage",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Data storage on the client side",
+                        "text": "Cookies. WebStorage. IndexedDB"
+                    },
+                    {
+                        "img": "auto",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Automatization",
+                        "text": "Node.js and the npm package manager. Setting up Webpack. CommonJS and ES6 modules"
+                    },
+                    {
+                        "img": "other",
+                        "logoColor": "rgb(255,197,109)",
+                        "title": "Additional",
+                        "text": "Iterators, generators, async / await. Higher-order functions. Handlebars, PUG, etc."
+                    }
+                ]
+            },
+            {
+                "title": "REACT",
+                "text": "Creating the client part of the SPA application using React",
+                "item": [
+                    {
+                        "img": "react",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "React components",
+                        "text": "Component approach, using jsx syntax, passing data to components, working with collections"
+                    },
+                    {
+                        "img": "css",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Component Styling",
+                        "text": "Inline CSS, vanilla CSS or SASS, CSS Modules, CSS-in-JS"
+                    },
+                    {
+                        "img": "event",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Events and state",
+                        "text": "Creating stateful components, adding interactivity."
+                    },
+                    {
+                        "img": "form",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Forms",
+                        "text": "Creating controlled elements"
+                    },
+                    {
+                        "img": "asynchronous",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Components life cycle",
+                        "text": "Redefining the behavior of components within their life cycle"
+                    },
+                    {
+                        "img": "route",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "React router",
+                        "text": "Creating and managing client-side routing. Code splitting. React.lazy, react loadable"
+                    },
+                    {
+                        "img": "pattern",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Patterns and context",
+                        "text": "Creating and using the Higher-Order Component, Render Prop, Context API"
+                    },
+                    {
+                        "img": "animation",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Animation",
+                        "text": "Creating animated components with React Transition Group"
+                    },
+                    {
+                        "img": "redux",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Redux",
+                        "text": "Using the Redux Library with React, Redux Toolkit"
+                    },
+                    {
+                        "img": "saga",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Saga / thunk",
+                        "text": "Library that aims to make application side effects"
+                    },
+                    {
+                        "img": "hooks",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Hooks",
+                        "text": "Modern syntax of React.js library"
+                    },
+                    {
+                        "img": "next",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "SSR",
+                        "text": "Server side rendering (Next.js)"
+                    },
+                    {
+                        "img": "password",
+                        "logoColor": "rgb(54,159,255)",
+                        "title": "Authorization",
+                        "text": "Authorization and user authentication (client side)"
+                    }
+                ]
+            },
+            {
+                "title": "NODE.JS",
+                "text": "Writing server-side code using Node.js",
+                "item": [
+                    {
+                        "img": "file",
+                        "logoColor": "rgb(60,179,113)",
+                        "title": "File system",
+                        "text": "Working with files using Node.js"
+                    },
+                    {
+                        "img": "express",
+                        "logoColor": "rgb(60,179,113)",
+                        "title": "Express",
+                        "text": "Working with files using Node.js"
+                    },
+                    {
+                        "img": "mongo",
+                        "logoColor": "rgb(60,179,113)",
+                        "title": "Mongodb",
+                        "text": "MongoDB and Mongoose ODM"
+                    },
+                    {
+                        "img": "password",
+                        "logoColor": "rgb(60,179,113)",
+                        "title": "Authorization",
+                        "text": "Authorization and user authentication (server side)"
+                    },
+                    {
+                        "img": "asynchronous",
+                        "logoColor": "rgb(60,179,113)",
+                        "title": "WebSockets",
+                        "text": "Persistent bi-directional network connection"
+                    }
+                ]
+            },
+            {
+                "title": "OTHER",
+                "text": "Other skills that are not included in the previous sections",
+                "item": [
+                    {
+                        "img": "ts",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "TypeScript",
+                        "text": "Using TypeScript with React"
+                    },
+                    {
+                        "img": "php",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "PHP skills",
+                        "text": "PHP skills, syntax, basic concepts, creating php templates for Wordpress"
+                    },
+                    {
+                        "img": "wordpress",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "Wordpress",
+                        "text": "Сreating an admin panel using CMS - Wordpress"
+                    },
+                    {
+                        "img": "jquery",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "JQuery",
+                        "text": "JQuery Library Skills"
+                    }
+                ]
+            }
+        ],
+        "relink": "Expected salary"
+    },
+    "salary": {
+        "title": "Expected salary",
+        "text": [
+            "On average, the front-end developer in Kiev earns ~$1200. This is the median of wages according to the data of 137 vacancies posted on work.ua site over the past 3 months. Also, according to the djinni portal, the largest number of offers were sent to candidates with the expected salary in the range from $1000+ to $2000+ (Among candidates with work experience from 1 to 2 years)",
+            "Regarding the DOU portal, the range was from $1000 to $1600 for developers with knowledge of the javascript programming language, but this is information for June 2020, which is a less relevant indicator."
+        ],
+        "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $200.01",
+        "before": "before - ",
+        "now": "now - ",
+        "graphText": "Still in doubt? Then the abstruse charts presented below should remove all your doubts",
+        "captionOne": "In this graph, the blue line shows the effectiveness of my work compared to other candidates who also want to get to your company. In my opinion, the choice is obvious.",
+        "captionTwo": "If you are not convinced by the first schedule, then see how your company's revenue will increase after I get to work for you.",
+        "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $1.4K, but in any case write to me, we can discuss it.",
+        "relink": "Contacts"
+    },
+    "download": {
+        "title": "Download CV",
+        "text": "As I promised on the main page, here you can download the resume in a format suitable for you",
+        "pdf": "This is a formatted version of the resume in PDF format. It looks the same on all devices.",
+        "doc": "This is a text version of the resume in DOC format, without registration. In case you are only interested in tex.",
+        "btn": "Download",
+        "relink": "Why am I going to change job?"
+    },
+    "main": {
+        "title": "The author of this page is looking for a front-end developer position",
+        "text": "If you don’t have time to familiarize yourself with all the information, or you are just too lazy, in the navigation section of the site you can go to the page for downloading resumes.",
+        "relink": "Here goes!"
+    },
+    "contacts": {
+        "title": "Contacts",
+        "secondTitle": "Will it be convenient for me to get to your office?",
+        "text": "None of my interviews have passed without this question. Looking ahead, I will answer that if you are in the aisles of the 30-minute walk from the metro, then this is just super. If your office is further, then I still not a big problem for me.",
+        "relink": "Download CV"
+    },
+    "notFound": {
+        "title": "404",
+        "text": "Oops, something went wrong and the page was not found",
+        "relink": "Go to Main page"
+    }
 }

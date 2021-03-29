@@ -7,78 +7,72 @@ import css from './Skills.module.css';
 import SkillsList from './SkillsList/SkillsList.component';
 
 interface Values {
-  img: string;
-  logoColor: string;
-  title: string;
-  text: string;
+    img: string;
+    logoColor: string;
+    title: string;
+    text: string;
 }
 
 interface Props {
-  content: {
-    title: string;
-    text: string[];
-    end: string[];
-    relink: string;
-    list: {
-      title: string;
-      text: string;
-      item: Values[];
-    }[];
-  };
+    content: {
+        title: string;
+        text: string[];
+        end: string[];
+        relink: string;
+        list: {
+            title: string;
+            text: string;
+            item: Values[];
+        }[];
+    };
 }
 
-const Skills: React.FC<Props> = ({
-  content: { title, text, end, relink, list },
-}) => (
-  <main className="container">
-    <PageFirstBlock
-      title={title}
-      img="/images/emoji/skills.png"
-      webp="/images/emoji/skills.webp"
-    />
+const Skills: React.FC<Props> = ({ content: { title, text, end, relink, list } }) => (
+    <main className="container">
+        <PageFirstBlock title={title} img="/images/emoji/skills.png" webp="/images/emoji/skills.webp" />
 
-    <PageText>
-      {text.map((paragraph, id) => (
-        <p key={id}>{paragraph}</p>
-      ))}
-    </PageText>
+        <PageText>
+            {text.map((paragraph, id) => (
+                <p key={id}>{paragraph}</p>
+            ))}
+        </PageText>
 
-    <article className={css.article}>
-      {list.map((section, index) =>
-        !(index % 2) ? (
-          <section key={index} className={css.section}>
-            <div className={css.left + ' gradient'}>
-              <h3>{section.title}</h3>
-              <p className={css.itemText}>{section.text}</p>
-            </div>
+        <article className={css.article}>
+            {list.map((section, index) =>
+                !(index % 2) ? (
+                    <section key={index} className={css.section}>
+                        <div className={css.left + ' gradient'}>
+                            <h3>{section.title}</h3>
+                            <p className={css.itemText}>{section.text}</p>
+                        </div>
 
-            <div className={css.right}>
-              <SkillsList props={section.item} />
-            </div>
-          </section>
-        ) : (
-          <section key={index} className={css.section}>
-            <div className={css.right}>
-              <SkillsList props={section.item} />
-            </div>
+                        <div className={css.right}>
+                            <SkillsList props={section.item} />
+                        </div>
+                    </section>
+                ) : (
+                    <section key={index} className={css.section}>
+                        <div className={css.right}>
+                            <SkillsList props={section.item} />
+                        </div>
 
-            <div className={css.leftRevers + ' gradient'}>
-              <h3>{section.title}</h3>
-              <p className={css.itemText}>{section.text}</p>
-            </div>
-          </section>
-        ),
-      )}
-    </article>
+                        <div className={css.leftRevers + ' gradient'}>
+                            <h3>{section.title}</h3>
+                            <p className={css.itemText}>{section.text}</p>
+                        </div>
+                    </section>
+                ),
+            )}
+        </article>
 
-    <PageText>
-      {end.map((paragraph, id) => (
-        <p key={id}>{paragraph}</p>
-      ))}
-    </PageText>
+        <PageText>
+            {end.map((paragraph, id) => (
+                <p key={id}>{paragraph}</p>
+            ))}
+        </PageText>
 
-    <SplitLink path="/salary" text={relink} />
-  </main>
+        <SplitLink path="/salary" text={relink} />
+    </main>
 );
 
 export default Skills;

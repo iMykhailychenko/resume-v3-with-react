@@ -7,14 +7,14 @@ import Messenger from './messenger/Messenger.container';
 import css from './TopBar.module.css';
 
 const TopBar = (): ReactElement => (
-  <div className={css.inner}>
-    <div className={css.leftBlock}>
-      <MenuBtn />
-      <Locale />
+    <div className={css.inner}>
+        <div className={css.leftBlock}>
+            <MenuBtn />
+            <Locale />
+        </div>
+        <Clock />
+        <Messenger />
     </div>
-    <Clock />
-    <Messenger />
-  </div>
 );
 
 export default TopBar;

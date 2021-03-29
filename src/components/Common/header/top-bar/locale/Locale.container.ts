@@ -6,13 +6,13 @@ import { IState, Locale } from '../../../../../types';
 import LocaleComponent from './Locale.component';
 
 const mapSTP = (state: IState): { locale: Locale } => ({
-  locale: state.locale as Locale,
+    locale: state.locale as Locale,
 });
 
 const mapDTP = (dispatch: Dispatch) => ({
-  toggleLocale: (data: Locale): void => {
-    dispatch(locale(data));
-  },
+    toggleLocale: (data: Locale): void => {
+        dispatch(locale(data));
+    },
 });
 
 export default connect(mapSTP, mapDTP)(LocaleComponent);

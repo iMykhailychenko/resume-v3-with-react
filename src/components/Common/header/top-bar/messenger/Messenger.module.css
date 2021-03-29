@@ -1,22 +1,22 @@
 .link {
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
-  transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in-out;
 }
 
 .link:focus {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .logo {
-  height: 2.8rem;
-  width: auto;
-  margin-left: 1.6rem;
+    height: 2.8rem;
+    width: auto;
+    margin-left: 1.6rem;
 }
 
 @media (max-width: 670px) {
-  .link {
-    font-size: 0;
-  }
+    .link {
+        font-size: 0;
+    }
 }

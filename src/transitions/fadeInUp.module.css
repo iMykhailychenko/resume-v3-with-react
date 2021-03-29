@@ -1,23 +1,23 @@
 .enter,
 .appearDone {
-  transform: translateY(10rem);
-  opacity: 0;
+    transform: translateY(10rem);
+    opacity: 0;
 }
 
 .enterActive {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 0.5s ease-in-out 0.5s;
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s ease-in-out 0.5s;
 }
 
 .exit {
-  transform: translateY(0);
-  opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .exitActive,
 .exitDone {
-  transform: translateY(10rem);
-  opacity: 0;
-  transition: 0.5s ease-in-out 0.5s;
+    transform: translateY(10rem);
+    opacity: 0;
+    transition: 0.5s ease-in-out 0.5s;
 }

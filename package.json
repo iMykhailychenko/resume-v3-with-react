@@ -1,80 +1,80 @@
 {
-  "name": "resume-v3-with-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/chart.js": "^2.9.28",
-    "chart.js": "^2.9.4",
-    "clsx": "^1.0.4",
-    "crypto-js": "^4.0.0",
-    "formik": "^2.1.4",
-    "jss": "^10.0.0",
-    "rc-scroll-anim": "^2.7.4",
-    "react": "^16.13.1",
-    "react-countup": "^4.3.3",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "react-intersection-observer": "^8.26.1",
-    "react-jss": "^10.0.0",
-    "react-media": "^1.10.0",
-    "react-redux": "^7.2.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "react-scroll-parallax": "^2.3.2",
-    "react-transition-group": "^4.3.0",
-    "redux": "^4.0.5",
-    "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^5.2.1",
-    "three": "^0.115.0",
-    "three-gltf-loader": "^1.111.0",
-    "typescript": "^3.7.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "netlify deploy -p",
-    "lint": "prettier --write './**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc && eslint --fix ./"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/crypto-js": "^4.0.1",
-    "@types/node": "^12.12.21",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
-    "@types/react-helmet": "^5.0.15",
-    "@types/react-redux": "^7.1.7",
-    "@types/react-router-dom": "^5.1.4",
-    "@types/react-transition-group": "^4.2.4",
-    "@typescript-eslint/eslint-plugin": "^4.3.0",
-    "@typescript-eslint/parser": "^4.3.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.2",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "eslint-plugin-simple-import-sort": "^5.0.3",
-    "prettier": "^2.1.2",
-    "redux-devtools-extension": "^2.13.8",
-    "typescript": "4.0"
-  }
+    "name": "resume-v3-with-react",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@types/chart.js": "^2.9.28",
+        "chart.js": "^2.9.4",
+        "clsx": "^1.0.4",
+        "crypto-js": "^4.0.0",
+        "formik": "^2.1.4",
+        "jss": "^10.0.0",
+        "rc-scroll-anim": "^2.7.4",
+        "react": "^16.13.1",
+        "react-countup": "^4.3.3",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.0.0",
+        "react-intersection-observer": "^8.26.1",
+        "react-jss": "^10.0.0",
+        "react-media": "^1.10.0",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.1",
+        "react-scroll-parallax": "^2.3.2",
+        "react-transition-group": "^4.3.0",
+        "redux": "^4.0.5",
+        "redux-persist": "^6.0.0",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^5.2.1",
+        "three": "^0.115.0",
+        "three-gltf-loader": "^1.111.0",
+        "typescript": "^3.7.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "predeploy": "npm run lint && npm run build",
+        "deploy": "netlify deploy -p",
+        "lint": "prettier --write './**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc && eslint --fix ./"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.2.10",
+        "@types/crypto-js": "^4.0.1",
+        "@types/node": "^12.12.21",
+        "@types/react": "^16.9.16",
+        "@types/react-dom": "^16.9.4",
+        "@types/react-helmet": "^5.0.15",
+        "@types/react-redux": "^7.1.7",
+        "@types/react-router-dom": "^5.1.4",
+        "@types/react-transition-group": "^4.2.4",
+        "@typescript-eslint/eslint-plugin": "^4.3.0",
+        "@typescript-eslint/parser": "^4.3.0",
+        "eslint-config-airbnb": "^18.2.0",
+        "eslint-config-prettier": "^6.12.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.3.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.21.2",
+        "eslint-plugin-react-hooks": "^4.1.2",
+        "eslint-plugin-simple-import-sort": "^5.0.3",
+        "prettier": "^2.1.2",
+        "redux-devtools-extension": "^2.13.8",
+        "typescript": "4.0"
+    }
 }

@@ -1,21 +1,21 @@
 .inner {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .leftBlock {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-height: 600px) {
-  .inner {
-    padding: 2rem 0;
-  }
+    .inner {
+        padding: 2rem 0;
+    }
 }

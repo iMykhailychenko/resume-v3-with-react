@@ -1,21 +1,21 @@
 .enter {
-  transform: scale(0);
-  opacity: 0;
+    transform: scale(0);
+    opacity: 0;
 }
 
 .enterActive {
-  transform: scale(1);
-  opacity: 1;
-  transition: 300ms ease-in-out;
+    transform: scale(1);
+    opacity: 1;
+    transition: 300ms ease-in-out;
 }
 
 .exit {
-  transform: scale(1);
-  opacity: 1;
+    transform: scale(1);
+    opacity: 1;
 }
 
 .exitActive {
-  transform: scale(0);
-  opacity: 0;
-  transition: 600ms ease-in-out;
+    transform: scale(0);
+    opacity: 0;
+    transition: 600ms ease-in-out;
 }
