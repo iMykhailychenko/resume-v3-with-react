@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { Component, MouseEvent, ReactElement } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import routes from '../../../../../routes';
@@ -18,6 +18,9 @@ class Navigation extends Component<IProps> {
         window.removeEventListener('keydown', this.handleKeydown);
     }
 
+    handleClick = (event: MouseEvent<HTMLDivElement | HTMLUListElement>): void => {
+        if (event.target === event.currentTarget) this.props.toggleMenu();
+    };
     handleKeydown = (event: KeyboardEvent): void => {
         if (event.key === 'Escape') this.props.toggleMenu();
     };
@@ -25,8 +28,8 @@ class Navigation extends Component<IProps> {
     render(): ReactElement {
         const { content, toggleMenu } = this.props;
         return (
-            <nav className={css.nav}>
-                <ul className={css.scroll}>
+            <nav className={css.nav} onClick={this.handleClick}>
+                <ul className={css.scroll} onClick={this.handleClick}>
                     {config.navigation.map(item => (
                         <li key={item.id}>
                             <NavLink

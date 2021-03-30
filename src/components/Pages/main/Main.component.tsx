@@ -9,15 +9,16 @@ import { FooterStyles } from '../../../styled-components/FooterStyles.js';
 import Canvas from './canvas/Canvas.container';
 import css from './Main.module.css';
 
-interface Props {
+interface IProps {
     content: {
         title: string;
         text: string;
         relink: string;
+        downloadHere: string;
     };
 }
 
-const Main = ({ content: { title, text, relink } }: Props): ReactElement => {
+const Main = ({ content: { title, text, relink, downloadHere } }: IProps): ReactElement => {
     const mobile = window.innerWidth < 768;
 
     return (
@@ -32,7 +33,14 @@ const Main = ({ content: { title, text, relink } }: Props): ReactElement => {
                         </CSSTransition>
 
                         <CSSTransition in timeout={800} classNames="slideUp" appear>
-                            <p className={clsx(css.title, 'easeInOut')}>{text}</p>
+                            <>
+                                <p className={clsx(css.title, 'easeInOut')}>
+                                    {text}{' '}
+                                    <Link to="/download" className={css.lint}>
+                                        {downloadHere}
+                                    </Link>
+                                </p>
+                            </>
                         </CSSTransition>
 
                         <CSSTransition in timeout={1000} classNames="slideUp" appear>

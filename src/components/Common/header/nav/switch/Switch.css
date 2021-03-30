@@ -5,6 +5,7 @@
     background: rgb(196, 196, 196);
     border: 0.3rem solid rgb(196, 196, 196);
     border-radius: 0.8rem;
+    user-select: none;
 }
 
 .btn-toggle:focus {

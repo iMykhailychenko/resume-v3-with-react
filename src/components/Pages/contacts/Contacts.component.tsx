@@ -27,7 +27,35 @@ const Contacts = ({ content }: Props): ReactElement => {
             <section className={css.section}>
                 <PageText>
                     <h3>{content.secondTitle}</h3>
-                    <p>{content.text}</p>
+                    <ul className={css.list}>
+                        <li>+38 097 70 24 504</li>
+                        <li>igor.c.m@ukr.net</li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/in/ihor-mykhailychenko-755778160/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="telegram"
+                            >
+                                linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/ihormykh" target="_blank" rel="noopener noreferrer" title="telegram">
+                                telegram
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.facebook.com/profile.php?id=100005827514352"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="facebook"
+                            >
+                                facebook
+                            </a>
+                        </li>
+                    </ul>
                 </PageText>
 
                 <div className={css.container}>

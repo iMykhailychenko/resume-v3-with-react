@@ -10,6 +10,11 @@
     background-color: rgba(200, 200, 200, 0.8);
 }
 
+.dark {
+    background-color: rgb(20, 20, 20);
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
 .wrp::before {
     content: '';
     position: absolute;

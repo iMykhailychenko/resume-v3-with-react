@@ -29,7 +29,7 @@
         "errorConfirm": "Do not forget to indicate consent to the processing of personal information."
     },
     "reason": {
-        "title": "How did I become a programmer?",
+        "title": "Why did I choose to become a Front End Developer?",
         "firstText": [
             "As often happens, after school I could not correctly set my life priorities and went to study in a specialty that did not interest me at all.",
             "All this time I felt out of place. Thoughts of becoming a programmer came to my mind from time to time, but I was always frightened by the stereotype that it is very difficult and boring.",
@@ -37,7 +37,7 @@
         ],
         "secondText": [
             "At the end of May 2019, I finally set my priorities and decided to change my field of activity as soon as possible. At that time I worked for a prestigious company, so this decision was not easy.",
-            "To do this, I signed up for a full-stack developer course at GoIT. I wanted to change professions as soon as possible in order to get a more relevant experience, so I got a job as a junior front-end developer before finishing the course.",
+            "To do this, I signed up for a full-stack developer course at GoIT. I wanted to change my profession as soon as possible in order to get a more relevant experience, so I got a job as a junior front-end developer before finishing the course.",
             "Since registering for the courses, I have never regretted my decision and in less than a year I received an offer for the position of middle front-end developer."
         ],
         "relink": "General information about me"
@@ -56,7 +56,7 @@
                 "37"
             ]
         ],
-        "text": "Soft skills: Can convey my thoughts correctly, work in a team, I want to receive and share knowledge, I have a good sense of humor, but it's not accurate.",
+        "text": "Soft skills: The ability to communicate in a clear, efficient way, work in a team, time management, a good sense of humor.",
         "relink": "Education and courses"
     },
     "education": {
@@ -166,17 +166,17 @@
             }
         ],
         "secondTitle": "Examples of my commercial works",
-        "textOne": "Below are the sites in the creation of which I took an active part. These are not all my works! For obvious reasons, I can not show all the commercial projects in which I was participated.",
-        "textTwo": "For comparison, the earlier versions of my resumes are presented below.",
-        "textThree": "Once, my friends and I decided to create a project that would allow me to gain experience to find my first job, and to improve my mentoring skills. As a result, this project has become something more. You can see the source code at this link:",
-        "textFour": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them I have upload to github.",
+        "textOne": "Here are the sites in the creation of which I took an active part. These aren't all my works! For obvious reasons, I can't show all the commercial projects in which I participated.",
+        "textTwo": "For comparison, the previous version of my CV is presented below.",
+        "textThree": "Once, my friends and I decided to create a project that would allow me to gain experience and would help me to find my first job. Consequently, this project has become something more. You can view the source code in this link: github link:",
+        "textFour": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them I uploaded to Github.",
         "relink": "Hard skills"
     },
     "skills": {
         "title": "Hard skills",
         "text": [
-            "Unfortunately or fortunately, but I learn new technologies faster than I can update this site.",
-            "Therefore, if you have not found the information you need - write to me! Perhaps I just did not mentioned it on the site"
+            "Unfortunately or fortunately, but I am learning new technologies faster than I can update this site.",
+            "Therefore, if you have not found the information you need - write to me! Maybe I didn't mention it on the site"
         ],
         "empty": [
             {
@@ -488,35 +488,35 @@
     "salary": {
         "title": "Expected salary",
         "text": [
-            "My salary expectations directly depend on the presence of an interesting project, a good team and, of course, cookies in the office",
-            "If these conditions are met, the cost of my labor will be $ 2500"
+            "My salary expectations depend directly on an interesting project, a good team and, of course, cookies in the office.",
+            "If these conditions are met, my salary expectations are $2500"
         ],
-        "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $300.01",
+        "sale": "In relation to the current situation in the world, I am ready to make you a special offer. If you contact me in the near future, you will receive a $300.01 discount.",
         "before": "before - ",
         "now": "now - ",
-        "graphText": "Still in doubt? Then the abstruse charts presented below should remove all your doubts",
-        "captionOne": "In this graph, the yellow line shows the effectiveness of my work compared to other candidates who also want to get to your company. In my opinion, the choice is obvious.",
-        "captionTwo": "If you are not convinced by the first schedule, then see how your company's revenue will increase after I get to work for you.",
-        "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $2200, but in any case write to me, we can discuss it.",
+        "graphText": "Are you still in doubt? Then the abstruse graphs presented below should remove all your doubts.",
+        "captionOne": "In this graph, the yellow line shows the effectiveness of my work compared to other candidates who also want to work at your company.",
+        "captionTwo": "If you are not convinced by the first graphic, then see how your company's income will increase after I join your company.",
+        "endText": "I hope you had some fun on this page. In the worst case scenario, no. Well, seriously, my expected income is $2,200, but in any case, write to me, we can talk about it.",
         "relink": "Contacts"
     },
     "download": {
         "title": "Download CV",
-        "text": "As I promised on the main page, here you can download the resume in a format suitable for you",
-        "pdf": "This is a formatted version of the resume in PDF format. It looks the same on all devices.",
-        "doc": "This is a text version of the resume in DOC format, without registration. In case you are only interested in tex.",
+        "text": "As promised on the homepage, you can download the CV in a format and language that you like, here",
+        "pdf": "It is a formatted version of the CV in PDF format. It looks the same on all devices.",
+        "doc": "It is a text version of the CV in DOC format, without registration. In case you're only interested in text.",
         "btn": "Download",
         "relink": "How did I become a programmer?"
     },
     "main": {
-        "title": "The author of this page is looking for a front-end developer position",
-        "text": "If you don’t have time to familiarize yourself with all the information, or you are just too lazy, in the navigation section of the site you can go to the page for downloading resumes.",
-        "relink": "Here goes!"
+        "title": "The author of this website is looking for a front-end developer position",
+        "text": "If you don’t have much time for looking through the whole site, scrolling all the pages and playing with the robot, you can simply download my CV in pdf or doc here",
+        "relink": "Let’s go!",
+        "downloadHere": "Download here"
     },
     "contacts": {
         "title": "Contacts",
-        "secondTitle": "Will it be convenient for me to get to your office?",
-        "text": "None of my interviews have passed without this question. Looking ahead, I will answer that if you are in the aisles of the 30-minute walk from the metro, then this is just super. If your office is further, then I still not a big problem for me.",
+        "secondTitle": "Contact me via messenger, phone or email:",
         "relink": "Download CV"
     },
     "notFound": {

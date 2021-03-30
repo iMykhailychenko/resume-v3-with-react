@@ -8,6 +8,7 @@ interface Props {
         title: string;
         text: string;
         relink: string;
+        downloadHere: string;
     };
 }
 

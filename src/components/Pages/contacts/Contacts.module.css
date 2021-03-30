@@ -29,6 +29,18 @@
     border: none;
 }
 
+.list {
+    font-size: 1.6rem;
+}
+
+.list li {
+    margin: 1.5rem 0;
+}
+
+.list a {
+    text-decoration: underline;
+}
+
 @media (max-width: 900px) {
     .formWrp {
         margin: 0 auto;

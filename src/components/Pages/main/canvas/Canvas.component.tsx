@@ -4,9 +4,14 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import MODEL_PATH from '../../../../assets/soldier.glb';
+import { Theme } from '../../../../types';
 import css from './Canvas.module.css';
 
-export default class Canvas extends Component {
+interface IProps {
+    theme: Theme;
+}
+
+export default class Canvas extends Component<IProps> {
     canvasRef = createRef<HTMLDivElement>();
     preloaderRef = createRef<HTMLParagraphElement>();
     handleKeydown: ((event: KeyboardEvent) => void) | null = null;
@@ -23,12 +28,13 @@ export default class Canvas extends Component {
     loader?: GLTFLoader | null;
     animate?: (() => void) | null;
 
-    componentDidMount(): void {
+    run = (): void => {
         // GENERAL OPERATORS
         const width = window.innerWidth;
         const height = window.innerHeight;
         const container = this.canvasRef.current;
         const preloader = this.preloaderRef.current;
+        const light = this.props.theme === 'light';
 
         // if null
         if (!container || !preloader) return;
@@ -37,11 +43,11 @@ export default class Canvas extends Component {
         this.camera = new THREE.PerspectiveCamera(20, width / height, 1, 1000);
         this.clock = new THREE.Clock();
         this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color(0x909090);
+        this.scene.background = new THREE.Color(light ? 0x909090 : 0x222222);
         this.scene.position.y = -1;
-        this.scene.fog = new THREE.Fog(0x909090, 1, 60);
+        this.scene.fog = new THREE.Fog(light ? 0x909090 : 0x222222, 1, 60);
 
-        this.hemiLight = new THREE.HemisphereLight(0x909090, 0xe0e0e0);
+        this.hemiLight = new THREE.HemisphereLight(light ? 0x909090 : 0x222222, light ? 0x909090 : 0x222222);
         this.hemiLight.position.set(0, 10, 0);
         this.scene.add(this.hemiLight);
 
@@ -170,7 +176,7 @@ export default class Canvas extends Component {
 
             window.addEventListener('keydown', this.handleKeydown);
         });
-    }
+    };
 
     clear = (): void => {
         this.camera = null;
@@ -183,12 +189,37 @@ export default class Canvas extends Component {
         this.controls = null;
         this.loader = null;
         this.animate = null;
+
+        if (this.handleKeydown) {
+            window.removeEventListener('keydown', this.handleKeydown);
+        }
     };
+
+    componentDidMount(): void {
+        this.run();
+    }
 
     componentWillUnmount(): void {
         this.clear();
-        if (!this.handleKeydown) return;
-        window.removeEventListener('keydown', this.handleKeydown);
+    }
+
+    componentDidUpdate(): void {
+        if (!this.scene) return;
+
+        switch (this.props.theme) {
+            case 'dark':
+                this.scene.background = new THREE.Color(0x222222);
+                this.scene.fog = new THREE.Fog(0x222222, 1, 60);
+                this.hemiLight = new THREE.HemisphereLight(0x222222, 0x222222);
+                break;
+            case 'light':
+                this.scene.background = new THREE.Color(0x909090);
+                this.scene.fog = new THREE.Fog(0x909090, 1, 60);
+                this.hemiLight = new THREE.HemisphereLight(0x909090, 0x222222);
+                break;
+            default:
+                return;
+        }
     }
 
     render(): ReactElement {
