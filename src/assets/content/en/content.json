@@ -179,18 +179,18 @@
             "Therefore, if you have not found the information you need - write to me! Perhaps I just did not mentioned it on the site"
         ],
         "empty": [
-              {
-                    "title": "Nothing found",
-                    "text": "",
-                    "item": [
-                          {
-                                "img": "github",
-                                "logoColor": "rgb(255,255,255)",
-                                "title": "It's empty here",
-                                "text": "Try to chang your search term"
-                          }
-                    ]
-              }
+            {
+                "title": "Nothing found",
+                "text": "",
+                "item": [
+                    {
+                        "img": "github",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "It's empty here",
+                        "text": "Try to chang your search term"
+                    }
+                ]
+            }
         ],
         "search": "Start typing",
         "list": [

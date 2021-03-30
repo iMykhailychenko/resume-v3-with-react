@@ -1,8 +1,5 @@
 # [RESUME](https://ihor-mykhailychenko.netlify.app)
 
-> At this time I'm not seeking to change jobs.  
-> Also, the information in this summary is out of date
-
 ### [Ссылка для просмотра резюме](https://ihor-mykhailychenko.netlify.app)
 
 ## Стек технологий:
@@ -22,29 +19,42 @@
 
 ## Навыки:
 
-- Система контроля версий. GitHub
-- Язык разметки, HTML. стандарт HTML5
-- технология CSS3
+- React
+- Redux
+- TypeScript
+- Angular
+- Node.js
+- Express
+- Основы Nest.js
+- Система контроля версий. Git
+- HTML/CSS
 - Адаптивная и кросс-браузерную верстка
 - БЕM
 - Pixel perfect верстка
 - Препроцессоры: SASS,
 - JavaScript
 - Шаблонизатор: PUG, Handlebars
-- NPM, Node.js
 - Webpack, GULP
-- React
-- Redux
-- TypeScript
-- Node.js
-- MongoDB
+- Python
 - Основы php
+- Postgresql
+- MongoDB
 - Wordpress
 - JQuery
 
 ## Опыт работы:
 
-#### Июль 2020 г. Компания: Merehead. Должность: front-end developer (react.js).
+#### Декабрь 2020 г. Компания: LuckyLand Gaming. Должность: middle front-end developer (react.js).
+
+Обязанности:
+- Разработка пользовательских интерфейсов с использованием React.js;
+- Рефакторинг старого кода и разработка нового функционала
+- Создание повторно используемых компонентов и интерфейсов для будущего использования;
+- Перевод макетов и каркасов в код на React.js;
+- Оптимизация компонентов для максимальной производительности на большом количестве веб-устройств и браузеров;
+
+
+#### Июль 2020 г. - Декабрь 2020 г. Компания: Merehead. Должность: front-end developer (react.js).
 
 Обязанности:
 - Разработка пользовательских интерфейсов с использованием React.js.

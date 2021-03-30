@@ -50,13 +50,7 @@ const SkillsSearch = ({ list, empty, search, value, onChange }: IProps): ReactEl
         <div>
             <label className={css.label}>
                 <p>{search}</p>
-                <input
-                    className={css.input}
-                    placeholder="Search"
-                    type="text"
-                    value={value}
-                    onChange={handleChange}
-                />
+                <input className={css.input} placeholder="Search" type="text" value={value} onChange={handleChange} />
             </label>
             <div className={css.inner}>
                 {value.trim().length ? (
