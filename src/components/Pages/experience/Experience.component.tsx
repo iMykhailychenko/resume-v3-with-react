@@ -41,7 +41,7 @@ export default class Experience extends Component<Props, State> {
     handleUp = (): void => {
         this.setState(
             (prev: State): State => {
-                const count = prev.count >= this.props.content.slider.length - 1 ? 0 : prev.count + 1;
+                const count = !prev.count ? this.props.content.slider.length - 1 : prev.count - 1;
                 return { count };
             },
         );
@@ -50,7 +50,7 @@ export default class Experience extends Component<Props, State> {
     handleDown = (): void => {
         this.setState(
             (prev: State): State => {
-                const count = !prev.count ? this.props.content.slider.length - 1 : prev.count - 1;
+                const count = prev.count >= this.props.content.slider.length - 1 ? 0 : prev.count + 1;
                 return { count };
             },
         );
