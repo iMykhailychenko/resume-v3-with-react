@@ -1,11 +1,26 @@
 import { connect } from 'react-redux';
+import { Dispatch } from 'redux';
 
-import { IState } from '../../types';
+import content from '../../redux/content/actions';
+import { IState, Locale } from '../../types';
 import App from './App.componet';
 
-const mapSTP = (state: IState): Pick<IState, 'theme' | 'menu'> => ({
+interface IProps {
+    theme: string;
+    menu: boolean;
+    locale: Locale;
+}
+
+const mapSTP = (state: IState): IProps => ({
     theme: state.theme,
     menu: state.menu,
+    locale: state.locale,
 });
 
-export default connect(mapSTP)(App);
+const mapDTP = (dispatch: Dispatch) => ({
+    toggleContent: (data: Locale): void => {
+        dispatch(content(data));
+    },
+});
+
+export default connect(mapSTP, mapDTP)(App);

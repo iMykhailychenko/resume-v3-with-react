@@ -34,6 +34,7 @@
     position: absolute;
     top: 50%;
     right: 0;
+    transform: translateX(50%);
     display: block;
     height: 1.5rem;
     width: 1.5rem;
@@ -41,19 +42,40 @@
     transition: 1s ease-in-out;
 }
 
+.activePoint {
+    transform: translateX(50%) scale(2.5);
+}
+
 .point:nth-of-type(2) {
-    top: 15%;
-    right: 8.4rem;
+    top: 10%;
+    right: 10.9rem;
+}
+.activePoint.point:nth-of-type(2) {
+    top: 13%;
+    right: 9rem;
 }
 
 .point:nth-of-type(3) {
-    top: 0%;
+    top: -1.3%;
     right: 30rem;
+}
+.activePoint.point:nth-of-type(3) {
+    top: -1.2%;
+    right: 30.5rem;
 }
 
 .point:nth-of-type(4) {
-    top: 16%;
+    top: 15%;
     right: 52rem;
+}
+.activePoint.point:nth-of-type(4) {
+    top: 14%;
+    right: 51.5rem;
+}
+
+.point:nth-of-type(5) {
+    top: 50%;
+    right: 59.8rem;
 }
 
 .current {
@@ -135,17 +157,21 @@
 
 .title {
     width: 50%;
-    margin: 6rem auto 10rem;
+    margin: 8rem auto 6rem;
     text-align: center;
 }
 
 .works {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: stretch;
-    grid-gap: 5rem 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 6rem;
+}
+
+.works li {
+    width: 30%;
+    margin: 1%;
 }
 
 .works li a {
@@ -281,15 +307,18 @@
     }
 }
 
-@media (max-width: 760px) {
-    .works {
-        max-width: 32rem;
-        margin: 0 auto;
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .works li {
+        width: 45%;
     }
 }
 
 @media (max-width: 440px) {
+    .works li {
+        width: 90%;
+        margin: 5%;
+    }
+
     .table td {
         padding: 1rem 0.5rem;
         font-size: 1.2rem;

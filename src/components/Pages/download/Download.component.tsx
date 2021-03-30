@@ -19,7 +19,7 @@ interface Props {
 }
 
 const Download: React.FC<Props> = ({ content: { title, text, pdf, doc, btn, relink } }) => (
-    <main className="container">
+    <div className="container">
         <PageFirstBlock title={title} img="/images/emoji/download.png" webp="/images/emoji/download.webp" />
 
         <PageText>
@@ -92,7 +92,7 @@ const Download: React.FC<Props> = ({ content: { title, text, pdf, doc, btn, reli
         </Parallax>
 
         <SplitLink path="/reason" text={relink} />
-    </main>
+    </div>
 );
 
 export default Download;

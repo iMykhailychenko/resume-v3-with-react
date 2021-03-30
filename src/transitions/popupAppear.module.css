@@ -1,14 +1,14 @@
 .enter :global(.popup) {
-    transform: scale(0);
+    transform: translateY(-6rem);
 }
 
 .enterActive :global(.popup) {
-    transform: scale(1);
-    transition: 200ms ease-in-out;
+    transform: translateY(0);
+    transition: 300ms ease-in-out;
 }
 
 .exit :global(.popup) {
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 .exitActive {
@@ -17,6 +17,6 @@
 }
 
 .exitActive :global(.popup) {
-    transform: scale(0);
+    transform: translateY(-6rem);
     transition: 200ms ease-in-out;
 }

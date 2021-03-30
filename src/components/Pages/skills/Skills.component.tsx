@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component, ReactElement } from 'react';
 
 import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.component';
 import PageText from '../../Common/page-text/PageText.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
 import css from './Skills.module.css';
 import SkillsList from './SkillsList/SkillsList.component';
+import SkillsSearch from './SkillsSearch/SkillsSearch.component';
 
 interface Values {
     img: string;
@@ -13,66 +14,89 @@ interface Values {
     text: string;
 }
 
-interface Props {
+export interface IList {
+    title: string;
+    text: string;
+    item: Values[];
+}
+
+interface IProps {
     content: {
         title: string;
         text: string[];
-        end: string[];
         relink: string;
-        list: {
-            title: string;
-            text: string;
-            item: Values[];
-        }[];
+        search: string;
+        empty: IList[];
+        list: IList[];
     };
 }
+interface IState {
+    search: string;
+}
 
-const Skills: React.FC<Props> = ({ content: { title, text, end, relink, list } }) => (
-    <main className="container">
-        <PageFirstBlock title={title} img="/images/emoji/skills.png" webp="/images/emoji/skills.webp" />
+class Skills extends Component<IProps, IState> {
+    state = {
+        search: '',
+    };
 
-        <PageText>
-            {text.map((paragraph, id) => (
-                <p key={id}>{paragraph}</p>
-            ))}
-        </PageText>
+    handleChange = (search: string): void => {
+        this.setState({ search });
+    };
 
-        <article className={css.article}>
-            {list.map((section, index) =>
-                !(index % 2) ? (
-                    <section key={index} className={css.section}>
-                        <div className={css.left + ' gradient'}>
-                            <h3>{section.title}</h3>
-                            <p className={css.itemText}>{section.text}</p>
-                        </div>
+    render(): ReactElement {
+        const { title, text, empty, relink, search, list } = this.props.content;
+        return (
+            <div className="container">
+                <PageFirstBlock title={title} img="/images/emoji/skills.png" webp="/images/emoji/skills.webp" />
 
-                        <div className={css.right}>
-                            <SkillsList props={section.item} />
-                        </div>
-                    </section>
-                ) : (
-                    <section key={index} className={css.section}>
-                        <div className={css.right}>
-                            <SkillsList props={section.item} />
-                        </div>
+                <PageText>
+                    {text.map((paragraph, id) => (
+                        <p key={id}>{paragraph}</p>
+                    ))}
+                </PageText>
 
-                        <div className={css.leftRevers + ' gradient'}>
-                            <h3>{section.title}</h3>
-                            <p className={css.itemText}>{section.text}</p>
-                        </div>
-                    </section>
-                ),
-            )}
-        </article>
+                <SkillsSearch
+                    search={search}
+                    empty={empty}
+                    value={this.state.search}
+                    onChange={this.handleChange}
+                    list={this.state.search.trim() ? list : empty}
+                />
 
-        <PageText>
-            {end.map((paragraph, id) => (
-                <p key={id}>{paragraph}</p>
-            ))}
-        </PageText>
+                {this.state.search.trim() ? null : (
+                    <article className={css.article}>
+                        {list.map((section, index) =>
+                            !(index % 2) ? (
+                                <section key={index} className={css.section}>
+                                    <div className={css.left + ' gradient'}>
+                                        <h3>{section.title}</h3>
+                                        <p className={css.itemText}>{section.text}</p>
+                                    </div>
 
-        <SplitLink path="/salary" text={relink} />
-    </main>
-);
+                                    <div className={css.right}>
+                                        <SkillsList skills={section.item} />
+                                    </div>
+                                </section>
+                            ) : (
+                                <section key={index} className={css.section}>
+                                    <div className={css.right}>
+                                        <SkillsList skills={section.item} />
+                                    </div>
+
+                                    <div className={css.leftRevers + ' gradient'}>
+                                        <h3>{section.title}</h3>
+                                        <p className={css.itemText}>{section.text}</p>
+                                    </div>
+                                </section>
+                            ),
+                        )}
+                    </article>
+                )}
+
+                <SplitLink path="/salary" text={relink} />
+            </div>
+        );
+    }
+}
 
 export default Skills;

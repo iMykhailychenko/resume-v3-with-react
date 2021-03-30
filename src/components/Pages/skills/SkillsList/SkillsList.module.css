@@ -1,8 +1,20 @@
+.flexList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .item {
     padding: 4rem;
     min-height: 35rem;
     margin-bottom: 4rem;
     outline: none;
+}
+
+.flexItem {
+    width: 30%;
+    margin: 1%;
+    padding: 2rem;
 }
 
 .itemTitle {
@@ -18,4 +30,17 @@
 .img {
     height: 2.2rem;
     width: 2.2rem;
+}
+
+@media (max-width: 1100px) {
+    .flexItem {
+        width: 46%;
+    }
+}
+
+@media (max-width: 768px) {
+    .flexItem {
+        width: 100%;
+        margin: 0 0 2rem;
+    }
 }

@@ -24,7 +24,7 @@ const Main = ({ content: { title, text, relink } }: Props): ReactElement => {
         <>
             <FooterStyles />
 
-            <main className="container">
+            <div className="container">
                 <section className={css.container}>
                     <div className={css.left}>
                         <CSSTransition in timeout={600} classNames="slideUp" appear>
@@ -59,7 +59,7 @@ const Main = ({ content: { title, text, relink } }: Props): ReactElement => {
                         </div>
                     )}
                 </section>
-            </main>
+            </div>
         </>
     );
 };

@@ -15,6 +15,7 @@
     content: '';
     position: absolute;
     right: 0;
+    transform: translateX(0);
     height: 100%;
     width: 6.1rem;
     border-radius: 0.6rem;
@@ -22,10 +23,8 @@
     transition: 0.3s ease-in-out;
 }
 
-.light::before {
-    left: 0;
-    right: auto;
-    transition: 0.3s ease-in-out;
+.btn-toggle.light::before {
+    transform: translateX(-100%);
 }
 
 .btn-toggle__elem {

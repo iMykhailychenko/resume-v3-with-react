@@ -47,6 +47,7 @@
 
     .param {
         font-weight: 700;
+        border-bottom: 0.1rem solid #e0e0e0;
     }
 
     .param,

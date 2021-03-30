@@ -3,7 +3,7 @@ const icons: { [key: string]: string } = {
     array: '/images/content/skills/array.svg',
     asynchronous: '/images/content/skills/asynchronous.svg',
     auto: '/images/content/skills/auto.svg',
-    brouser: '/images/content/skills/brouser.svg',
+    browser: '/images/content/skills/browser.svg',
     bug: '/images/content/skills/bug.svg',
     css: '/images/content/skills/css.svg',
     dom: '/images/content/skills/dom.svg',
@@ -35,6 +35,9 @@ const icons: { [key: string]: string } = {
     express: '/images/content/skills/form.svg',
     next: '/images/content/skills/next.svg',
     mongo: '/images/content/skills/mongo.svg',
+    python: '/images/content/skills/python.svg',
+    sql: '/images/content/skills/sql.svg',
+    angular: '/images/content/skills/angular.svg',
 };
 
 export default icons;

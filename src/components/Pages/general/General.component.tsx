@@ -15,7 +15,7 @@ interface Props {
 }
 
 const General = ({ content: { title, tablet, text, relink } }: Props): ReactElement => (
-    <main className="container">
+    <div className="container">
         <PageFirstBlock title={title} img="/images/emoji/general.png" webp="/images/emoji/general.webp" />
 
         <section className={css.container}>
@@ -36,7 +36,7 @@ const General = ({ content: { title, tablet, text, relink } }: Props): ReactElem
         </section>
 
         <SplitLink path="/education" text={relink} />
-    </main>
+    </div>
 );
 
 export default General;

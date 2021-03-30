@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 
-import css from '../Experiance.module.css';
+import css from '../Experience.module.css';
 
 interface IProject {
     name: string;
@@ -9,6 +9,11 @@ interface IProject {
 }
 
 const projects: IProject[] = [
+    {
+        name: 'Blog application (react, redux, saga, typescript, node.js, mongoDB). In progress...',
+        code: 'https://github.com/iMykhailychenko/blog-app-mern-frontend',
+        site: 'https://blog-eta-teal.vercel.app/',
+    },
     {
         name: 'My npm package (react-modal-dom)',
         code: 'https://github.com/iMykhailychenko/react-modal-dom',
@@ -23,11 +28,6 @@ const projects: IProject[] = [
         name: 'Chatbots (next.js, redux, typescript, node.js, saga)',
         code: 'https://github.com/iMykhailychenko/chat-bot',
         site: 'https://chat-bot-five.vercel.app/',
-    },
-    {
-        name: 'Blog application (react, redux, typescript, node.js, saga). In progress...',
-        code: 'https://github.com/iMykhailychenko/blog-app-mern-ci',
-        site: 'https://mykh-blog.netlify.app/',
     },
     {
         name: 'Js router (js, spa)',

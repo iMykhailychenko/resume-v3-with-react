@@ -18,7 +18,7 @@ const Reason = ({ content: { title, firstText, secondText, relink } }: Props): R
     const mobile = window.innerWidth < 768;
 
     return (
-        <main className="container">
+        <div className="container">
             <PageFirstBlock title={title} img="/images/emoji/reason.png" webp="/images/emoji/reason.webp" />
 
             <section className={css.content}>
@@ -104,7 +104,7 @@ const Reason = ({ content: { title, firstText, secondText, relink } }: Props): R
             </section>
 
             <SplitLink path="/general" text={relink} />
-        </main>
+        </div>
     );
 };
 

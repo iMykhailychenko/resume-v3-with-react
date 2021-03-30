@@ -10,9 +10,10 @@ interface Props {
         textOne: string;
         textTwo: string;
         textThree: string;
+        textFour: string;
         relink: string;
         slider: {
-            linkt: string;
+            link: string;
             company: string;
             title: string;
             responsibility: string;

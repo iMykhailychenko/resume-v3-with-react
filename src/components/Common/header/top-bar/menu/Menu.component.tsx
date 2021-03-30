@@ -14,7 +14,7 @@ interface Props {
 export const getCircleWidth = (diameter: number): number => diameter * Math.PI;
 
 const MenuBtn = ({ content, theme, menu, toggleMenu }: Props): ReactElement => {
-    // set a color of menu btn according to globat theme color
+    // set a color of menu btn according to global theme color
     const color: string = theme === 'light' ? 'rgb(0, 0, 0)' : 'rgb(248, 248, 248)';
 
     // set position of menu according to nav menu position (open/close)
@@ -37,16 +37,16 @@ const MenuBtn = ({ content, theme, menu, toggleMenu }: Props): ReactElement => {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <circle
-                    cx="1.21rem"
-                    cy="1.21em"
-                    r="1.1rem"
+                    cx="50%"
+                    cy="50%"
+                    r="49%"
                     strokeWidth="0.1rem"
                     stroke={color}
                     strokeDasharray={strokeDasharray}
                 />
-                <circle cx="1.2rem" cy="0.7rem" width="0.2rem" height="0.2rem" r="0.1rem" fill={color} />
-                <circle cx="1.2rem" cy="1.2rem" width="0.2rem" height="0.2rem" r="0.1rem" fill={color} />
-                <circle cx="1.2rem" cy="1.7rem" width="0.2rem" height="0.2rem" r="0.1rem" fill={color} />
+                <circle cx="50%" cy="30%" width="0.2rem" height="0.2rem" r="0.1rem" fill={color} />
+                <circle cx="50%" cy="50%" width="0.2rem" height="0.2rem" r="0.1rem" fill={color} />
+                <circle cx="50%" cy="70%" width="0.2rem" height="0.2rem" r="0.1rem" fill={color} />
             </svg>
 
             <span className="menu__text">{content}</span>

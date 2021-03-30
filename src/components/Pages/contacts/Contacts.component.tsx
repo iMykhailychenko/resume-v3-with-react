@@ -17,7 +17,7 @@ const Contacts = ({ content }: Props): ReactElement => {
     const mobile = window.innerWidth < 768;
 
     return (
-        <main className="container">
+        <div className="container">
             <PageFirstBlock
                 title={content.title}
                 img={'/images/emoji/contacts.png'}
@@ -57,7 +57,7 @@ const Contacts = ({ content }: Props): ReactElement => {
             </section>
 
             <SplitLink path="/download" text={content.relink} />
-        </main>
+        </div>
     );
 };
 

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { ReactElement } from 'react';
 
 import icons from '../../../../assets/icons';
 import css from './SkillsList.module.css';
@@ -11,14 +11,15 @@ interface Values {
     text: string;
 }
 
-interface Props {
-    props: Values[];
+interface IProps {
+    skills: Values[];
+    flex?: boolean;
 }
 
-const SkillsList: React.FC<Props> = ({ props }) => (
-    <ul className={css.list}>
-        {props.map(({ img, logoColor, title, text }, id) => (
-            <li key={id} className={clsx(css.item, 'border')}>
+const SkillsList = ({ skills, flex = false }: IProps): ReactElement => (
+    <ul className={clsx(css.list, flex && css.flexList)}>
+        {skills.map(({ img, logoColor, title, text }, id) => (
+            <li key={id} className={clsx(css.item, 'border', flex && css.flexItem)}>
                 <div className={css.logo} style={{ background: `${logoColor}` }}>
                     <img className={css.img} src={icons[img]} alt="" />
                 </div>

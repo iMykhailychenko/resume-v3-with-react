@@ -11,7 +11,7 @@ export type Theme = 'light' | 'dark';
 
 export interface IState {
     theme: string;
-    locale: string;
+    locale: Locale;
     menu: boolean;
     popup: boolean;
     content: Content;

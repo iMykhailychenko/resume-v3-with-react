@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 
-import { locale } from '../../../../../redux/locale/actions';
+import locale from '../../../../../redux/locale/actions';
 import { IState, Locale } from '../../../../../types';
 import LocaleComponent from './Locale.component';
 

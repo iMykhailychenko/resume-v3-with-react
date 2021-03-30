@@ -1,26 +1,16 @@
 import { connect } from 'react-redux';
 
 import { IState } from '../../../types';
-import Skills from './Skills.component';
-
-interface Values {
-    img: string;
-    logoColor: string;
-    title: string;
-    text: string;
-}
+import Skills, { IList } from './Skills.component';
 
 interface Props {
     content: {
         title: string;
         text: string[];
-        end: string[];
         relink: string;
-        list: {
-            title: string;
-            text: string;
-            item: Values[];
-        }[];
+        search: string;
+        empty: IList[];
+        list: IList[];
     };
 }
 

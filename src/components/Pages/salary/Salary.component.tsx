@@ -30,7 +30,7 @@ const Salary = ({
     theme,
     content: { title, text, sale, before, now, graphText, captionOne, captionTwo, endText, relink },
 }: Props): ReactElement => (
-    <main>
+    <div>
         <div className="container">
             <PageFirstBlock title={title} img="/images/emoji/salary.png" webp="/images/emoji/salary.webp" />
 
@@ -43,8 +43,8 @@ const Salary = ({
             <section className={css.section}>
                 <p>{sale}</p>
 
-                <Sale number={1600.0} prefix={before} />
-                <Sale number={1399.99} prefix={now} />
+                <Sale number={2500.0} prefix={before} />
+                <Sale number={2199.99} prefix={now} />
             </section>
 
             <section className={css.beforeChart}>
@@ -89,7 +89,7 @@ const Salary = ({
 
             <SplitLink path="/contacts" text={relink} />
         </div>
-    </main>
+    </div>
 );
 
 export default Salary;

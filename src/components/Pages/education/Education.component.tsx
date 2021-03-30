@@ -22,7 +22,7 @@ interface Props {
 }
 
 const Education = ({ content: { title, item, relink } }: Props): ReactElement => (
-    <main className={css.overflow}>
+    <div className={css.overflow}>
         <div className="container">
             <PageFirstBlock
                 title={title}
@@ -40,7 +40,7 @@ const Education = ({ content: { title, item, relink } }: Props): ReactElement =>
 
             <SplitLink path="/experience" text={relink} />
         </div>
-    </main>
+    </div>
 );
 
 export default Education;

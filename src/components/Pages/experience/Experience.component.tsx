@@ -3,10 +3,12 @@ import React, { Component, ReactElement } from 'react';
 
 import PageFirstBlock from '../../Common/page-first-block/PageFirstBlock.component';
 import SplitLink from '../../Common/split-link/SplitLink.component';
-import Comercial from './comercial/Comercial.component';
-import css from './Experiance.module.css';
+import Commercial from './commercial/Commercial.component';
+import css from './Experience.module.css';
 import Learning from './learning/Learning.component';
+import Pet from './pet/Pet.component';
 import Resume from './resume/Resume.component';
+import SliderDots from './slider/Slider.component';
 
 interface Props {
     content: {
@@ -15,9 +17,10 @@ interface Props {
         textOne: string;
         textTwo: string;
         textThree: string;
+        textFour: string;
         relink: string;
         slider: {
-            linkt: string;
+            link: string;
             company: string;
             title: string;
             responsibility: string;
@@ -30,7 +33,7 @@ interface State {
     count: number;
 }
 
-export default class Experiance extends Component<Props, State> {
+export default class Experience extends Component<Props, State> {
     state = {
         count: 0,
     };
@@ -38,7 +41,7 @@ export default class Experiance extends Component<Props, State> {
     handleUp = (): void => {
         this.setState(
             (prev: State): State => {
-                const count = !prev.count ? 3 : prev.count - 1;
+                const count = prev.count >= this.props.content.slider.length - 1 ? 0 : prev.count + 1;
                 return { count };
             },
         );
@@ -47,7 +50,7 @@ export default class Experiance extends Component<Props, State> {
     handleDown = (): void => {
         this.setState(
             (prev: State): State => {
-                const count = prev.count >= 3 ? 0 : prev.count + 1;
+                const count = !prev.count ? this.props.content.slider.length - 1 : prev.count - 1;
                 return { count };
             },
         );
@@ -61,11 +64,11 @@ export default class Experiance extends Component<Props, State> {
         const rotate: number = count * 45;
 
         return (
-            <main className="container">
+            <div className="container">
                 <PageFirstBlock
                     title={content.title}
-                    img="/images/emoji/experiance.png"
-                    webp="/images/emoji/experiance.webp"
+                    img="/images/emoji/experience.png"
+                    webp="/images/emoji/experience.webp"
                 />
 
                 <Parallax
@@ -74,46 +77,7 @@ export default class Experiance extends Component<Props, State> {
                     animation={{ opacity: 1 }}
                     style={{ opacity: 0 }}
                 >
-                    {!mobile && (
-                        <>
-                            <div className={css.circle + ' border'} style={{ transform: `rotate(${rotate}deg)` }}>
-                                <span
-                                    className={css.point + ' reversBackground'}
-                                    style={{
-                                        transform: `scale(${count === 0 ? 2.5 : 1}) translate(${
-                                            count === 0 ? '26%' : '50%'
-                                        }, -50%)`,
-                                    }}
-                                />
-                                <span
-                                    className={css.point + ' reversBackground'}
-                                    style={{
-                                        transform: `scale(${count === 1 ? 2.5 : 1}) translate(${
-                                            count === 1 ? '-12%' : '50%'
-                                        }, -50%)`,
-                                    }}
-                                />
-                                <span
-                                    className={css.point + ' reversBackground'}
-                                    style={{
-                                        transform: `scale(${count === 2 ? 2.5 : 1}) translate(${
-                                            count === 2 ? '6%' : '50%'
-                                        }, ${count === 2 ? '-20%' : '-50%'})`,
-                                    }}
-                                />
-                                <span
-                                    className={css.point + ' reversBackground'}
-                                    style={{
-                                        transform: `scale(${count === 3 ? 2.5 : 1}) translate(${
-                                            count === 3 ? '44%' : '50%'
-                                        }, ${count === 3 ? '-45%' : '-50%'})`,
-                                    }}
-                                />
-                            </div>
-
-                            <span className={css.current}>{`0${count + 1}`}</span>
-                        </>
-                    )}
+                    <SliderDots mobile={mobile} rotate={rotate} count={count} total={content.slider.length} />
 
                     <div className={css.block}>
                         <div className={css.wrp} style={{ transform: `translateY(-${y}rem)` }}>
@@ -121,7 +85,7 @@ export default class Experiance extends Component<Props, State> {
                                 <div key={index} className={css.inner}>
                                     <a
                                         className={css.link}
-                                        href={slide.linkt}
+                                        href={slide.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         tabIndex={-1}
@@ -141,8 +105,8 @@ export default class Experiance extends Component<Props, State> {
 
                         {!mobile && (
                             <>
-                                <button className={css.btn} onClick={this.handleUp}></button>
-                                <button className={css.btn} onClick={this.handleDown}></button>
+                                <button className={css.btn} type="button" onClick={this.handleUp} />
+                                <button className={css.btn} type="button" onClick={this.handleDown} />
                             </>
                         )}
                     </div>
@@ -162,7 +126,7 @@ export default class Experiance extends Component<Props, State> {
                     </Parallax>
 
                     <div className={css.border + ' border-top'}>
-                        <Comercial />
+                        <Commercial />
 
                         <Parallax
                             className={css.title}
@@ -185,8 +149,31 @@ export default class Experiance extends Component<Props, State> {
                                 opacity: '0',
                             }}
                         >
-                            <p>{content.textThree}</p>
+                            <p>
+                                {content.textThree}{' '}
+                                <a
+                                    className={css.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://github.com/MarianMalvin/phoqer"
+                                >
+                                    github link
+                                </a>
+                            </p>
                         </Parallax>
+                        <Pet />
+
+                        <Parallax
+                            className={css.title}
+                            animation={{ y: 0, opacity: 1 }}
+                            style={{
+                                transform: 'translateY(50%)',
+                                opacity: '0',
+                            }}
+                        >
+                            <p>{content.textFour}</p>
+                        </Parallax>
+
                         <Parallax
                             className={css.title}
                             animation={{ y: 0, opacity: 1 }}
@@ -201,7 +188,7 @@ export default class Experiance extends Component<Props, State> {
                 </div>
 
                 <SplitLink path="/skills" text="Hard skills" />
-            </main>
+            </div>
         );
     }
 }

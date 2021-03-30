@@ -2,7 +2,7 @@
     "header": {
         "menu": "Site navigation",
         "main": "Home",
-        "reason": "Why am I going to change job?",
+        "reason": "How did I become a programmer?",
         "general": "General information",
         "education": "Education and courses",
         "experience": "My work experience",
@@ -29,16 +29,16 @@
         "errorConfirm": "Do not forget to indicate consent to the processing of personal information."
     },
     "reason": {
-        "title": "Why am I going to change job?",
+        "title": "How did I become a programmer?",
         "firstText": [
-            "From childhood I was interested in mathematics, and especially geometry. Therefore, I decided that I had a successful future in the world of economics and finance. After graduation, I began to study and continue to work in this area.",
-            "Soon, I realized that design of documents and presentations make more sense to me than the content of these documents.",
-            "Missing a long period of mental anguish, I will go straight to the main point. About two years ago, I unexpectedly discovered the world of web development."
+            "As often happens, after school I could not correctly set my life priorities and went to study in a specialty that did not interest me at all.",
+            "All this time I felt out of place. Thoughts of becoming a programmer came to my mind from time to time, but I was always frightened by the stereotype that it is very difficult and boring.",
+            "Everything changed dramatically when I decided to create my first website in 2018. Since then, I have never stopped programming."
         ],
         "secondText": [
-            "Already at the end of May 2019, I finally set priorities and enrolled in full-stack developer courses in GoIT.",
-            "After weighing the pros and cons, I decided to change my profession as soon as possible to get a more relevant experience, so I got a job as a junior fron-end developer much earlier before graduation of the GoIT course.",
-            "As a result of this decision, I significantly improved my knowledge and skills, however, now I decided to go further to maximize my potential and fully apply the knowledge gained in GoIT course."
+            "At the end of May 2019, I finally set my priorities and decided to change my field of activity as soon as possible. At that time I worked for a prestigious company, so this decision was not easy.",
+            "To do this, I signed up for a full-stack developer course at GoIT. I wanted to change professions as soon as possible in order to get a more relevant experience, so I got a job as a junior front-end developer before finishing the course.",
+            "Since registering for the courses, I have never regretted my decision and in less than a year I received an offer for the position of middle front-end developer."
         ],
         "relink": "General information about me"
     },
@@ -96,13 +96,26 @@
         "title": "My work experience",
         "slider": [
             {
-                "linkt": "https://merehead.com/ru/",
-                "company": "Merehead",
-                "title": "July 2020 - present. Front-end developer (react.js).",
+                "link": "https://www.luckylandgaming.com/",
+                "company": "LuckyLand Gaming",
+                "title": "December 2020 - present. Middle Front-end developer (react.js).",
                 "responsibility": "Responsibilities:",
                 "list": [
-                    "developing user-facing features using React.js;",
-                    "setuping applications from scratch;",
+                    "developing user-facing features with React.js;",
+                    "refactoring old code and developing new functionality;",
+                    "building reusable components and front-end libraries for future use;",
+                    "translating designs and wireframes into high quality code;",
+                    "optimizing components for maximum performance across a vast array of web-capable devices and browsers;"
+                ]
+            },
+            {
+                "link": "https://merehead.com/",
+                "company": "Merehead",
+                "title": "July 2020 - December 2020. Front-end developer (react.js).",
+                "responsibility": "Responsibilities:",
+                "list": [
+                    "developing user-facing features with React.js;",
+                    "setup applications from scratch;",
                     "building reusable components and front-end libraries for future use;",
                     "translating designs and wireframes into high quality code;",
                     "optimizing components for maximum performance across a vast array of web-capable devices and browsers;",
@@ -110,7 +123,7 @@
                 ]
             },
             {
-                "linkt": "https://dl.agency/",
+                "link": "https://dl.agency/",
                 "company": "DL.Agency",
                 "title": "January 2020 - July 2020. Junior front-end developer.",
                 "responsibility": "Responsibilities:",
@@ -124,7 +137,7 @@
                 ]
             },
             {
-                "linkt": "https://home.kpmg/ua/ru/home.html",
+                "link": "https://home.kpmg/ua/ru/home.html",
                 "company": "KPMG Ukraine",
                 "title": "May 2018 - October 2019. Transfer Pricing Consultant.",
                 "responsibility": "Responsibilities:",
@@ -138,7 +151,7 @@
                 ]
             },
             {
-                "linkt": "https://www.controlpay.com/",
+                "link": "https://www.controlpay.com/",
                 "company": "ControlPay Ukraine",
                 "title": "February - May 2018 Invoice auditor",
                 "responsibility": "Responsibilities:",
@@ -154,8 +167,9 @@
         ],
         "secondTitle": "Examples of my commercial works",
         "textOne": "Below are the sites in the creation of which I took an active part. These are not all my works! For obvious reasons, I can not show all the commercial projects in which I was participated.",
-        "textTwo": "For comparison, the earlier versions of my resumes are presented below. Do not judge strictly, they were created a long time ago.",
-        "textThree": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them end up on github.",
+        "textTwo": "For comparison, the earlier versions of my resumes are presented below.",
+        "textThree": "Once, my friends and I decided to create a project that would allow me to gain experience to find my first job, and to improve my mentoring skills. As a result, this project has become something more. You can see the source code at this link:",
+        "textFour": "Programming is my hobby. Therefore, in my free time I learn something new or create educational projects. Some of them I have upload to github.",
         "relink": "Hard skills"
     },
     "skills": {
@@ -164,10 +178,21 @@
             "Unfortunately or fortunately, but I learn new technologies faster than I can update this site.",
             "Therefore, if you have not found the information you need - write to me! Perhaps I just did not mentioned it on the site"
         ],
-        "end": [
-            "In this section I will indicate the basic skills and knowledge that I mastered during the GoIT courses, as well as those that I have mastered in practice. Some of these skills are presented on this site.",
-            "Also, you can visit my page on GitHub and make sure that all the indicated skills have been passed by me in practice. The link to the GitHub profile is in the footer of the site."
+        "empty": [
+              {
+                    "title": "Nothing found",
+                    "text": "",
+                    "item": [
+                          {
+                                "img": "github",
+                                "logoColor": "rgb(255,255,255)",
+                                "title": "It's empty here",
+                                "text": "Try to chang your search term"
+                          }
+                    ]
+              }
         ],
+        "search": "Start typing",
         "list": [
             {
                 "title": "HTML & CSS",
@@ -198,7 +223,7 @@
                         "text": "Page layout for various devices and screen widths. Mobile-first CSS."
                     },
                     {
-                        "img": "brouser",
+                        "img": "browser",
                         "logoColor": "rgb(237,119,119)",
                         "title": "Cross-browser compatibility. Layout methodologies",
                         "text": "Working with browser-specific properties. Using the BEM naming methodology"
@@ -206,7 +231,7 @@
                     {
                         "img": "sass",
                         "logoColor": "rgb(237,119,119)",
-                        "title": "Automatization and preprocessors",
+                        "title": "Atomization and preprocessors",
                         "text": "Automating the layout process with Gulp. SASS CSS preprocessor. PUG HTML preprocessor."
                     }
                 ]
@@ -417,7 +442,25 @@
                         "img": "ts",
                         "logoColor": "rgb(255,255,255)",
                         "title": "TypeScript",
-                        "text": "Using TypeScript with React"
+                        "text": "Typed JavaScript that easily scales"
+                    },
+                    {
+                        "img": "angular",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "Angular",
+                        "text": "Angular is an application design framework for creating efficient and sophisticated single-page apps."
+                    },
+                    {
+                        "img": "python",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "Python",
+                        "text": "Python skills, syntax, basic concepts, creating simple servers"
+                    },
+                    {
+                        "img": "sql",
+                        "logoColor": "rgb(255,255,255)",
+                        "title": "Postgresql",
+                        "text": "Object-relational database system"
                     },
                     {
                         "img": "php",
@@ -445,16 +488,16 @@
     "salary": {
         "title": "Expected salary",
         "text": [
-            "On average, the front-end developer in Kiev earns ~$1200. This is the median of wages according to the data of 137 vacancies posted on work.ua site over the past 3 months. Also, according to the djinni portal, the largest number of offers were sent to candidates with the expected salary in the range from $1000+ to $2000+ (Among candidates with work experience from 1 to 2 years)",
-            "Regarding the DOU portal, the range was from $1000 to $1600 for developers with knowledge of the javascript programming language, but this is information for June 2020, which is a less relevant indicator."
+            "My salary expectations directly depend on the presence of an interesting project, a good team and, of course, cookies in the office",
+            "If these conditions are met, the cost of my labor will be $ 2500"
         ],
-        "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $200.01",
+        "sale": "In connection with the current situation in the world, I am ready to make a special offer for you. If you contact me in the near future, you will receive a discount of $300.01",
         "before": "before - ",
         "now": "now - ",
         "graphText": "Still in doubt? Then the abstruse charts presented below should remove all your doubts",
-        "captionOne": "In this graph, the blue line shows the effectiveness of my work compared to other candidates who also want to get to your company. In my opinion, the choice is obvious.",
+        "captionOne": "In this graph, the yellow line shows the effectiveness of my work compared to other candidates who also want to get to your company. In my opinion, the choice is obvious.",
         "captionTwo": "If you are not convinced by the first schedule, then see how your company's revenue will increase after I get to work for you.",
-        "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $1.4K, but in any case write to me, we can discuss it.",
+        "endText": "I hope this page amused you a little. In the worst case, no. Well, seriously, my expected income level is $2200, but in any case write to me, we can discuss it.",
         "relink": "Contacts"
     },
     "download": {
@@ -463,7 +506,7 @@
         "pdf": "This is a formatted version of the resume in PDF format. It looks the same on all devices.",
         "doc": "This is a text version of the resume in DOC format, without registration. In case you are only interested in tex.",
         "btn": "Download",
-        "relink": "Why am I going to change job?"
+        "relink": "How did I become a programmer?"
     },
     "main": {
         "title": "The author of this page is looking for a front-end developer position",
