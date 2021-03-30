@@ -22,7 +22,11 @@ class Nav extends Component<IProps> {
     render(): ReactElement {
         return (
             <CSSTransition in={this.props.menu} timeout={500} classNames={slideNav} unmountOnExit>
-                <div className={clsx(css.wrp, this.props.theme === 'dark' && css.dark)} onClick={this.handleClick} aria-hidden>
+                <div
+                    className={clsx(css.wrp, this.props.theme === 'dark' && css.dark)}
+                    onClick={this.handleClick}
+                    aria-hidden
+                >
                     <div className="container">
                         <Switch />
                         <Navigation />
