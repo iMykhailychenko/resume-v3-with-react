@@ -4,6 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 
 import { encode, initialValues, validEmail } from '../../../services/utils';
 import popTransition from '../../../transitions/pop.module.css';
+import ConfettiWrp from '../confetti';
 import css from './Form.module.css';
 
 interface Values {
@@ -46,47 +47,62 @@ const FormComponent = ({ content }: Props): ReactElement => (
         }}
     >
         {values => (
-            <Form className={css.form} data-netlify="true" data-netlify-honeypot="bot-field">
-                <h2 className={css.title}>{content.title}</h2>
+            <>
+                {values.status && <ConfettiWrp />}
+                <Form className={css.form} data-netlify="true" data-netlify-honeypot="bot-field">
+                    <h2 className={css.title}>{content.title}</h2>
 
-                <CSSTransition in={values.status} timeout={1000} classNames={popTransition} unmountOnExit>
-                    <p className={css.success}>{content.success}</p>
-                </CSSTransition>
+                    <CSSTransition in={values.status} timeout={1000} classNames={popTransition} unmountOnExit>
+                        <p className={css.success}>{content.success}</p>
+                    </CSSTransition>
 
-                <Field className={css.input} type="text" name="name" placeholder={content.name} autoComplete="off" />
+                    <Field
+                        className={css.input}
+                        type="text"
+                        name="name"
+                        placeholder={content.name}
+                        autoComplete="off"
+                    />
 
-                <Field className={css.input} type="email" name="email" placeholder={content.email} autoComplete="off" />
-                <ErrorMessage name="email" render={msg => <span className={css.errors}>{msg}</span>} />
+                    <Field
+                        className={css.input}
+                        type="email"
+                        name="email"
+                        placeholder={content.email}
+                        autoComplete="off"
+                    />
+                    <ErrorMessage name="email" render={msg => <span className={css.errors}>{msg}</span>} />
 
-                <Field
-                    className={css.input}
-                    type="text"
-                    name="company"
-                    placeholder={content.company}
-                    autoComplete="off"
-                />
+                    <Field
+                        className={css.input}
+                        type="text"
+                        name="company"
+                        placeholder={content.company}
+                        autoComplete="off"
+                    />
 
-                <Field
-                    as="textarea"
-                    className={css.textarea}
-                    rows={10}
-                    cols={45}
-                    name="text"
-                    placeholder={content.text}
-                />
+                    <Field
+                        as="textarea"
+                        className={css.textarea}
+                        rows={10}
+                        cols={45}
+                        name="text"
+                        placeholder={content.text}
+                    />
 
-                <label className={css.label}>
-                    <Field type="checkbox" name="confirm" />
-                    <span className={css.checkmark}></span>
-                    <span className={css.checktext}>{content.confirm}</span>
-                </label>
+                    <label className={css.label}>
+                        <Field type="checkbox" name="confirm" />
+                        <span className={css.checkmark} />
+                        <span className={css.checktext}>{content.confirm}</span>
+                    </label>
 
-                <ErrorMessage name="confirm" render={msg => <span className={css.errors}>{msg}</span>} />
+                    <ErrorMessage name="confirm" render={msg => <span className={css.errors}>{msg}</span>} />
 
-                <button className={css.btn + ' btn-blue'} type="submit">
-                    {content.submit}
-                </button>
-            </Form>
+                    <button className={css.btn + ' btn-blue'} type="submit">
+                        {content.submit}
+                    </button>
+                </Form>
+            </>
         )}
     </Formik>
 );

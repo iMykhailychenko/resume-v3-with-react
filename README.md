@@ -19,28 +19,29 @@
 
 ## Навыки:
 
+##### programming languages
+- JavaScript
+- TypeScript
+- Python (...in progress)
+- php (beginner)
+##### libraries/frameworks
 - React
 - Redux
-- TypeScript
-- Angular
+- Angular (beginner)
 - Node.js
 - Express
-- Основы Nest.js
-- Система контроля версий. Git
-- HTML/CSS
-- Адаптивная и кросс-браузерную верстка
-- БЕM
-- Pixel perfect верстка
-- Препроцессоры: SASS,
-- JavaScript
-- Шаблонизатор: PUG, Handlebars
-- Webpack, GULP
-- Python
-- Основы php
-- Postgresql
+- Nest.js (...in progress)
+##### other
 - MongoDB
-- Wordpress
+- Postgresql
+- Version control systems. Git
+- HTML/CSS
+- PUG, Handlebars
+- SASS,
+- BEM
 - JQuery
+- Webpack, GULP
+- Wordpress
 
 ## Опыт работы:
 
