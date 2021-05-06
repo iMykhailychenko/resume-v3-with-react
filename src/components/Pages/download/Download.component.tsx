@@ -41,7 +41,7 @@ const Download: React.FC<Props> = ({ content: { title, text, pdf, doc, btn, reli
                 <div className={clsx(css.files, 'border-top')}>
                     <ul className={css.list}>
                         <li>
-                            <a className={clsx(css.link, 'reversBackground')} href="/files/resume-ru.pdf" download>
+                            <a className={clsx(css.link, 'reversBackground')} href="/files/resume-ua.pdf" download>
                                 {`${btn} pdf UA`}
                             </a>
                         </li>
@@ -51,7 +51,7 @@ const Download: React.FC<Props> = ({ content: { title, text, pdf, doc, btn, reli
                             </a>
                         </li>
                         <li>
-                            <a className={clsx(css.link, 'reversBackground')} href="/files/resume-ru.pdf" download>
+                            <a className={clsx(css.link, 'reversBackground')} href="/files/resume-en.pdf" download>
                                 {`${btn} pdf EN`}
                             </a>
                         </li>
