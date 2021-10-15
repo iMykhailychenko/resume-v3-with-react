@@ -42,8 +42,7 @@ const FormComponent = ({ content }: Props): ReactElement => (
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: encode({ 'form-name': 'contact', ...values }),
             })
-                .then(res => res.json())
-                .then(() => actions.setStatus('success'))
+                .then(res => actions.setStatus(res.ok ? 'success' : 'error'))
                 .catch(() => actions.setStatus('error'));
         }}
     >
