@@ -112,6 +112,7 @@
     user-select: none;
 }
 
+.error,
 .success {
     max-width: 32.8rem;
     border-radius: 0.8rem;
@@ -119,6 +120,12 @@
     background: rgb(54, 159, 255);
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
+}
+
+.error {
+    background: rgb(239, 239, 239);
+    color: rgb(182, 30, 30);
+    font-weight: 600;
 }
 
 @media (max-width: 460px) {

@@ -37,23 +37,38 @@ const FormComponent = ({ content }: Props): ReactElement => (
         }}
         onSubmit={(values, actions) => {
             actions.resetForm();
-            fetch('/', {
+            fetch('', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: encode({ 'form-name': 'contact', ...values }),
             })
-                .then(() => actions.setStatus(true))
-                .catch(error => console.log(error));
+                .then(res => res.json())
+                .then(() => actions.setStatus('success'))
+                .catch(() => actions.setStatus('error'));
         }}
     >
         {values => (
             <>
-                {values.status && <ConfettiWrp />}
+                {values.status === 'success' && <ConfettiWrp />}
                 <Form className={css.form} data-netlify="true" data-netlify-honeypot="bot-field">
                     <h2 className={css.title}>{content.title}</h2>
 
-                    <CSSTransition in={values.status} timeout={1000} classNames={popTransition} unmountOnExit>
+                    <CSSTransition
+                        in={values.status === 'success'}
+                        timeout={1000}
+                        classNames={popTransition}
+                        unmountOnExit
+                    >
                         <p className={css.success}>{content.success}</p>
+                    </CSSTransition>
+
+                    <CSSTransition
+                        in={values.status === 'error'}
+                        timeout={1000}
+                        classNames={popTransition}
+                        unmountOnExit
+                    >
+                        <p className={css.error}>{content.error}</p>
                     </CSSTransition>
 
                     <Field

@@ -24,6 +24,7 @@
         "confirm": "I consent to the processing of personal information",
         "submit": "Submit",
         "success": "Your question has been sent successfully. I will try to answer it as quickly as possible.",
+        "error": "Oops! An error has occurred. The service is unstable because I use free hosting. Try to write a message to the contacts listed in the footer",
         "errorMail": "Oops .. There seems to be a mistake here.",
         "errorNoMail": "I will not be able to answer your question without knowing your email.",
         "errorConfirm": "Do not forget to indicate consent to the processing of personal information."
