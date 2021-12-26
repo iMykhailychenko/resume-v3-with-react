@@ -36,20 +36,27 @@ const FormComponent = ({ content }: Props): ReactElement => (
             return errors;
         }}
         onSubmit={(values, actions) => {
-            actions.resetForm();
             fetch('', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: encode({ 'form-name': 'contact', ...values }),
             })
-                .then(res => actions.setStatus(res.ok ? 'success' : 'error'))
+                .then(res => {
+                    if (res.ok) {
+                        actions.resetForm();
+                        actions.setStatus('success');
+                        return;
+                    }
+
+                    actions.setStatus('error');
+                })
                 .catch(() => actions.setStatus('error'));
         }}
     >
         {values => (
             <>
                 {values.status === 'success' && <ConfettiWrp />}
-                <Form className={css.form} data-netlify="true" data-netlify-honeypot="bot-field">
+                <Form className={css.form}>
                     <h2 className={css.title}>{content.title}</h2>
 
                     <CSSTransition
