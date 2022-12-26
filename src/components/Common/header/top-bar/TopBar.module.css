@@ -3,10 +3,16 @@
     z-index: 10;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
-    padding: 4rem 0;
+    padding: 7rem 0 4rem;
+}
+
+@media screen and (min-width: 540px) {
+    .inner {
+        padding: 6rem 0 4rem;
+    }
 }
 
 .leftBlock {

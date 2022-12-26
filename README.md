@@ -1,5 +1,7 @@
 # [RESUME](https://ihor-mykhailychenko.netlify.app)
 
+> :warning: **OUTDATED**
+
 ### [Ссылка для просмотра резюме](https://ihor-mykhailychenko.netlify.app)
 
 ## Стек технологий:

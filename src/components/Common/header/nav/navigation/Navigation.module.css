@@ -77,20 +77,26 @@
     object-fit: cover;
 }
 
-@media (max-width: 1200px) {
+@media screen and (min-width: 2000px) {
+    .link {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
     .scroll {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     .scroll {
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem 3rem;
     }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 420px) {
     .scroll {
         grid-template-columns: 1fr;
         grid-gap: 1rem;

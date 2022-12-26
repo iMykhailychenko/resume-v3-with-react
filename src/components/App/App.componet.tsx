@@ -9,6 +9,7 @@ import Form from '../Common/form/Form.container';
 import Header from '../Common/header/Header.component';
 import Popup from '../Common/popup/Popup.container';
 import ScrollTopBtn from '../Common/scroll-top-btn/ScrollTopBtn.component';
+import Warning from '../Common/warning/Warning.component';
 
 interface Props {
     theme: string;
@@ -50,6 +51,8 @@ class App extends Component<Props> {
                             <Route component={routes.NotFound.component} />
                         </Switch>
                     </Suspense>
+
+                    <Warning />
                 </main>
                 <Footer />
             </>

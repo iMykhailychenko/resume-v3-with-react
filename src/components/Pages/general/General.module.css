@@ -21,7 +21,7 @@
 
 .img {
     position: sticky;
-    top: 2rem;
+    top: 7rem;
     z-index: 2;
     height: 32rem;
     object-fit: cover;
@@ -41,14 +41,10 @@
     font-size: 1.2rem;
 }
 
-@media (max-width: 1100px),
-    (max-height: 760px),
-    (min-width: 1500px) and (max-height: 916px),
-    (min-width: 2300px) and (max-height: 1330px) {
+@media (max-height: 760px), (max-width: 900px) {
     .container {
         height: auto;
-        margin: 0;
-        margin-bottom: 8rem;
+        margin: 0 0 8rem;
     }
 
     .img {

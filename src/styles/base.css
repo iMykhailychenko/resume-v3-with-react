@@ -190,9 +190,3 @@ a {
         font-size: 12px;
     }
 }
-
-@media (min-width: 2300px) {
-    html {
-        font-size: 18px;
-    }
-}
